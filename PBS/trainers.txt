@@ -49,7 +49,6 @@ LoseText = Bien hecho, estoy que goteo.
 Pokemon = SPINDA,12
 Pokemon = ZANGOOSE,14
     Moves = QUICKATTACK,BULKUP
-    Item = SILKSCARF
 #-------------------------------
 [CAMPER,Alex]
 LoseText = ¡No podrás con Depression!
