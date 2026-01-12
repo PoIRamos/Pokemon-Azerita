@@ -48,7 +48,7 @@ Pokemon = MACHOP,9
 LoseText = Bien hecho, estoy que goteo.
 Pokemon = SPINDA,12
 Pokemon = ZANGOOSE,14
-    Moves = FACADE,BULKUP
+    Moves = QUICKATTACK,BULKUP
     Item = SILKSCARF
 #-------------------------------
 [CAMPER,Alex]
@@ -98,7 +98,7 @@ Pokemon = SANDSHREW,14
 LoseText = Buffen al monje volkswagen.
 Pokemon = MEDITITE,21
 Pokemon = RIOLU,20
-Pokemon = GURDURR,22
+Pokemon = TIMBURR,22
     Moves = LOWKICK,BULKUP,ROCKSLIDE,BRICKBREAK
     Item = FISTPLATE
 #-------------------------------
