@@ -1,4 +1,4 @@
-# Consulta la documentación en la wiki para aprender a editar este archivo.
+# Consulta la documentación en la wiki para aprender a editar este archivo. 
 #==============================
 # EJEMPLO
 #==============================
