@@ -1,14 +1,2 @@
-Notas del parche 06/01/2026
-Se ha añadido un randomizador en el launcher
-El randomizador:
-Randomiza los starters (estos siempre son la primera etapa evolutiva de un pokemon con 3 evoluciones)
-NO randomiza los raid bosses (esto significa que no pueden salir como pokemon salvajes o de un entrenador random)
-NO randomiza los líderes de gimnasio ni liga pokemon para mantener una curva de dificultad
-Todos los demás entrenadores y todos los pokemon salvajes son completamente random
-Hasta el nivel 36 los pokemon salvajes/de entrenadores NO son full evolve y aprenden movimientos de potencia media-baja
-A partir del nivel 36 TODOS los pokemon salvajes/de entrenadores SÍ son full evolve/legendarios y aprenden movimientos de potencia alta
-Los movimientos que aprenden los pokemon y sus habilidades (incluyendo ocultas) son completamente random
-La probabilidad de que los pokemon puedan aprender MOs es mucho más alta para evitar quedarse atascado por no poder usar Corte o Surf.
-Los pokemon y objetos encontrados/regalados (incluyendo recompensas de quest) NO son random, randomizar items puede causar muchos bugs y es peligroso porque puede cargarse eventos o scripts, sobre todo con las quest.
-Los vendedores NO son random, por el mismo motivo que el punto anterior y para poder acceder a los objetos evolutivos y cosas así.
-Los combates de evento (quests/raid bosses) NO son random.
+Notas del parche 13/01/2026
+Randomizador presuntamente terminado.
