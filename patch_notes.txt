@@ -1,2 +1,2 @@
-Notas del parche 13/01/2026
-Randomizador presuntamente terminado.
+Notas del parche 14/01/2026
+Randomizador terminado, bugfixes, fase de test y candidato al release.
