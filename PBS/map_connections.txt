@@ -26,11 +26,13 @@
 50,East,0,53,West,0
 # Arena Gurubashi (58) - Vega de Espina Torcida (56)
 58,East,0,56,West,27
-# Valle del Fresno (7) - Los Baldíos (14)
-7,South,0,14,North,4
-# Las Cien Agujas (17) - Los Baldíos (14)
-17,North,0,14,South,26
-# Rudotar (84) - Los Baldíos (14)
-84,West,0,14,East,0
+# Los Baldíos (14) - Valle del Fresno (7)
+14,North,4,7,South,0
 # Rudotar (84) - Valle del Fresno (7)
 84,North,0,7,South,96
+# Costa Oscurecida (79) - Valle del Fresno (7)
+79,South,17,7,North,0
+# Rudotar (84) - Los Baldíos (14)
+84,West,0,14,East,0
+# Las Cien Agujas (17) - Los Baldíos (14)
+17,North,0,14,South,26
