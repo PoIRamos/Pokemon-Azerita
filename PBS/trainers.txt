@@ -1,5 +1,5 @@
 # Consulta la documentación en la wiki para aprender a editar este archivo.
-#============================== 
+#==============================
 # EJEMPLO
 #==============================
 [LEADER_Brock,Brock]
