@@ -1,8 +1,4 @@
-Notas del parche 15/01/2026
-¡Release oficial!
-- Se ha bloqueado la entrada a Vega de Espina Torcida hasta tener 3 medallas.
-- Los pokemon del Alto Mando ya no tienen movimientos random.
-- Ahora no se randomizan los Whelps de la pelea de Onyxia ni los Ghouls de Rasgamonte (sólo la habilidad).
-- Se ha corregido un error que no se aplicaba la habilidad de Sindragosa.
-- El Sindragosa de Sistine siempre usará Obliterar si el objetivo está congelado.
-- Bugfixes varios.
+Notas del parche 1.0.4
+- Se han corregido algunos fallos de terreno
+- Se ha aumentado mucho la visión en cuevas oscuras
+- Se ha nerfeado la liga pokemon (ya no tienen EVs)
