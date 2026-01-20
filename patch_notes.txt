@@ -1,4 +1,2 @@
-Notas del parche 1.0.4
-- Se han corregido algunos fallos de terreno
-- Se ha aumentado mucho la visión en cuevas oscuras
-- Se ha nerfeado la liga pokemon (ya no tienen EVs)
+Notas del parche 1.0.5
+- Se han añadido los NPC de los líderes de gimnasio a la Liga Pokemon.
