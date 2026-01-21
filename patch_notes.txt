@@ -1,2 +1,3 @@
-Notas del parche 1.0.5
-- Se han añadido los NPC de los líderes de gimnasio a la Liga Pokemon.
+Notas del parche 1.0.6
+- Ajustes a los equipos de líderes de gimnasio.
+- Guía del juego terminada.
