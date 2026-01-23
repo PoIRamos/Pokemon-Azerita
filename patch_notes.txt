@@ -2,3 +2,4 @@ Notas del parche 1.0.7
 - Se han añadido los objetos evolutivos que faltaban a los vendedores del centro comercial de Bolarus.
 - Ahora los pokemon que evolucionan por intercambio evolucionan a nivel 36
 - Ahora los pokemon que evolucioan por intercambio llevando un objeto evolucionan usando ese objeto sobre el pokemon (como si fuesen piedras evolutivas)
+- Se ha corregido un error que los pokemon no aprendían movimientos si subían de nivel en combate
