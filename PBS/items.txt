@@ -1193,7 +1193,8 @@ Name = Roca del Rey
 NamePlural = Rocas del Rey
 Pocket = 1
 Price = 5000
-Flags = Fling_30
+FieldUse = OnPokemon
+Flags = Fling_80,EvolutionStone
 Description = Puede hacer retroceder al enemigo cuando el Pokémon que la lleva le hiera.
 #-------------------------------
 [RAZORFANG]
@@ -1549,7 +1550,8 @@ NamePlural = Revestim. Metálicos
 Pocket = 1
 Price = 3000
 SellPrice = 1000
-Flags = Fling_30
+FieldUse = OnPokemon
+Flags = Fling_80,EvolutionStone
 Description = Película metálica que fortalece los ataques de tipo Acero. Debe llevarlo un Pokémon.
 #-------------------------------
 [SILKSCARF]
@@ -1919,7 +1921,8 @@ Name = Dientes Marino
 NamePlural = Dientes Marinos
 Pocket = 1
 Price = 2000
-Flags = Fling_90
+FieldUse = OnPokemon
+Flags = Fling_80,EvolutionStone
 Description = Tiene el brillo afilado de la plata y debe llevarlo Clamperl. Sube el At. Esp.
 #-------------------------------
 [DEEPSEASCALE]
@@ -1927,7 +1930,8 @@ Name = Escama Marina
 NamePlural = Escamas Marinas
 Pocket = 1
 Price = 2000
-Flags = Fling_30
+FieldUse = OnPokemon
+Flags = Fling_80,EvolutionStone
 Description = Tiene un débil brillo rosado y debe llevarla Clamperl. Sube la Def. Esp.
 #-------------------------------
 [ADAMANTORB]
@@ -2153,7 +2157,8 @@ NamePlural = Escamas Dragón
 Pocket = 1
 Price = 3000
 SellPrice = 1000
-Flags = Fling_30
+FieldUse = OnPokemon
+Flags = Fling_80,EvolutionStone
 Description = Una gruesa y resistente escama que pueden llevar los Pokémon de tipo Dragón cuando son capturados.
 #-------------------------------
 [UPGRADE]
@@ -2162,7 +2167,8 @@ NamePlural = Mejoras
 Pocket = 1
 Price = 3000
 SellPrice = 1000
-Flags = Fling_30
+FieldUse = OnPokemon
+Flags = Fling_80,EvolutionStone
 Description = Peculiar dispositivo fabricado en Silph S.A. que contiene todo tipo de datos.
 #-------------------------------
 [DUBIOUSDISC]
@@ -2171,7 +2177,8 @@ NamePlural = Discos Extraños
 Pocket = 1
 Price = 3000
 SellPrice = 1000
-Flags = Fling_50
+FieldUse = OnPokemon
+Flags = Fling_80,EvolutionStone
 Description = Dispositivo transparente que contiene datos misteriosos. Es de fabricante desconocido.
 #-------------------------------
 [PROTECTOR]
@@ -2180,7 +2187,8 @@ NamePlural = Protectores
 Pocket = 1
 Price = 3000
 SellPrice = 1000
-Flags = Fling_80
+FieldUse = OnPokemon
+Flags = Fling_80,EvolutionStone
 Description = Dispositivo de protección muy pesado. Algunos Pokémon lo adoran.
 #-------------------------------
 [ELECTIRIZER]
@@ -2189,7 +2197,8 @@ NamePlural = Electrizadores
 Pocket = 1
 Price = 3000
 SellPrice = 1000
-Flags = Fling_80
+FieldUse = OnPokemon
+Flags = Fling_80,EvolutionStone
 Description = Este dispositivo contiene una gran cantidad de energía eléctrica. Algunos Pokémon lo adoran.
 #-------------------------------
 [MAGMARIZER]
@@ -2198,7 +2207,8 @@ NamePlural = Magmatizadores
 Pocket = 1
 Price = 3000
 SellPrice = 1000
-Flags = Fling_80
+FieldUse = OnPokemon
+Flags = Fling_80,EvolutionStone
 Description = Esta caja contiene una enorme cantidad de energía magmática. Algunos Pokémon lo adoran.
 #-------------------------------
 [REAPERCLOTH]
@@ -2207,7 +2217,8 @@ NamePlural = Telas Terribles
 Pocket = 1
 Price = 3000
 SellPrice = 1000
-Flags = Fling_10
+FieldUse = OnPokemon
+Flags = Fling_80,EvolutionStone
 Description = Tela imbuida de una energía espiritual muy potente. Algunos Pokémon la adoran.
 #-------------------------------
 [PRISMSCALE]
@@ -2216,7 +2227,8 @@ NamePlural = Escamas Bellas
 Pocket = 1
 Price = 3000
 SellPrice = 1000
-Flags = Fling_30
+FieldUse = OnPokemon
+Flags = Fling_80,EvolutionStone
 Description = Curiosa piedra que hace evolucionar a determinadas especies de Pokémon. Brilla con los colores del arcoíris.
 #-------------------------------
 [OVALSTONE]
@@ -2234,7 +2246,8 @@ NamePlural = Dulces de Nata
 Pocket = 1
 Price = 3000
 SellPrice = 1000
-Flags = Fling_80
+FieldUse = OnPokemon
+Flags = Fling_80,EvolutionStone
 Description = Un dulce a base de suave y esponjosa nata montada. Cierto Pokémon lo adora.
 #-------------------------------
 [SACHET]
@@ -2243,7 +2256,8 @@ NamePlural = Saquitos Fragantes
 Pocket = 1
 Price = 3000
 SellPrice = 1000
-Flags = Fling_80
+FieldUse = OnPokemon
+Flags = Fling_80,EvolutionStone
 Description = Saquito que desprende un aroma peculiar. Cierto Pokémon lo adora.
 #-------------------------------
 [STRAWBERRYSWEET]

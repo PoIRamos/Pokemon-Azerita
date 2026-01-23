@@ -1636,7 +1636,7 @@ Category = Renacuajo
 Pokedex = Tiene la piel húmeda y lubricada con un fluido aceitoso. Gracias a esta película grasa, puede escapar de las garras de cualquier rival en pleno combate.
 Generation = 1
 WildItemUncommon = KINGSROCK
-Evolutions = POLIWRATH,Item,WATERSTONE,POLITOED,TradeItem,KINGSROCK
+Evolutions = POLIWRATH,Item,WATERSTONE,POLITOED,Item,KINGSROCK
 #-------------------------------
 [POLIWRATH]
 Name = Poliwrath
@@ -1717,7 +1717,7 @@ Category = Psi
 Pokedex = Dicen que un chico que tenía capacidades psíquicas se transformó de repente en Kadabra mientras ayudaba en un estudio sobre poderes extrasensoriales.
 Generation = 1
 WildItemUncommon = TWISTEDSPOON
-Evolutions = ALAKAZAM,Trade,
+Evolutions = ALAKAZAM,Level,36
 #-------------------------------
 [ALAKAZAM]
 Name = Alakazam
@@ -1798,7 +1798,7 @@ Category = Superpoder
 Pokedex = Machoke lleva un cinturón para controlar su abrumadora energía. Como es tan peligroso, nadie se lo ha quitado nunca.
 Generation = 1
 WildItemUncommon = FOCUSBAND
-Evolutions = MACHAMP,Trade,
+Evolutions = MACHAMP,Level,36
 #-------------------------------
 [MACHAMP]
 Name = Machamp
@@ -2011,7 +2011,7 @@ Category = Roca
 Pokedex = Baja las montañas rodando por cuestas escarpadas. Es tan robusto que destroza árboles y cantos rodados al impactar con ellos.
 Generation = 1
 WildItemUncommon = EVERSTONE
-Evolutions = GOLEM,Trade,
+Evolutions = GOLEM,Level,36
 #-------------------------------
 [GOLEM]
 Name = Golem
@@ -2117,7 +2117,7 @@ Category = Atontado
 Pokedex = Con la cola, atrapa a su rival metiéndolo bajo agua en las riberas de los ríos. Suele olvidar lo que estaba haciendo y pasarse días enteros holgazaneando en la orilla.
 Generation = 1
 WildItemUncommon = LAGGINGTAIL
-Evolutions = SLOWBRO,Level,37,SLOWKING,TradeItem,KINGSROCK
+Evolutions = SLOWBRO,Level,37,SLOWKING,Item,KINGSROCK
 #-------------------------------
 [SLOWBRO]
 Name = Slowbro
@@ -2492,7 +2492,7 @@ Habitat = Cave
 Category = Gas
 Pokedex = Es un Pokémon peligroso. Si en la oscuridad ves a uno flotando y haciéndote señas, no te acerques. Este Pokémon intentará darte lametazos para robarte la energía.
 Generation = 1
-Evolutions = GENGAR,Trade,
+Evolutions = GENGAR,Level,36
 #-------------------------------
 [GENGAR]
 Name = Gengar
@@ -2543,7 +2543,7 @@ Habitat = Cave
 Category = Serpiente Roca
 Pokedex = Tiene un imán en el cerebro que le sirve de brújula para no perder la orientación cuando esta cavando túneles. A medida que crece, se le redondea y suaviza el cuerpo.
 Generation = 1
-Evolutions = STEELIX,TradeItem,METALCOAT
+Evolutions = STEELIX,Item,METALCOAT
 #-------------------------------
 [DROWZEE]
 Name = Drowzee
@@ -2990,7 +2990,7 @@ Habitat = RoughTerrain
 Category = Taladro
 Pokedex = Su cuerno, que gira como un taladro, destroza altos edificios de una pasada. Puede erguirse sobre las patas traseras y tiene un cerebro muy bien desarrollado.
 Generation = 1
-Evolutions = RHYPERIOR,TradeItem,PROTECTOR
+Evolutions = RHYPERIOR,Item,PROTECTOR
 #-------------------------------
 [CHANSEY]
 Name = Chansey
@@ -3126,7 +3126,7 @@ Category = Dragón
 Pokedex = Las púas venenosas que cubren su cuerpo tienen mucho valor a la hora de preparar remedios de hierbas tradicionales. Como algo amenace su nido, atacará sin piedad.
 Generation = 1
 WildItemUncommon = DRAGONSCALE
-Evolutions = KINGDRA,TradeItem,DRAGONSCALE
+Evolutions = KINGDRA,Item,DRAGONSCALE
 #-------------------------------
 [GOLDEEN]
 Name = Goldeen
@@ -3289,7 +3289,7 @@ Habitat = Grassland
 Category = Mantis
 Pokedex = Es espectacular ver lo rápido que es. Su velocidad potencia las guadañas que tiene en los brazos, de por sí contundentes, pues rebanan gruesos troncos de un tajo.
 Generation = 1
-Evolutions = SCIZOR,TradeItem,METALCOAT
+Evolutions = SCIZOR,Item,METALCOAT
 #-------------------------------
 [JYNX]
 Name = Jynx
@@ -3341,7 +3341,7 @@ Category = Eléctrico
 Pokedex = Al desatarse una tormenta, se enfrenta a otros para ver quién alcanza antes los sitios altos en los que pueden caer rayos. Hay ciudades que los usan como pararrayos.
 Generation = 1
 WildItemUncommon = ELECTIRIZER
-Evolutions = ELECTIVIRE,TradeItem,ELECTIRIZER
+Evolutions = ELECTIVIRE,Item,ELECTIRIZER
 #-------------------------------
 [MAGMAR]
 Name = Magmar
@@ -3368,7 +3368,7 @@ Category = Escupefuego
 Pokedex = Al luchar, expulsa violentas llamas para intimidar a su rival. Estos estallidos de fuego crean ondas de calor que abrasan la hierba y los árboles de la zona.
 Generation = 1
 WildItemUncommon = MAGMARIZER
-Evolutions = MAGMORTAR,TradeItem,MAGMARIZER
+Evolutions = MAGMORTAR,Item,MAGMARIZER
 #-------------------------------
 [PINSIR]
 Name = Pinsir
@@ -3653,7 +3653,7 @@ Habitat = Urban
 Category = Virtual
 Pokedex = Un Pokémon formado por códigos de programación. Se mueve libre en el ciberespacio.
 Generation = 1
-Evolutions = PORYGON2,TradeItem,UPGRADE
+Evolutions = PORYGON2,Item,UPGRADE
 #-------------------------------
 [OMANYTE]
 Name = Omanyte
@@ -6168,7 +6168,7 @@ Habitat = Urban
 Category = Virtual
 Pokedex = Porygon2 fue creado por el hombre gracias a los avances científicos. Su inteligencia artificial le permite aprender gestos y emociones totalmente nuevas.
 Generation = 2
-Evolutions = PORYGONZ,TradeItem,DUBIOUSDISC
+Evolutions = PORYGONZ,Item,DUBIOUSDISC
 #-------------------------------
 [STANTLER]
 Name = Stantler
@@ -9236,7 +9236,7 @@ Habitat = WatersEdge
 Category = Pez
 Pokedex = Feebas vive en charcas llenas de algas. Parece que el aspecto terriblemente descuidado que ofrece sea la causa de que pocos entrenadores lo críen.
 Generation = 3
-Evolutions = MILOTIC,Beauty,170,MILOTIC,TradeItem,PRISMSCALE
+Evolutions = MILOTIC,Beauty,170,MILOTIC,Item,PRISMSCALE
 #-------------------------------
 [MILOTIC]
 Name = Milotic
@@ -9425,7 +9425,7 @@ Category = Atrayente
 Pokedex = Se piensa que su cuerpo es hueco y que sólo contiene una fantasmagórica bola de fuego. Con todo, nadie ha podido confirmar esta teoría.
 Generation = 3
 WildItemUncommon = SPELLTAG
-Evolutions = DUSKNOIR,TradeItem,REAPERCLOTH
+Evolutions = DUSKNOIR,Item,REAPERCLOTH
 #-------------------------------
 [TROPIUS]
 Name = Tropius
@@ -9690,7 +9690,7 @@ Pokedex = Un Clamperl cierra de golpe la concha para evitar que escape su presa.
 Generation = 3
 WildItemCommon = PEARL
 WildItemUncommon = BIGPEARL
-Evolutions = HUNTAIL,TradeItem,DEEPSEATOOTH,GOREBYSS,TradeItem,DEEPSEASCALE
+Evolutions = HUNTAIL,Item,DEEPSEATOOTH,GOREBYSS,Item,DEEPSEASCALE
 #-------------------------------
 [HUNTAIL]
 Name = Huntail
@@ -13687,7 +13687,7 @@ Pokedex = La energía que no puede contener en el interior de su cuerpo se escap
 Generation = 5
 WildItemCommon = EVERSTONE
 WildItemUncommon = HARDSTONE
-Evolutions = GIGALITH,Trade,
+Evolutions = GIGALITH,Level,36
 #-------------------------------
 [GIGALITH]
 Name = Gigalith
@@ -13891,7 +13891,7 @@ Shape = Bipedal
 Category = Musculoso
 Pokedex = Ejercita sus músculos cargando vigas de acero. Le encanta lucir sus músculos entre sus amigos.
 Generation = 5
-Evolutions = CONKELDURR,Trade,
+Evolutions = CONKELDURR,Level,36
 #-------------------------------
 [CONKELDURR]
 Name = Conkeldurr
@@ -17639,7 +17639,7 @@ Shape = HeadArms
 Category = Aroma
 Pokedex = Su cuerpo emana una fragancia que embelesa a quien la huele. La fragancia es diferente según los alimentos que ingiere.
 Generation = 6
-Evolutions = AROMATISSE,TradeItem,SACHET
+Evolutions = AROMATISSE,Item,SACHET
 #-------------------------------
 [AROMATISSE]
 Name = Aromatisse
@@ -17689,7 +17689,7 @@ Shape = HeadLegs
 Category = Cuchería
 Pokedex = Escupe hebras pegajosas de color blanco y textura parecida a las del algodón de azúcar, con las que envuelve al enemigo y le impide que se mueva.
 Generation = 6
-Evolutions = SLURPUFF,TradeItem,WHIPPEDDREAM
+Evolutions = SLURPUFF,Item,WHIPPEDDREAM
 #-------------------------------
 [SLURPUFF]
 Name = Slurpuff
@@ -18288,7 +18288,7 @@ Shape = HeadArms
 Category = Tocón
 Pokedex = Pokémon que nace cuando un espíritu se adentra en un tocón podrido. Habita en bosques que son poco frecuentados por humanos.
 Generation = 6
-Evolutions = TREVENANT,Trade,
+Evolutions = TREVENANT,Level,36
 #-------------------------------
 [TREVENANT]
 Name = Trevenant
@@ -18339,7 +18339,7 @@ Pokedex = En el interior de la calabaza reside un espíritu que ha permanecido a
 FormName = Small Size
 Generation = 6
 Flags = InheritFormFromMother
-Evolutions = GOURGEIST,Trade,
+Evolutions = GOURGEIST,Level,36
 #-------------------------------
 [GOURGEIST]
 Name = Gourgeist
