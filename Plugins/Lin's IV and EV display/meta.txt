@@ -1,0 +1,5 @@
+Name       = IV and EV display
+Version    = 1.0
+Essentials = 20.1
+Link       = https://reliccastle.com/resources/1368/
+Credits    = LinKazamine
