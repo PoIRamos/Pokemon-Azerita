@@ -1,5 +1,4 @@
-Notas del parche 1.0.7
-- Se han habilitado las cápsulas habilidad
-- Se han añadido vendedores con todas las mentas y cápsulas habilidad en Polgrimmar
-- Se han reducido los precios de los objetos competitivos
-- Se ha añadido un plugin para mostrar los IV y EV en los datos del pokemon
+Notas del parche 1.1.0
+- Ahora las MT/MO tienen compatibilidad random del 50% indepentientemente del tipo del pokemon.
+- Ahora se cura al equipo del jugador después de cada combate de Alto Mando.
+- Se han añadido varios objetos curativos por el mapa.
