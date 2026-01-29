@@ -1,5 +1,9 @@
 ﻿# Consulta la documentación en la wiki para aprender a editar este archivo.
 #-------------------------------
+[002] # Abadía del Norte
+Water,20
+    100,MAGIKARP,5,5
+#-------------------------------
 [005] # Bosque de Elbuin
 Land,21
     30,PIDGEY,3,5
@@ -221,6 +225,24 @@ Land,21
     20,GLISCOR,75,76
 Water,2
     50,OMASTAR,75,76
+#-------------------------------
+[089] # Guarida de Onyxia
+Cave,4
+    30,COALOSSAL,82,84
+    30,FLYGON,82,84
+    30,CAMERUPT,82,84
+#-------------------------------
+[090] # Guarida de Onyxia
+Cave,4
+    30,COALOSSAL,82,84
+    30,FLYGON,82,84
+    30,CAMERUPT,82,84
+#-------------------------------
+[091] # Guarida de Onyxia
+Cave,4
+    30,COALOSSAL,82,84
+    30,FLYGON,82,84
+    30,CAMERUPT,82,84
 #-------------------------------
 [099] # Rasgamonte
 Land,21

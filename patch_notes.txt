@@ -1,4 +1,2 @@
-Notas del parche 1.1.0
-- Ahora las MT/MO tienen compatibilidad random del 50% indepentientemente del tipo del pokemon.
-- Ahora se cura al equipo del jugador después de cada combate de Alto Mando.
-- Se han añadido varios objetos curativos por el mapa.
+Notas del parche 1.1.1
+- Se han añadido encuentros de pokemon salvajes a Abadía del Norte y Guarida de Onyxia.
