@@ -5853,7 +5853,7 @@ Habitat = Cave
 Category = Puerco
 Pokedex = Está cubierto por un pelaje tupido y de largas cerdas que le permite soportar el frío. Usa los colmillos para desenterrar los alimentos cubiertos por el hielo.
 Generation = 2
-Evolutions = MAMOSWINE,HasMove,ANCIENTPOWER
+Evolutions = MAMOSWINE,Level,50
 #-------------------------------
 [CORSOLA]
 Name = Corsola
