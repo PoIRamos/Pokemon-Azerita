@@ -17987,7 +17987,7 @@ Shape = BipedalTail
 Category = Heredero
 Pokedex = Pokémon recreado a partir de fósiles. Cuando sucede algo que no es de su agrado, se enfurece y se vuelve violento.
 Generation = 6
-Evolutions = TYRANTRUM,LevelDay,39
+Evolutions = TYRANTRUM,Level,39
 #-------------------------------
 [TYRANTRUM]
 Name = Tyrantrum
