@@ -21881,7 +21881,7 @@ Shape = Multiped
 Category = Malcriado
 Pokedex = Emerge a tierra firme en busca de alimento. Su extrema curiosidad lo induce a golpear con los tentáculos todo lo que entra en su campo visual.
 Generation = 8
-Evolutions = GRAPPLOCT,HasMove,TAUNT
+Evolutions = GRAPPLOCT,Level,36
 #-------------------------------
 [GRAPPLOCT]
 Name = Grapploct
