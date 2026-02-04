@@ -1128,7 +1128,7 @@ Habitat = Cave
 Category = Murciélago
 Pokedex = Tiene colmillos que atraviesan el pelaje más grueso. Se ceba chupando la sangre a la gente y a otros Pokémon. Revolotea en la oscuridad y ataca por la espalda.
 Generation = 1
-Evolutions = CROBAT,Happiness,
+Evolutions = CROBAT,Level,40
 #-------------------------------
 [ODDISH]
 Name = Oddish
@@ -18213,7 +18213,7 @@ Category = Molusco
 Pokedex = Segrega una mucosidad que corroe todo lo que toca y consigue así ahuyentar al enemigo. Sus ojos han involucionado, por lo que no puede ver.
 Generation = 6
 WildItemUncommon = SHEDSHELL
-Evolutions = GOODRA,LevelRain,50
+Evolutions = GOODRA,Level,50
 #-------------------------------
 [GOODRA]
 Name = Goodra
