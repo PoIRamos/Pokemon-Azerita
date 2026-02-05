@@ -1,4 +1,2 @@
-Notas del parche 1.1.3
-- Se ha arreglado un error que la Cápsula Habilidad cambiaba la habilidad siempre del primer pokemon del equipo
-- Se han añadido varias Maxipepitas por el mapa
-- Se han añadido rutas de vuelo entre Rasgamonte y la Liga Pokemon
+Notas del parche 1.1.7
+- Se ha añadido un vendedor de MTs al centro comercial de Bolarus
