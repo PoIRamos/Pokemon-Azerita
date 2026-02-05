@@ -4748,6 +4748,26 @@ Flags = Fling_90
 Move = CLOSECOMBAT
 Description = Lucha abiertamente contra el rival sin defenderse. También reduce la Defensa y la Def. Esp. del usuario.
 #-------------------------------
+[TM106]
+Name = MT106
+NamePlural = MT106
+Pocket = 4
+Price = 2000
+FieldUse = TR
+Flags = Fling_90
+Move = OBLITERATE
+Description = Golpe de hielo asolador. Triplica el daño si el objetivo está congelado destrozando el hielo que lo atrapa.
+#-------------------------------
+[TM107]
+Name = MT107
+NamePlural = MT107
+Pocket = 4
+Price = 2000
+FieldUse = TR
+Flags = Fling_90
+Move = LANDSWRATH
+Description = Acumula energía de la corteza terrestre y la concentra contra los oponentes, dañándolos.
+#-------------------------------
 [HM01]
 Name = MO01
 NamePlural = MO01
