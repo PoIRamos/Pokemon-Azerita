@@ -1,2 +1,4 @@
 Notas del parche 1.1.7
-- Se ha añadido un vendedor de MTs al centro comercial de Bolarus
+- Se ha arreglado el clima Nieve y el movimiento Velo Aurora
+- Se ha reducido el ataque de Sindragosa
+- Se ha aumentado la vida de Sindragosa
