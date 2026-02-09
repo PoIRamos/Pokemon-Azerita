@@ -23028,7 +23028,7 @@ Generation = 8
 [SINDRAGOSA]
 Name = Sindragosa
 Types = DRAGON,ICE
-BaseStats = 155,170,150,100,95,150
+BaseStats = 145,150,140,90,85,130
 GenderRatio = Genderless
 GrowthRate = Slow
 BaseExp = 330
