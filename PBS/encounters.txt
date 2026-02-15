@@ -1,5 +1,5 @@
 ﻿# Consulta la documentación en la wiki para aprender a editar este archivo.
-#-------------------------------
+#------------------------------- 
 [002] # Abadía del Norte
 Water,20
     100,MAGIKARP,5,5
