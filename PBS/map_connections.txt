@@ -1,31 +1,5 @@
 ﻿# Consulta la documentación en la wiki para aprender a editar este archivo.
 #-------------------------------
-# Abadía del norte (2) - Bosque de Elbuin (5)
-2,South,0,5,North,45
-# Bosque de Elbuin (5) - Loch Moras (30)
-5,West,0,30,East,24
-# Villa de oro (6) - Bosque de Elbuin (5)
-6,North,0,5,South,0
-# Villa Oscura (41) - Bosque de Elbuin (5)
-41,West,0,5,East,80
-# Villa de oro (6) - Loch Moras (30)
-6,West,0,30,East,63
-# Bosque Oscuro (40) - Villa de oro (6)
-40,North,0,6,South,0
-# Cráter de Gun'oro (19) - Taranis (18)
-19,East,0,18,West,13
-# Loch Moras (30) - Dun Moros (33)
-30,North,0,33,South,30
-# Bosque Oscuro (40) - Loch Moras (30)
-40,West,0,30,East,97
-# Garganta fogosa (45) - Dun Moros (33)
-45,West,0,33,East,21
-# Villa Oscura (41) - Bosque Oscuro (40)
-41,West,0,40,East,7
-# Cumbre Piedra Negra (50) - Terraza de la cumbre (53)
-50,East,0,53,West,0
-# Arena Gurubashi (58) - Vega de Espina Torcida (56)
-58,East,0,56,West,27
 # Los Baldíos (14) - Valle del Fresno (7)
 14,North,4,7,South,0
 # Rudotar (84) - Valle del Fresno (7)
@@ -36,3 +10,25 @@
 84,West,0,14,East,0
 # Las Cien Agujas (17) - Los Baldíos (14)
 17,North,0,14,South,26
+# Cráter de Gun'oro (19) - Taranis (18)
+19,East,0,18,West,13
+# Cumbre Piedra Negra (50) - Terraza de la cumbre (53)
+50,East,0,53,West,0
+# Arena Gurubashi (58) - Vega de Espina Torcida (56)
+58,East,0,56,West,27
+# Dun Moros (33) - Loch Moras (30)
+33,South,24,30,North,0
+# Bosque de Elbuin (2) - Loch Moras (30)
+2,West,0,30,East,22
+# Villa de Oro (3) - Loch Moras (30)
+3,West,0,30,East,62
+# Bosque Oscuro (40) - Villa Oscura (41)
+40,East,7,41,West,0
+# Villa de Oro (3) - Bosque Oscuro (40)
+3,South,6,40,North,0
+# Garganta fogosa (45) - Dun Moros (33)
+45,West,0,33,East,21
+# Bosque de Elbuin (2) - Abadia del Norte (8)
+2,North,46,8,South,0
+# Villa de Oro (3) - Bosque de Elbuin (2)
+3,North,0,2,South,0

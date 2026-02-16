@@ -3,33 +3,26 @@
 [001]   # Intro
 Name = Intro
 #-------------------------------
-[002]   # Abadía del norte
-Name = Abadía del norte
-Outdoor = true
-ShowArea = true
-BattleBack = field
-#-------------------------------
-[003]   # Casa jugador
-Name = Casa de \PN
-HealingSpot = 2,8,8
-#-------------------------------
-[004]   # Laboratorio Oak
-Name = Abadía del norte
-ShowArea = false
-#-------------------------------
-[005]   # Bosque de Elbuin
+[002]   # Bosque de Elbuin
 Name = Bosque de Elbuin
 Outdoor = true
 ShowArea = true
 BattleBack = field
-Environment = Forest
 #-------------------------------
-[006]   # Villa de oro
-Name = Villa de oro
+[003]   # Villa de Oro
+Name = Villa de Oro
 Outdoor = true
 ShowArea = true
 BattleBack = field
-MapPosition = 0,93,70
+#-------------------------------
+[004]   # Centro pokemon Villa de oro
+Name = Centro pokemon Villa de oro
+ShowArea = false
+#-------------------------------
+[005]   # Gimnasio Villa de oro
+Name = Villa de Oro
+Outdoor = false
+BattleBack = indoor1
 #-------------------------------
 [007]   # Valle del Fresno
 Name = Valle del Fresno
@@ -39,8 +32,11 @@ BattleBack = forest
 MapSize = 2,11
 Environment = Forest
 #-------------------------------
-[008]   # Casa de Denora
+[008]   # Abadia del Norte
 Name = Abadía del norte
+Outdoor = true
+ShowArea = true
+BattleBack = field
 #-------------------------------
 [009]   # Paso de Frondavil
 Name = Paso de Frondavil
@@ -112,17 +108,17 @@ ShowArea = true
 BattleBack = forest
 Environment = Forest
 #-------------------------------
-[021]   # Centro pokemon Villa de oro
+[021]
 Name = Villa de Oro
 Outdoor = false
 ShowArea = false
+MapPosition = 0,93,70
 BattleBack = field
-MapPosition = 0,93,70
 #-------------------------------
-[022]   # Gimnasio Villa de oro
+[022]
 Name = Villa de Oro
-BattleBack = indoor1
 MapPosition = 0,93,70
+BattleBack = indoor1
 #-------------------------------
 [023]   # Alto Mando 3
 Name = Sala Alto Mando 3
@@ -151,16 +147,16 @@ Outdoor = false
 ShowArea = true
 BattleBack = cave1
 #-------------------------------
-[028]   # Tienda Villa de oro
+[028]
 Name = Tienda Villa de oro
 ShowArea = false
 #-------------------------------
-[029]   # Posada del león orgulloso
+[029]
 Name = Posada del león orgulloso
 ShowArea = true
 Bicycle = true
-BattleBack = indoor1
 MapPosition = 0,93,70
+BattleBack = indoor1
 #-------------------------------
 [030]   # Loch Moras
 Name = Loch Moras
@@ -184,6 +180,12 @@ ShowArea = true
 Weather = Snow,100
 BattleBack = snow
 Environment = Snow
+#-------------------------------
+[037]   # Posada del león orgulloso
+Name = Posada del león orgulloso
+ShowArea = true
+Bicycle = true
+BattleBack = indoor1
 #-------------------------------
 [039]   # Gimnasio Dun Moros
 Name = Dun Moros

@@ -1,10 +1,10 @@
 ﻿# Consulta la documentación en la wiki para aprender a editar este archivo.
 #------------------------------- 
-[002] # Abadía del Norte
+[008] # Abadía del Norte
 Water,20
     100,MAGIKARP,5,5
 #-------------------------------
-[005] # Bosque de Elbuin
+[002] # Bosque de Elbuin
 Land,21
     30,PIDGEY,3,5
     30,ZIGZAGOON,3,5
@@ -13,7 +13,7 @@ Land,21
 Water,20
     100,MAGIKARP,5,5
 #-------------------------------
-[006] # Villa de oro
+[003] # Villa de oro
 Land,21
     40,SUNKERN,6,8
     30,KAKUNA,6,8
