@@ -1,3 +1,5 @@
-Notas del parche 1.1.9
-- Se han eliminado los IV de los pokemon del Alto Mandokir
-- Se han reducido en 20 todas las estadísticas de Sindragosa
+Notas del parche 1.2.0
+- Se ha renombrado el proyecto a "Pokemon Azerita"
+- Se han reworkeado las zonas iniciales para que usen los mismos gráficos que las zonas posteriores
+- Se han sustituido los entrenadores del Bosque de Elbuin por Kobolds.
+- Se han añadido los pokemon Kobold y la evolución Rey Vela.
