@@ -1,5 +1,9 @@
-Notas del parche 1.2.0
-- Se ha renombrado el proyecto a "Pokemon Azerita"
-- Se han reworkeado las zonas iniciales para que usen los mismos gráficos que las zonas posteriores
-- Se han sustituido los entrenadores del Bosque de Elbuin por Kobolds.
-- Se han añadido los pokemon Kobold y la evolución Rey Vela.
+Notas del parche 2.0.0
+- Release oficial de Pokemon Azerita
+- Nuevo contenido de expansión: El Ataque de los Clanes
+- Nuevas zonas: Tierras Blasteadas, Bosk of Jade, Península de Llama Infernal, Nagrand, Gorgrond y Valle Sombra de Luna
+- Nuevas raids: Fundición Piedra Negra y Templo Oscuro
+- Sistema de facciones y reputaciones
+- Nuevos objetos legendarios
+- Bosses del mundo antiguo completamente rediseñados
+- Algunas zonas del mundo antiguo reworkeadas
