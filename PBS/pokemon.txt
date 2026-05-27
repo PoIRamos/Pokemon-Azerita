@@ -23235,7 +23235,7 @@ Weight = 785.0
 Pokedex = Esta forma, temida y venerada por igual, le ha valido el nombre de Regio Escudo Guerrero por su capacidad de repeler cualquier ataque.
 #-------------------------------
 [MECHAGENGAR]
-Name = Gengar
+Name = G3NG4R
 Types = GHOST,POISON
 BaseStats = 70,75,70,120,140,85
 GenderRatio = Female50Percent
@@ -23332,3 +23332,100 @@ Category = Hibernante
 Pokedex = Rey Vela líder de los Kobold.
 Generation = 3
 #-------------------------------
+[YULON]
+Name = Yu'lon
+Types = FAIRY,DRAGON
+BaseStats = 105,60,90,90,95,140
+GenderRatio = Genderless
+GrowthRate = Medium
+BaseExp = 170
+EVs = SPECIAL_ATTACK,2
+CatchRate = 70
+Happiness = 50
+Abilities = MISTYSURGE
+Moves = 1,PLAYNICE,1,DISARMINGVOICE,5,TWISTER,10,PROTECT,15,CHARM,20,SAFEGUARD,25,JADEBREATH,30,CALMMIND,35,DRAGONPULSE,40,LIGHTSCREEN,45,REFLECT,50,MOONBLAST,55,RECOVER
+TutorMoves = AMNESIA,ATTRACT,BREAKINGSWIPE,CALMMIND,DAZZLINGGLEAM,DRACOMETEOR,DRAGONCLAW,DRAGONPULSE,ENDURE,FACADE,FLY,GIGAIMPACT,HELPINGHAND,HYPERVOICE,ICYWIND,LIGHTSCREEN,MOONBLAST,PLAYROUGH,PROTECT,RAINDANCE,REFLECT,REST,ROUND,SAFEGUARD,SLEEPTALK,SNORE,SUBSTITUTE,SUNNYDAY,SWIFT,TAILWIND,THUNDERWAVE
+EggMoves = TWISTER,MIST
+EggGroups = Monster,Dragon
+HatchSteps = 5120
+Height = 3.0
+Weight = 185.0
+Color = Green
+Shape = Serpentine
+Category = Sosiego
+Pokedex = La serpiente de jade, uno de los cuatro Augustos Celestiales.
+Generation = 7
+#-------------------------------
+[ABOMINATION]
+Name = Abominación
+Types = POISON,DARK
+# HP – Atk – Def – Speed – SpA – SpD
+BaseStats = 140,55,85,30,45,85
+GenderRatio = Genderless
+GrowthRate = Medium
+BaseExp = 166
+EVs = ATTACK,2
+CatchRate = 60
+Happiness = 50
+Abilities = SHADOWTAG
+Moves = 1,POISONFANG,1,LEECHLIFE,1,BODYSLAM,1,ASSURANCE
+EggGroups = Mineral
+HatchSteps = 5120
+Height = 1.9
+Weight = 107.3
+Color = Gray
+Shape = Bipedal
+Category = Vertedero
+Pokedex = Abominación que ronda el Bosque Oscuro dando caza a aventureros desprevenidos.
+Generation = 5
+WildItemCommon = LEFTOVERS
+#-------------------------------
+[GEDDON]
+Name = Geddon
+Types = FIRE
+BaseStats = 75,95,67,83,125,95
+GenderRatio = Genderless
+GrowthRate = Medium
+BaseExp = 270
+EVs = SPECIAL_ATTACK,3
+CatchRate = 30
+Happiness = 50
+Abilities = FLAMEBODY
+HiddenAbilities = VITALSPIRIT
+Moves = 1,SMOG,1,LEER,1,EMBER,1,SMOKESCREEN,12,CLEARSMOG,16,FLAMEWHEEL,20,CONFUSERAY,24,SCARYFACE,28,FIREPUNCH,34,LAVAPLUME,40,LOWKICK,46,FLAMETHROWER,52,SUNNYDAY,58,FIREBLAST,64,HYPERBEAM
+TutorMoves = ATTRACT,BODYSLAM,BRICKBREAK,BULLDOZE,BURNINGJEALOUSY,DOUBLETEAM,EARTHQUAKE,ENDURE,FACADE,FIREBLAST,FIREPUNCH,FIRESPIN,FLAMETHROWER,FLAREBLITZ,FLING,FOCUSBLAST,FOCUSENERGY,FOCUSPUNCH,GIGAIMPACT,HEATWAVE,HELPINGHAND,HIDDENPOWER,HYPERBEAM,IRONTAIL,LOWKICK,LOWSWEEP,MEGAKICK,MEGAPUNCH,MYSTICALFIRE,OVERHEAT,POWERSWAP,PROTECT,PSYCHIC,REST,ROCKCLIMB,ROCKSLIDE,ROCKSMASH,ROCKTOMB,ROUND,SCARYFACE,SCORCHINGSANDS,SCREECH,SLEEPTALK,SNORE,SOLARBEAM,STOMPINGTANTRUM,STRENGTH,SUBSTITUTE,SUNNYDAY,SWAGGER,TAUNT,THIEF,THUNDERBOLT,THUNDERPUNCH,TORMENT,UPROAR,WEATHERBALL,WILLOWISP
+EggGroups = Humanlike
+HatchSteps = 6400
+Height = 1.6
+Weight = 68.0
+Color = Red
+Shape = BipedalTail
+Category = Explosión
+Pokedex = Uno de los tenientes de Ragnaros. Patrulla la entrada al Núcleo de Magma.
+Generation = 4
+WildItemUncommon = MAGMARIZER
+#-------------------------------
+[GRUUL]
+Name = Gruul
+Types = FIGHTING,ROCK
+# HP – Atk – Def – Speed – SpA – SpD
+BaseStats = 270,80,270,100,80,240
+GenderRatio = Genderless
+GrowthRate = Slow
+BaseExp = 290
+EVs = HP,1,ATTACK,2
+CatchRate = 30
+Happiness = 35
+Abilities = SHEERFORCE
+HiddenAbilities = INNERFOCUS
+Moves = 1,ROCKSLIDE,1,EARTHQUAKE,1,HAMMERARM,1,NOBLEROAR
+EggGroups = Undiscovered
+HatchSteps = 20480
+Height = 21
+Weight = 980.0
+Color = Brown
+Shape = Quadruped
+Habitat = Grassland
+Category = Volcán
+Pokedex = El último de los gronns de Draenor.
+Generation = 2

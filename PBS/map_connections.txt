@@ -1,5 +1,15 @@
 ﻿# Consulta la documentación en la wiki para aprender a editar este archivo.
 #-------------------------------
+# Bosque de Elbuin (2) - Loch Moras (30)
+2,West,0,30,East,22
+# Bosque de Elbuin (2) - Abadia del Norte (8)
+2,North,46,8,South,0
+# Villa de Oro (3) - Bosque de Elbuin (2)
+3,North,0,2,South,0
+# Villa de Oro (3) - Loch Moras (30)
+3,West,0,30,East,62
+# Villa de Oro (3) - Bosque Oscuro (40)
+3,South,6,40,North,0
 # Los Baldíos (14) - Valle del Fresno (7)
 14,North,4,7,South,0
 # Rudotar (84) - Valle del Fresno (7)
@@ -12,23 +22,21 @@
 17,North,0,14,South,26
 # Cráter de Gun'oro (19) - Taranis (18)
 19,East,0,18,West,13
+# Dun Moros (33) - Loch Moras (30)
+33,South,24,30,North,0
+# Garganta fogosa (45) - Dun Moros (33)
+45,West,0,33,East,21
+# Bosque Oscuro (40) - Villa Oscura (41)
+40,East,7,41,West,0
 # Cumbre Piedra Negra (50) - Terraza de la cumbre (53)
 50,East,0,53,West,0
 # Arena Gurubashi (58) - Vega de Espina Torcida (56)
 58,East,0,56,West,27
-# Dun Moros (33) - Loch Moras (30)
-33,South,24,30,North,0
-# Bosque de Elbuin (2) - Loch Moras (30)
-2,West,0,30,East,22
-# Villa de Oro (3) - Loch Moras (30)
-3,West,0,30,East,62
-# Bosque Oscuro (40) - Villa Oscura (41)
-40,East,7,41,West,0
-# Villa de Oro (3) - Bosque Oscuro (40)
-3,South,6,40,North,0
-# Garganta fogosa (45) - Dun Moros (33)
-45,West,0,33,East,21
-# Bosque de Elbuin (2) - Abadia del Norte (8)
-2,North,46,8,South,0
-# Villa de Oro (3) - Bosque de Elbuin (2)
-3,North,0,2,South,0
+# Península de llama infernal (106) - Valle Sombra de Luna (113)
+106,South,0,113,North,0
+# Nagrand (111) - Valle Sombra de Luna (113)
+111,East,43,113,West,0
+# Gorgrond (28) - Península de llama infernal (106)
+28,South,13,106,North,0
+# Nagrand (111) - Península de llama infernal (106)
+111,East,0,106,West,9

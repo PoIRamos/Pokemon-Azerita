@@ -350,24 +350,6 @@ BaseMoney = 60
 SkillLevel = 32
 IntroBGM = Trainers Eyes Meet
 #-------------------------------
-[TEAMROCKET_M]
-Name = Team Rata
-Gender = Male
-BaseMoney = 32
-IntroBGM = Trainers Eyes Meet
-#-------------------------------
-[TEAMROCKET_F]
-Name = Team Rata
-Gender = Female
-BaseMoney = 32
-IntroBGM = Trainers Eyes Meet
-#-------------------------------
-[ROCKETBOSS]
-Name = Jefe del Team Rata
-Gender = Male
-BaseMoney = 1000
-BattleBGM = Battle rival
-#-------------------------------
 [LEADER_Brock]
 Name = Líder de Gimnasio
 Gender = Male
@@ -459,13 +441,6 @@ BaseMoney = 70
 BattleBGM = Battle Gym Leader
 VictoryBGM = Battle victory leader
 #-------------------------------
-[GEDDON]
-Name = Barón
-Gender = Male
-BaseMoney = 70
-BattleBGM = Battle Gym Leader
-VictoryBGM = Battle victory leader
-#-------------------------------
 [GURUBASHI]
 Name = Devoto Gurubashi
 Gender = Male
@@ -490,14 +465,35 @@ Gender = Male
 BaseMoney = 32
 IntroBGM = Trainers Eyes Meet
 #-------------------------------
-[LEADER_Ginzu]
+[LEADER_Maxwell]
 Name = Líder de Gimnasio
 Gender = Male
 BaseMoney = 100
 BattleBGM = Battle Gym Leader
 VictoryBGM = Battle victory leader
 #-------------------------------
-[LEADER_Entseeker]
+[LEADER_Thaurissan]
+Name = Líder de Gimnasio
+Gender = Male
+BaseMoney = 100
+BattleBGM = Battle Gym Leader
+VictoryBGM = Battle victory leader
+#-------------------------------
+[LEADER_Jaina]
+Name = Líder de Gimnasio
+Gender = Female
+BaseMoney = 100
+BattleBGM = Battle Gym Leader
+VictoryBGM = Battle victory leader
+#-------------------------------
+[LEADER_Malfurion]
+Name = Líder de Gimnasio
+Gender = Male
+BaseMoney = 100
+BattleBGM = Battle Gym Leader
+VictoryBGM = Battle victory leader
+#-------------------------------
+[LEADER_Tyrande]
 Name = Líder de Gimnasio
 Gender = Female
 BaseMoney = 100
@@ -524,6 +520,7 @@ IntroBGM = Trainers Eyes Meet
 #-------------------------------
 [ONYXIA]
 Name = Matriarca del Vuelo Negro
+Gender = Unknown
 BaseMoney = 100
 #-------------------------------
 [LEADER_Thrall]
@@ -545,13 +542,6 @@ Gender = Male
 BaseMoney = 32
 IntroBGM = Trainers Eyes Meet
 #-------------------------------
-[LEADER_Keena]
-Name = Líder
-Gender = Male
-BaseMoney = 100
-BattleBGM = Battle Gym Leader
-VictoryBGM = Battle victory leader
-#-------------------------------
 [ELITEFOUR_Anduin]
 Name = Alto Mando
 Gender = Male
@@ -566,14 +556,14 @@ BaseMoney = 100
 BattleBGM = Battle Elite
 VictoryBGM = Battle victory leader
 #-------------------------------
-[ELITEFOUR_Mojo]
+[ELITEFOUR_Anubarak]
 Name = Alto Mando
 Gender = Male
 BaseMoney = 100
 BattleBGM = Battle Elite
 VictoryBGM = Battle victory leader
 #-------------------------------
-[ELITEFOUR_Tuerkitas]
+[ELITEFOUR_Kelthuzad]
 Name = Alto Mando
 Gender = Male
 BaseMoney = 100
@@ -587,3 +577,105 @@ BaseMoney = 120
 BattleBGM = Battle Champion
 VictoryBGM = Battle victory leader
 #-------------------------------
+[TEAMROCKET_M]
+Name = Empleado de Blizzard
+Gender = Male
+BaseMoney = 32
+IntroBGM = Trainers Eyes Meet
+#-------------------------------
+[TEAMROCKET_F]
+Name = Empleada de Blizzard
+Gender = Female
+BaseMoney = 32
+IntroBGM = Trainers Eyes Meet
+#-------------------------------
+[ROCKETBOSS]
+Name = Director de WoW
+Gender = Male
+BaseMoney = 1000
+BattleBGM = Battle rival
+#-------------------------------
+[ROCKET_HOLLY]
+Name = Productora ejecutiva
+Gender = Female
+BaseMoney = 500
+BattleBGM = Battle rival
+#-------------------------------
+[ROCKET_BRIAN]
+Name = Ingeniero jefe de Classic
+Gender = Male
+BaseMoney = 500
+BattleBGM = Battle rival
+#-------------------------------
+[ROCKET_METZEN]
+Name = Director creativo
+Gender = Male
+BaseMoney = 500
+BattleBGM = Battle rival
+#-------------------------------
+[LEADER_Morladim]
+Name = Líder de Gimnasio
+Gender = Male
+BaseMoney = 100
+BattleBGM = Battle Gym Leader
+VictoryBGM = Battle victory leader
+#-------------------------------
+[LEADER_Magni]
+Name = Líder de Gimnasio
+Gender = Male
+BaseMoney = 100
+BattleBGM = Battle Gym Leader
+VictoryBGM = Battle victory leader
+#-------------------------------
+[HANSGAR]
+Name =
+Gender = Male
+BaseMoney = 100
+#-------------------------------
+[FRANZOK]
+Name =
+Gender = Male
+BaseMoney = 100
+#-------------------------------
+[THOGAR]
+Name = Operador
+Gender = Male
+BaseMoney = 100
+#-------------------------------
+[PUÑONEGRO]
+Name = Señor de la guerra
+Gender = Male
+BaseMoney = 100
+#-------------------------------
+[MAGHAR]
+Name = Legionario
+Gender = Male
+BaseMoney = 32
+IntroBGM = Trainers Eyes Meet
+#-------------------------------
+[NAGA]
+Name = Naga
+Gender = Female
+BaseMoney = 32
+IntroBGM = Trainers Eyes Meet
+#-------------------------------
+[DH]
+Name = Cazador de demonios
+Gender = Male
+BaseMoney = 32
+IntroBGM = Trainers Eyes Meet
+#-------------------------------
+[VASHJ]
+Name = Lady
+Gender = Female
+BaseMoney = 100
+#-------------------------------
+[KAELTHAS]
+Name = Archimago
+Gender = Female
+BaseMoney = 100
+#-------------------------------
+[ILLIDAN]
+Name = Lord
+Gender = Female
+BaseMoney = 100

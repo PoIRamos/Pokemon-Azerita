@@ -227,19 +227,19 @@ Water,2
     50,OMASTAR,75,76
 #-------------------------------
 [089] # Guarida de Onyxia
-Cave,4
+Cave,3
     30,COALOSSAL,82,84
     30,FLYGON,82,84
     30,CAMERUPT,82,84
 #-------------------------------
 [090] # Guarida de Onyxia
-Cave,4
+Cave,3
     30,COALOSSAL,82,84
     30,FLYGON,82,84
     30,CAMERUPT,82,84
 #-------------------------------
 [091] # Guarida de Onyxia
-Cave,4
+Cave,3
     30,COALOSSAL,82,84
     30,FLYGON,82,84
     30,CAMERUPT,82,84
@@ -261,3 +261,38 @@ Land,21
     20,GLALIE,82,84
     20,WALREIN,82,84
     20,BEARTIC,82,84
+#-------------------------------
+[006] # Bosk of Jade
+Land,21
+    20,DRAMPA,39,41
+    20,KOMALA,39,41
+    20,PANGORO,39,41
+Water,2
+    60,GYARADOS,40,41
+    40,WISHIWASHI,39,41
+#-------------------------------
+[022] # Tierras Blasteadas
+Land,21
+    20,ARCANINE,69,71
+    20,DRAGONITE,69,71
+    20,MEDICHAM,69,71
+#-------------------------------
+[111] # Nagrand
+Land,21
+    20,COPPERAJAH,69,71
+    20,NOIVERN,69,71
+    20,LYCANROC,69,71
+    20,CLAYDOL,69,71
+#-------------------------------
+[106] # Península de llama infernal
+Land,21
+    20,GENGAR,69,71
+    20,EMBOAR,69,71
+    20,CENTISKORCH,69,71
+    20,GOLURK,69,71
+#-------------------------------
+[113] # Valle sombra de luna
+Water,2
+    60,MANTINE,40,41
+    40,MILOTIC,39,41
+    40,PRIMARINA,39,41

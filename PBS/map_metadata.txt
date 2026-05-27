@@ -24,6 +24,14 @@ Name = Villa de Oro
 Outdoor = false
 BattleBack = indoor1
 #-------------------------------
+[006]   # Bosk of Jade
+Name = Bosk of Jade
+Outdoor = true
+ShowArea = true
+Weather = Fog,100
+BattleBack = field
+Environment = Forest
+#-------------------------------
 [007]   # Valle del Fresno
 Name = Valle del Fresno
 Outdoor = true
@@ -115,10 +123,12 @@ ShowArea = false
 MapPosition = 0,93,70
 BattleBack = field
 #-------------------------------
-[022]
-Name = Villa de Oro
-MapPosition = 0,93,70
-BattleBack = indoor1
+[022] # Tierras Blasteadas 
+Name = Tierras Blasteadas
+Outdoor = true
+ShowArea = true
+BattleBack = rocky
+Environment = Rock
 #-------------------------------
 [023]   # Alto Mando 3
 Name = Sala Alto Mando 3
@@ -147,16 +157,16 @@ Outdoor = false
 ShowArea = true
 BattleBack = cave1
 #-------------------------------
-[028]
-Name = Tienda Villa de oro
-ShowArea = false
-#-------------------------------
-[029]
-Name = Posada del león orgulloso
+[028] #Gorgrond 
+Name = Gorgrond
+Outdoor = true
 ShowArea = true
-Bicycle = true
-MapPosition = 0,93,70
-BattleBack = indoor1
+BicycleAlways = false
+BattleBack = rocky
+Environment = Volcano
+#-------------------------------
+[029] # Centro de Gorgrond
+Name = Gorgrond
 #-------------------------------
 [030]   # Loch Moras
 Name = Loch Moras
@@ -461,6 +471,14 @@ Name = Liga Pokemon
 Outdoor = false
 ShowArea = true
 #-------------------------------
+[106] #Península de Llama Infernal
+Name = Península de Llama Infernal
+Outdoor = true
+ShowArea = true
+BicycleAlways = false
+BattleBack = rocky
+Environment = Volcano
+#-------------------------------
 [108]   # Alto Mando 1
 Name = Sala Alto Mando 1
 Outdoor = false
@@ -470,3 +488,46 @@ BattleBack = elite4
 Name = Sala Alto Mando 2
 Outdoor = false
 BattleBack = elite6
+#-------------------------------
+[081]   # Centro Península de Llama Infernal
+Name = Península de Llama Infernal
+#-------------------------------
+[038] #Fundición Piedra Negra 
+Name = Fundición Piedra Negra 
+Outdoor = false
+ShowArea = true
+BicycleAlways = false
+BattleBack = rocky
+Environment = Volcano
+#-------------------------------
+[111]   # Nagrand
+Name = Nagrand
+Outdoor = true
+ShowArea = true
+BattleBack = field
+Environment = Forest
+#-------------------------------
+[112]   # Guarida de Gruul
+Name = Guarida de Gruul
+Outdoor = false
+ShowArea = true
+BattleBack = rocky
+Environment = Cave
+#-------------------------------
+[113]   # Valle Sombra de Luna
+Name = Valle Sombra de Luna
+Outdoor = true
+ShowArea = true
+BattleBack = forest
+Environment = ForestGrass
+#-------------------------------
+[114]   # Centro Valle Sombra de Luna
+Name = Valle Sombra de Luna
+#-------------------------------
+[115] #Templo Oscuro
+Name = Templo Oscuro
+Outdoor = false
+ShowArea = true
+BicycleAlways = false
+BattleBack = rocky
+Environment = Volcano

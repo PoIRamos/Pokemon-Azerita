@@ -44,18 +44,18 @@ Pokemon = MACHOP,9
 #==============================
 # VILLA DE ORO
 #==============================
-[LEADER_Brock,Depression]
-LoseText = Bien hecho, estoy que goteo.
+[LEADER_Maxwell,Maxwell]
+LoseText = Bien hecho, tienes potencial.
 Pokemon = SPINDA,12
     Moves = TEETERDANCE,QUICKATTACK
 Pokemon = ZANGOOSE,14
     Moves = QUICKATTACK,BULKUP
 #-------------------------------
 [CAMPER,Alex]
-LoseText = ¡No podrás con Depression!
+LoseText = ¡No podrás con Maxwell!
 Pokemon = TEDDIURSA,11
 #-------------------------------
-[ROCKETBOSS,Denora,0]
+[ROCKETBOSS,Hazzikostas,0]
 LoseText = Aprendes rápido.
 Pokemon = ZUBAT,10
     Moves = GUST,BITE
@@ -65,15 +65,15 @@ Pokemon = SKORUPI,12
 # CUEVA WENDIGOS
 #==============================
 #-------------------------------
-[FISHERMAN,Jon]
-LoseText = A ver si pesco algo bueno.
-Pokemon = GOLDEEN,17
+[ENANO,Jarl]
+LoseText = Tampoco era para tanto.
+Pokemon = CRANIDOS,17
 #-------------------------------
-[BIKER,David]
-LoseText = Menudo derrape.
+[ENANO,Dax]
+LoseText = ¡Ay caramba!
 Pokemon = MAGNEMITE,17
 #-------------------------------
-[BLACKBELT,Carlos]
+[ENANO,Cilbuin]
 LoseText = Pues me has calentado.
 Pokemon = TIMBURR,17
 #==============================
@@ -94,8 +94,8 @@ Pokemon = SANDSHREW,14
 #==============================
 # DUN MOROS
 #==============================
-[LEADER_Koga,Copyninja]
-LoseText = Buffen al monje volkswagen.
+[LEADER_Magni,Magni]
+LoseText = Estás hecho un adalid.
 Pokemon = MEDITITE,21
     Moves = CONFUSION,DETECT,ROCKSMASH
 Pokemon = RIOLU,20
@@ -105,50 +105,21 @@ Pokemon = TIMBURR,22
     Item = FISTPLATE
 #-------------------------------
 [ENANO,Sebastián]
-LoseText = ¡No podrás con Copyninja!
+LoseText = ¡No podrás con Magni!
 Pokemon = MAKUHITA,19
 #==============================
 # BOSQUE OSCURO
 #==============================
-[TEAMROCKET_M,Bodeguita,0]
-LoseText = Bah, has tenido suerte.
-Pokemon = MUK,27
-Pokemon = SWALOT,27
-Pokemon = WEEZING, 28
-#-------------------------------
-[CUEBALL,Stitches]
-LoseText = Stitches pierde...
-Pokemon = GARBODOR,35
-#-------------------------------
-[PSYCHIC_M,Sal]
-LoseText = Vale tío, que era broma.
-Pokemon = DUSKULL,24
-#-------------------------------
-[PSYCHIC_M,Álvaro]
-LoseText = Menudo fantasma.
-Pokemon = KIRLIA,25
-#-------------------------------
-[PSYCHIC_M,Julio]
-LoseText = Pero bueno.
-Pokemon = KADABRA,26
-#-------------------------------
-[PSYCHIC_M,Javi]
-LoseText = Me he hecho caca.
-Pokemon = SHUPPET,24
-Pokemon = HAUNTER,25
-#-------------------------------
-[PSYCHIC_M,Flavio]
-LoseText = Me has dado pero bien.
-Pokemon = ABSOL,27
+[ROCKET_HOLLY,Holly Longdale,0]
+LoseText = Esto sí que no me lo esperaba.
+Pokemon = ARBOK,27
+Pokemon = DUSCLOPS,27
+Pokemon = SCYTHER, 28
 #==============================
 # VILLA OSCURA
 #==============================
-[CAMPER,Sergio]
-LoseText = ¡No podrás con Serrpent!
-Pokemon = SHIFTRY,28
-#-------------------------------
-[LEADER_Blaine,Serrpent]
-LoseText = Peleas bien.
+[LEADER_Morladim,Mor'ladim]
+LoseText = Ni has pestañeado.
 Pokemon = PAWNIARD,29
     Moves = METALCLAW,SUCKERPUNCH,SCARYFACE
 Pokemon = HONCHKROW,29
@@ -159,27 +130,24 @@ Pokemon = MIGHTYENA,30
 #==============================
 # GARGANTA FOGOSA
 #==============================
-[LEADER_Keena,Keena]
-Pokemon = TROPIUS,33
-Pokemon = HARIYAMA,33
-Pokemon = SWAMPERT,34
+[ELITEFOUR_Anduin,Anduin,0]
+Pokemon = SLOWBRO,33
+Pokemon = ESPEON,33
+Pokemon = GALLADE,34
 #-------------------------------
-[TEAMROCKET_M,Beto,0]
-Pokemon = MAGMAR,33
-Pokemon = TYPHLOSION,34
+[ROCKET_BRIAN,Brian Birmingham,0]
+Pokemon = PIKACHU,33
+Pokemon = CHARIZARD,34
 #-------------------------------
-[TEAMROCKET_M,Ciszek,0]
-Pokemon = ELECTABUZZ,33
-Pokemon = AMPHAROS,34
+[ROCKET_METZEN,Chris Metzen,0]
+Pokemon = MUDSDALE,33
+Pokemon = REYVELA,34
 #==============================
 # MONTE PIEDRA NEGRA
 #==============================
 [MOIRA,Moira]
-LoseText = ¡Volveremos a reclamar la montaña!
+LoseText = ¡Somos los dueños de la montaña!
 Pokemon = AERODACTYL,42
-#-------------------------------
-[GEDDON,Geddon]
-Pokemon = EMBOAR,42
 #-------------------------------
 [ENANO,Bjorn]
 LoseText = Mochila mochila.
@@ -273,8 +241,8 @@ Pokemon = DRUDDIGON,39
 #===============================
 # CUMBRE PIEDRA NEGRA
 #===============================
-[LEADER_Ginzu,Ginzu]
-LoseText = Definitivamente la roca no es infalible. La próxima vez elegiré tijeras.
+[LEADER_Thaurissan,Thaurissan]
+LoseText = No me esperaba un rival tan duro.
 Pokemon = GIGALITH,41
     Moves = STEALTHROCK,SMACKDOWN,IRONDEFENSE
 Pokemon = GOLEM,40
@@ -286,7 +254,7 @@ Pokemon = TYRANTRUM,42
     Item = FOCUSBAND
 #-------------------------------
 [ENANO,Gonzalo]
-LoseText = ¡No podrás con Ginzu!
+LoseText = ¡No podrás con Thaurissan!
 Pokemon = KABUTOPS,41
 #===============================
 # VEGA DE ESPINA TORCIDA
@@ -447,7 +415,7 @@ Pokemon = AURORUS,40
 Pokemon = CRADILY,40
 Pokemon = CRANIDOS,40
 #-------------------------------
-[CHANELLER,Laura]
+[CHANELLER,Nuwa]
 Items = MEGARING
 LoseText = Me voy al fondo derecha.
 Pokemon = CHIMECHO,40
@@ -459,8 +427,8 @@ Pokemon = LUCARIO,40
 #==============================
 # CIUDAD DE BOLARUS
 #==============================
-[LEADER_Brock,Yakionigiri]
-LoseText = No he calculado la parábola.
+[LEADER_Jaina,Jaina]
+LoseText = ¡Ha sido un combate mágico!
 Pokemon = PELIPPER,50
     Moves = ROOST,HURRICANE,WATERPULSE,MIST
     AbilityIndex = 1
@@ -473,13 +441,13 @@ Pokemon = MILOTIC,51
     Item = LEFTOVERS
 #-------------------------------
 [MARINE,Daniel]
-LoseText = ¡No podrás con Yaki!
+LoseText = ¡No podrás con Jaina!
 Pokemon = JELLICENT,49
 #==============================
 # COSTA OSCURECIDA
 #==============================
-[ROCKETBOSS,Denora,1]
-LoseText = Saludos a tu madre.
+[ROCKETBOSS,Hazzikostas,1]
+LoseText = Sinceramente, ha sido un skill issue.
 Pokemon = CROBAT,55
 Pokemon = TOXICROAK,55
 Pokemon = TOXAPEX,55
@@ -537,10 +505,10 @@ Pokemon = TANGROWTH,56
 # CLARO LUNAR
 #==============================
 [ELFO,Esneisi]
-LoseText = ¡No podrás con Entseeker!
+LoseText = ¡No podrás con Malfurion!
 Pokemon = MEGANIUM,64
 #-------------------------------
-[LEADER_Entseeker,Entseeker]
+[LEADER_Malfurion,Malfurion]
 Items = MEGARING
 LoseText = Eres realmente bueno.
 Pokemon = FERROTHORN,64
@@ -695,12 +663,12 @@ LoseText = ¡Tú aplastar!
 Pokemon = HYDREIGON,75
 #-------------------------------
 [ELFO,Brayan]
-LoseText = ¡No podrás con Keena!
+LoseText = ¡No podrás con Tyrande!
 Pokemon = AROMATISSE,75
 #-------------------------------
-[LEADER_Keena,Keena,1]
+[LEADER_Tyrande,Tyrande]
 Items = MEGARING
-LoseText = Esta vez tenías razón.
+LoseText = ¡Por Elune!
 Pokemon = TOGEKISS,76
     Moves = MOONBLAST,CALMMIND,AIRSLASH,FLAMETHROWER
 Pokemon = SYLVEON,76
@@ -905,133 +873,133 @@ Pokemon = CHARIZARD,79
 #==============================
 # DENOREGAN SALA 1
 #==============================
-[TEAMROCKET_F,Aredia]
+[TEAMROCKET_F,Annie]
 LoseText = ¡No puede ser!
-Pokemon = ELECTABUZZ,80
-Pokemon = BRONZONG,80
+Pokemon = ELECTABUZZ,65
+Pokemon = BRONZONG,65
 #-------------------------------
-[TEAMROCKET_F,Sofía]
+[TEAMROCKET_F,Stella]
 LoseText = ¡No puede ser!
-Pokemon = MAGNEZONE,81
-Pokemon = JOLTEON,81
+Pokemon = MAGNEZONE,65
+Pokemon = JOLTEON,65
 #==============================
 # DENOREGAN SALA 2
 #==============================
-[TEAMROCKET_F,María]
+[TEAMROCKET_F,Mary]
 LoseText = ¡No puede ser!
-Pokemon = BLISSEY,80
-Pokemon = ALAKAZAM,80
+Pokemon = BLISSEY,65
+Pokemon = ALAKAZAM,65
 #-------------------------------
-[TEAMROCKET_F,Ana]
+[TEAMROCKET_F,Anne]
 LoseText = ¡No puede ser!
-Pokemon = CARNIVINE,80
-Pokemon = COFAGRIGUS,80
+Pokemon = CARNIVINE,65
+Pokemon = COFAGRIGUS,65
 #-------------------------------
-[TEAMROCKET_F,Bea]
+[TEAMROCKET_M,Jeff]
 LoseText = ¡No puede ser!
-Pokemon = CORVIKNIGHT,80
-Pokemon = CROBAT,80
+Pokemon = CORVIKNIGHT,65
+Pokemon = CROBAT,65
 #-------------------------------
 [TEAMROCKET_F,Joana]
 LoseText = ¡No puede ser!
-Pokemon = LOPUNNY,81
-Pokemon = DELPHOX,81
+Pokemon = LOPUNNY,66
+Pokemon = DELPHOX,66
 #-------------------------------
-[TEAMROCKET_F,Juliana]
+[TEAMROCKET_M,Julian]
 LoseText = ¡No puede ser!
-Pokemon = CRYOGONAL,81
-Pokemon = LUCARIO,81
+Pokemon = CRYOGONAL,66
+Pokemon = LUCARIO,66
 #-------------------------------
-[TEAMROCKET_F,Nerea]
+[TEAMROCKET_M,Noah]
 LoseText = ¡No puede ser!
-Pokemon = EELEKTROSS,81
-Pokemon = MAWILE,81
+Pokemon = EELEKTROSS,66
+Pokemon = MAWILE,66
 #==============================
 # DENOREGAN SALA 3
 #==============================
-[TEAMROCKET_F,Laura]
+[TEAMROCKET_F,Lucy]
 LoseText = ¡No puede ser!
-Pokemon = HELIOLISK,80
-Pokemon = LOPUNNY,80
+Pokemon = HELIOLISK,66
+Pokemon = LOPUNNY,66
 #-------------------------------
-[TEAMROCKET_F,Eva]
+[TEAMROCKET_M,Vance]
 LoseText = ¡No puede ser!
-Pokemon = MANECTRIC,80
-Pokemon = MELMETAL,80
+Pokemon = MANECTRIC,66
+Pokemon = MELMETAL,66
 #-------------------------------
 [TEAMROCKET_F,Nora]
 LoseText = ¡No puede ser!
-Pokemon = MUDSDALE,80
-Pokemon = RAICHU,80
+Pokemon = MUDSDALE,66
+Pokemon = RAICHU,66
 #-------------------------------
-[TEAMROCKET_F,Silvia]
+[TEAMROCKET_M,Steven]
 LoseText = ¡No puede ser!
-Pokemon = EMPOLEON,80
-Pokemon = ROTOM,80
+Pokemon = EMPOLEON,66
+Pokemon = ROTOM,66
 #-------------------------------
-[TEAMROCKET_F,Marta]
+[TEAMROCKET_F,Moxie]
 LoseText = ¡No puede ser!
-Pokemon = MRMIME,81
-Pokemon = SLOWKING,81
+Pokemon = MRMIME,66
+Pokemon = SLOWKING,66
 #-------------------------------
-[TEAMROCKET_F,Paula]
+[TEAMROCKET_M,Paul]
 LoseText = ¡No puede ser!
-Pokemon = STAKATAKA,80
-Pokemon = TOXTRICITY,80
+Pokemon = STAKATAKA,66
+Pokemon = TOXTRICITY,66
 #-------------------------------
 [TEAMROCKET_F,Elizabeth]
 LoseText = ¡No puede ser!
-Pokemon = TURTONATOR,80
-Pokemon = WEEZING,80
+Pokemon = TURTONATOR,66
+Pokemon = WEEZING,66
 #-------------------------------
-[TEAMROCKET_F,Miriam]
+[TEAMROCKET_M,Marcus]
 LoseText = ¡No puede ser!
-Pokemon = WOBBUFFET,80
-Pokemon = XATU,80
+Pokemon = WOBBUFFET,66
+Pokemon = XATU,66
 #-------------------------------
 [TEAMROCKET_F,Jane]
 LoseText = ¡No puede ser!
-Pokemon = METAGROSS,81
-Pokemon = NINETALES_ALOLA,81
+Pokemon = METAGROSS,67
+Pokemon = NINETALES_ALOLA,67
 #==============================
 # DENOREGAN SALA DENORA
 #==============================
-[TEAMROCKET_M,Bodeguita,1]
+[ROCKET_HOLLY,Holly Longdale,1]
 Items = MEGARING
-LoseText = Ha sido un mal try, no te lo tengas tan creído.
-Pokemon = ZOROARK,83
-Pokemon = ABSOL,83
-    Item = ABSOLITE
-Pokemon = WEAVILE, 83
-Pokemon = HYDREIGON,84
+LoseText = Esto no estaba en los planes.
+Pokemon = ARBOK,69
+Pokemon = DUSKNOIR, 69
+Pokemon = HYDREIGON,69
+Pokemon = SCIZOR,70
+    Item = SCIZORITE
 #-------------------------------
-[TEAMROCKET_M,Ciszek,1]
+[ROCKET_BRIAN,Brian Birmingham,1]
 Items = MEGARING
-LoseText = Pero tú eres una barbaridad.
-Pokemon = GALVANTULA,83
-Pokemon = AMPHAROS, 83
-Pokemon = ELECTIVIRE,83
-Pokemon = HERACROSS,84
-    Item = HERACRONITE
-#-------------------------------
-[TEAMROCKET_M,Beto,1]
-Items = MEGARING
-LoseText = Bueno pues pártele la boca al putero.
-Pokemon = MAGMORTAR,83
-Pokemon = TYPHLOSION, 83
-Pokemon = VOLCARONA,83
-Pokemon = CHARIZARD,84
+LoseText = Así da gusto el world PvP.
+Pokemon = RAICHU,69
+Pokemon = STARMIE, 69
+Pokemon = SNORLAX,69
+Pokemon = CHARIZARD,70
     Item = CHARIZARDITEY
 #-------------------------------
-[ROCKETBOSS,Denora,2]
+[ROCKET_METZEN,Chris Metzen,1]
 Items = MEGARING
-LoseText = ¡No puede ser!
-Pokemon = CROBAT,84
-Pokemon = DRAPION,84
-Pokemon = VENUSAUR,84
-Pokemon = SALAZZLE,84
-Pokemon = DRAGALGE,84
-Pokemon = GENGAR,85
+LoseText = Está bien, ve a por Ion.
+Pokemon = MUDSDALE,69
+Pokemon = REYVELA, 69
+Pokemon = VOLCARONA,69
+Pokemon = GYARADOS,70
+    Item = GYARADOSITE
+#-------------------------------
+[ROCKETBOSS,Hazzikostas,2]
+Items = MEGARING
+LoseText = ¡Este no es el lore que he creado!
+Pokemon = CROBAT,70
+Pokemon = DRAPION,70
+Pokemon = VENUSAUR,70
+Pokemon = SALAZZLE,70
+Pokemon = DRAGALGE,70
+Pokemon = GENGAR,71
     Item = GENGARITE
 #==============================
 # RASGAMONTE
@@ -1040,7 +1008,7 @@ Pokemon = GENGAR,85
 #==============================
 # LIGA POKEMON
 #==============================
-[ELITEFOUR_Anduin,Anduin]
+[ELITEFOUR_Anduin,Anduin,1]
 LoseText = ¡Sabía que lo conseguirías!
 Items = MEGARING
 Pokemon = SLOWKING,92
@@ -1066,9 +1034,6 @@ Pokemon = GALLADE,92
 [ELITEFOUR_Varok,Colmillosauro]
 LoseText = ¡Fuerza y honor!
 Items = MEGARING
-Pokemon = DRUDDIGON,94
-    Moves = CRUNCH,HONECLAWS,DRAGONTAIL,ROCKSLIDE
-    AbilityIndex = 0
 Pokemon = HAXORUS,94
     Moves = SWORDSDANCE,DRAGONCLAW,BULLDOZE,XSCISSOR
     AbilityIndex = 1
@@ -1081,14 +1046,17 @@ Pokemon = GARCHOMP,94
 Pokemon = NOIVERN,94
     Moves = FOCUSBLAST,THUNDER,DRAGONPULSE,HURRICANE
     AbilityIndex = 0
+Pokemon = RAYQUAZA,94
+    Moves = DRAGONASCENT,DRAGONDANCE,OUTRAGE,EXTREMESPEED
+    AbilityIndex = 0
 Pokemon = CHARIZARD,94
     Moves = FLAREBLITZ,DRAGONCLAW,SHADOWCLAW,BRICKBREAK
     AbilityIndex = 0
     Item = CHARIZARDITEX
 #-------------------------------
 #HP, Attack, Defense, Sp.Atk, Sp.Def, Speed
-[ELITEFOUR_Mojo,Mojo]
-LoseText = Qué falso, si sólo estaba probando la hitbox.
+[ELITEFOUR_Anubarak,Anub'arak]
+LoseText = Caerás ante la ciudadela.
 Items = MEGARING
 Pokemon = SKARMORY,96
     Moves = SPIKES,IRONHEAD,IRONDEFENSE,STEALTHROCK
@@ -1100,11 +1068,6 @@ Pokemon = AGGRON,96
     AbilityIndex = 0
     Item = AGGRONITE
     Nature = RELAXED
-Pokemon = ZAMAZENTA,96
-    Moves = IRONHEAD,HEAVYSLAM,REST,BEHEMOTHBASH
-    AbilityIndex = 0
-    Item = RUSTEDSHIELD
-    Nature = IMPISH
 Pokemon = AEGISLASH,96
     Moves = KINGSSHIELD,SHADOWSNEAK,SHADOWCLAW,IRONHEAD
     AbilityIndex = 0
@@ -1120,10 +1083,15 @@ Pokemon = MAGNEZONE,96
     Ability = ANALYTIC
     Item = AIRBALLOON
     Nature = QUIET
+Pokemon = SOLGALEO,96
+    Moves = SUNSTEELSTRIKE,ZENHEADBUTT,FLAREBLITZ,EARTHQUAKE
+    AbilityIndex = 0
+    Item = LEFTOVERS
+    Nature = IMPISH
 #-------------------------------
 #HP, Attack, Defense, Sp.Atk, Sp.Def, Speed
-[ELITEFOUR_Tuerkitas,Tuerkitas]
-LoseText = No pasa nada. La Época Dorada no se extingue… solo se reinicia.
+[ELITEFOUR_Kelthuzad,Kel'thuzad]
+LoseText = ¡Qué arrogancia!
 Items = MEGARING
 Pokemon = SPIRITOMB,98
     Moves = WILLOWISP,FOULPLAY,PAINSPLIT,SHADOWSNEAK
@@ -1145,16 +1113,16 @@ Pokemon = BANETTE,98
     AbilityIndex = 0
     Item = BANETTITE
     Nature = JOLLY
-Pokemon = MECHAGENGAR,98
-    Moves = SHADOWBALL,SLUDGEBOMB,FOCUSBLAST,THUNDERBOLT
-    AbilityIndex = 0
-    Item = LIFEORB
-    Nature = TIMID
 Pokemon = DRAGAPULT,98
     Moves = DRAGONDARTS,PHANTOMFORCE,UTURN,DRAGONDANCE
     AbilityIndex = 1
     Item = SITRUSBERRY
     Nature = JOLLY
+Pokemon = GIRATINA,98
+    Moves = SHADOWBALL,EARTHPOWER,DRACOMETEOR,SUBSTITUTE
+    AbilityIndex = 1
+    Item = LEFTOVERS
+    Nature = MODEST
 # IV/EV: HP, Attack, Defense, Sp.Atk, Sp.Def, Speed
 #-------------------------------
 [CHAMPION,Sistine,1]
@@ -1166,8 +1134,8 @@ Pokemon = NINETALES_ALOLA,100
     Nature = TIMID
 Pokemon = ARTICUNO,100
     Moves = BLIZZARD,ROOST,FREEZEDRY,UTURN
-    AbilityIndex = 0
-    Item = FOCUSSASH
+    AbilityIndex = 2
+    Item = NEVERMELTICE
     Nature = CALM
 Pokemon = MAMOSWINE,100
     Moves = EARTHQUAKE,AVALANCHE,ICESHARD,IRONHEAD
@@ -1189,3 +1157,433 @@ Pokemon = SINDRAGOSA,100
     AbilityIndex = 0
     Item = LEFTOVERS
     Nature = ADAMANT
+#==============================
+# GORGROND
+#==============================
+[MAGHAR,Gormorok]
+LoseText = ¡Nos invaden!
+Pokemon = ARCHEOPS,83
+Pokemon = AURORUS,83
+Pokemon = DONPHAN,83
+#-------------------------------
+[MAGHAR,Gunthak]
+LoseText = ¡Reunid a los clanes!
+Pokemon = BLAZIKEN,83
+Pokemon = CLAYDOL,83
+Pokemon = EXPLOUD,83
+#-------------------------------
+[MAGHAR,Rudotan]
+LoseText = ¡Reunid a los clanes!
+Pokemon = EMBOAR,83
+Pokemon = FERALIGATR,83
+Pokemon = GIGALITH,83
+#-------------------------------
+[MAGHAR,Kirog]
+LoseText = ¡Reunid a los clanes!
+Pokemon = GARCHOMP,83
+Pokemon = GLISCOR,83
+Pokemon = GOLURK,83
+#-------------------------------
+[MAGHAR,Medan]
+LoseText = ¡Reunid a los clanes!
+Pokemon = GOODRA,83
+Pokemon = HARIYAMA,83
+Pokemon = HERACROSS,83
+#-------------------------------
+[MAGHAR,Goron]
+LoseText = ¡Reunid a los clanes!
+Pokemon = HIPPOWDON,83
+Pokemon = HOUNDOOM,83
+Pokemon = INFERNAPE,83
+#-------------------------------
+[MAGHAR,Kaal]
+LoseText = ¡Reunid a los clanes!
+Pokemon = INCINEROAR,83
+Pokemon = KROOKODILE,83
+Pokemon = LUXRAY,83
+#-------------------------------
+[MAGHAR,Brook]
+LoseText = ¡Reunid a los clanes!
+Pokemon = MAGCARGO,83
+Pokemon = MAGMORTAR,83
+Pokemon = MANDIBUZZ,83
+#-------------------------------
+[MAGHAR,Meredar]
+LoseText = ¡Reunid a los clanes!
+Pokemon = MAROWAK,83
+Pokemon = MUDSDALE,83
+Pokemon = NINETALES,83
+#-------------------------------
+[MAGHAR,Hull]
+LoseText = ¡Reunid a los clanes!
+Pokemon = NIDOKING,83
+Pokemon = NIDOQUEEN,83
+#-------------------------------
+[MAGHAR,Zoark]
+LoseText = ¡Reunid a los clanes!
+Pokemon = RAMPARDOS,83
+Pokemon = RHYPERIOR,83
+Pokemon = SEISMITOAD,83
+#-------------------------------
+[MAGHAR,Drogosh]
+LoseText = ¡Reunid a los clanes!
+Pokemon = SKARMORY,83
+Pokemon = STARAPTOR,83
+Pokemon = STEELIX,83
+#-------------------------------
+[MAGHAR,Jorn]
+LoseText = ¡Reunid a los clanes!
+Pokemon = SWAMPERT,83
+Pokemon = TALONFLAME,83
+Pokemon = TAUROS,83
+#-------------------------------
+[MAGHAR,Vrosh]
+LoseText = ¡Reunid a los clanes!
+Pokemon = TORKOAL,83
+Pokemon = TYPHLOSION,83
+Pokemon = TYRANTRUM,83
+#-------------------------------
+[MAGHAR,Brence]
+LoseText = ¡Reunid a los clanes!
+Pokemon = ARCANINE,83
+Pokemon = ARCANINE,83
+Pokemon = ARCANINE,83
+Pokemon = ARCANINE,83
+Pokemon = ARCANINE,83
+#-------------------------------
+[MAGHAR,Mordok]
+LoseText = ¡Reunid a los clanes!
+Pokemon = ARCANINE,83
+Pokemon = ARCANINE,83
+Pokemon = ARCANINE,83
+Pokemon = ARCANINE,83
+Pokemon = ARCANINE,83
+#==============================
+# FUNDICIÓN PIEDRA NEGRA
+#==============================
+[MAGHAR,Garan]
+LoseText = ¡Reunid a los clanes!
+Pokemon = AGGRON,85
+Pokemon = GOLEM,85
+#-------------------------------
+[MAGHAR,Throkk]
+LoseText = ¡Reunid a los clanes!
+Pokemon = FLAREON,85
+Pokemon = HIPPOWDON,85
+#-------------------------------
+[MAGHAR,Zarmodar]
+LoseText = ¡Reunid a los clanes!
+Pokemon = SKARMORY,85
+Pokemon = NOIVERN,85
+#-------------------------------
+[MAGHAR,Harn]
+LoseText = ¡Reunid a los clanes!
+Pokemon = DONPHAN,85
+Pokemon = STEELIX,85
+#-------------------------------
+[MAGHAR,Nalorak]
+LoseText = ¡Reunid a los clanes!
+Pokemon = LUNATONE,85
+Pokemon = SOLROCK,85
+#-------------------------------
+[MAGHAR,Vanul]
+LoseText = ¡Reunid a los clanes!
+Pokemon = SCIZOR,85
+Pokemon = KANGASKHAN,85
+#-------------------------------
+[MAGHAR,Krosh]
+LoseText = ¡Reunid a los clanes!
+Pokemon = MACHAMP,85
+Pokemon = BRAVIARY,85
+#-------------------------------
+[MAGHAR,Bruck]
+LoseText = ¡Reunid a los clanes!
+Pokemon = CORVIKNIGHT,85
+Pokemon = TALONFLAME,85
+#-------------------------------
+[MAGHAR,Noroz]
+LoseText = ¡Reunid a los clanes!
+Pokemon = ARCANINE,85
+Pokemon = GIGALITH,85
+#-------------------------------
+[HANSGAR,Hans'gar]
+LoseText = ¡Argh!
+Items = MEGARING
+Pokemon = AERODACTYL,86
+    Moves = ROCKSLIDE,ROOST,UTURN,BRAVEBIRD
+Pokemon = COALOSSAL,86
+    Moves = BULLDOZE,HEATCRASH,ROCKWRECKER,TARSHOT
+Pokemon = GARCHOMP,87
+    Moves = STOMPINGTANTRUM,DRAGONRUSH,CRUNCH,ROCKSLIDE
+    Item = GARCHOMPITE
+#-------------------------------
+[FRANZOK,Franzok]
+LoseText = ¡Nos han planchado!
+Items = MEGARING
+Pokemon = FORRETRESS,86
+    Moves = GYROBALL,WILLOWISP,LUNGE,RAGEPOWDER
+Pokemon = GLISCOR,86
+    Moves = ACROBATICS,ROOST,EARTHQUAKE,CROSSPOISON
+Pokemon = SCIZOR,87
+    Moves = XSCISSOR,IRONHEAD,AERIALACE,MACHPUNCH
+    Item = SCIZORITE
+#-------------------------------
+[THOGAR,Thogar]
+LoseText = No tengo tiempo para esto.
+Items = MEGARING
+Pokemon = CONKELDURR,86
+    Moves = HAMMERARM,PROTECT,CONFUSERAY,THUNDERPUNCH
+Pokemon = STEELIX,86
+    Moves = EARTHQUAKE,IRONTAIL,ROCKSLIDE,THUNDERFANG
+Pokemon = BRONZONG,86
+    Moves = RECOVER,CALMMIND,PSYCHIC,GYROBALL
+Pokemon = TORKOAL,86
+    Moves = EARTHPOWER,ERUPTION,SUNNYDAY,SOLARBEAM
+Pokemon = MOLTRES,87
+    Moves = FLAMETHROWER,AIRSLASH,ROOST,WILLOWISP
+Pokemon = LUCARIO,87
+    Moves = AURASPHERE,FLASHCANNON,BULLETPUNCH,FIREBLAST
+    Item = LUCARIONITE
+#-------------------------------
+[PUÑONEGRO,Puñonegro]
+LoseText = Esto... no puede... acabar así...
+Items = MEGARING
+Pokemon = CAMERUPT,87
+    Moves = EARTHPOWER,ERUPTION,ANCIENTPOWER,FIREBLAST
+Pokemon = CHARIZARD,87
+    Moves = FLAMETHROWER,AIRSLASH,ROOST,DRAGONPULSE
+Pokemon = RHYPERIOR,87
+    Moves = EARTHQUAKE,ROCKSLIDE,CLOSECOMBAT,PROTECT
+Pokemon = METAGROSS,88
+    Moves = ZENHEADBUTT,METEORMASH,AGILITY,BODYSLAM
+Pokemon = HEATRAN,88
+    Moves = HEATWAVE,EARTHPOWER,FLASHCANNON,POWERGEM
+Pokemon = GROUDON,88
+    Moves = PRECIPICEBLADES,STONEEDGE,HEATCRASH,SWAGGER
+    Item = REDORB
+#==============================
+# Valle Sombra de Luna
+#==============================
+[NAGA,Vassiana]
+LoseText = ¡Por la Reina!
+Pokemon = LANTURN,83
+Pokemon = LUDICOLO,83
+#-------------------------------
+[NAGA,Zaravess]
+LoseText = ¡Por la Reina!
+Pokemon = LUMINEON,83
+Pokemon = MALAMAR,83
+#-------------------------------
+[NAGA,Karista]
+LoseText = ¡Por la Reina!
+Pokemon = OCTILLERY,83
+Pokemon = OMASTAR,83
+#-------------------------------
+[NAGA,Nashara]
+LoseText = ¡Por la Reina!
+Pokemon = MANTINE,83
+Pokemon = MASQUERAIN,83
+#-------------------------------
+[NAGA,Lanash]
+LoseText = ¡Por la Reina!
+Pokemon = MIENSHAO,83
+Pokemon = MILOTIC,83
+#-------------------------------
+[NAGA,Ciria]
+LoseText = ¡Por la Reina!
+Pokemon = PELIPPER,83
+Pokemon = PRIMARINA,83
+#-------------------------------
+[NAGA,Anatesh]
+LoseText = ¡Por la Reina!
+Pokemon = POLIWRATH,83
+Pokemon = QUAGSIRE,83
+#-------------------------------
+[NAGA,Jashira]
+LoseText = ¡Por la Reina!
+Pokemon = POLITOED,83
+Pokemon = SAMUROTT,83
+#-------------------------------
+[DH,Judion]
+LoseText = ¡Por los Illidari!
+Pokemon = SHARPEDO,83
+Pokemon = SKUNTANK,83
+#-------------------------------
+[DH,Elvedil]
+LoseText = ¡Por los Illidari!
+Pokemon = SWELLOW,83
+Pokemon = TOXAPEX,83
+#-------------------------------
+[DH,Kiralas]
+LoseText = ¡Por los Illidari!
+Pokemon = TOXTRICITY,83
+Pokemon = UMBREON,83
+#-------------------------------
+[DH,Nazael]
+LoseText = ¡Por los Illidari!
+Pokemon = WEEZING,83
+Pokemon = XATU,83
+#-------------------------------
+[DH,Surio]
+LoseText = ¡Por los Illidari!
+Pokemon = ZOROARK,83
+Pokemon = YANMEGA,83
+#-------------------------------
+[DH,Kalaine]
+LoseText = ¡Por los Illidari!
+Pokemon = CRAWDAUNT,83
+Pokemon = CROBAT,83
+#-------------------------------
+[DH,Thoralas]
+LoseText = ¡Por los Illidari!
+Pokemon = DRIFBLIM,83
+Pokemon = FEAROW,83
+#-------------------------------
+[DH,Brego]
+LoseText = ¡Por los Illidari!
+Pokemon = FROSLASS,83
+Pokemon = GLISCOR,83
+#-------------------------------
+[DH,Avandros]
+LoseText = ¡Por los Illidari!
+Pokemon = BISHARP,83
+Pokemon = BISHARP,83
+Pokemon = BISHARP,83
+Pokemon = BISHARP,83
+#-------------------------------
+[DH,Faidan]
+LoseText = ¡Por los Illidari!
+Pokemon = BISHARP,83
+Pokemon = BISHARP,83
+Pokemon = BISHARP,83
+Pokemon = BISHARP,83
+#==============================
+# TEMPLO OSCURO
+#==============================
+[DH,Naralesh]
+LoseText = ¡Por los Illidari!
+Pokemon = ABSOL,85
+Pokemon = ESPEON,85
+#-------------------------------
+[DH,Larion]
+LoseText = ¡Por los Illidari!
+Pokemon = BANETTE,85
+Pokemon = BISHARP,85
+#-------------------------------
+[DH,Brine]
+LoseText = ¡Por los Illidari!
+Pokemon = BUIZEL,85
+Pokemon = CACTURNE,85
+#-------------------------------
+[DH,Hairun]
+LoseText = ¡Por los Illidari!
+Pokemon = CHANDELURE,85
+Pokemon = COFAGRIGUS,85
+#-------------------------------
+[DH,Xeron]
+LoseText = ¡Por los Illidari!
+Pokemon = TOXICROAK,85
+Pokemon = DECIDUEYE,85
+#-------------------------------
+[DH,Vallion]
+LoseText = ¡Por los Illidari!
+Pokemon = DRAPION,85
+Pokemon = DUSKNOIR,85
+#-------------------------------
+[NAGA,Iris]
+LoseText = ¡Por la Reina!
+Pokemon = EMPOLEON,85
+Pokemon = GOLDUCK,85
+#-------------------------------
+[NAGA,Steana]
+LoseText = ¡Por la Reina!
+Pokemon = VAPOREON,85
+Pokemon = LAPRAS,85
+#-------------------------------
+[VASHJ,Vashj]
+LoseText = Lord Illidan... te he... fallado...
+Items = MEGARING
+Pokemon = BLASTOISE,86
+    Moves = HYDROPUMP,SCALD,POWERGEM,ICEBEAM
+Pokemon = GRENINJA,86
+    Moves = WATERSHURIKEN,DARKPULSE,DOUBLETEAM,TOXICSPIKES
+Pokemon = GOLISOPOD,86
+    Moves = LIQUIDATION,XSCISSOR,DRILLRUN,LEECHLIFE
+Pokemon = KINGDRA,86
+    Moves = RAINDANCE,DRACOMETEOR,SURF,DRAGONPULSE
+Pokemon = KYOGRE,87
+    Moves = ORIGINPULSE,THUNDER,CALMMIND,BLIZZARD
+Pokemon = SWAMPERT,87
+    Moves = WATERFALL,EARTHQUAKE,KNOCKOFF,ICEPUNCH
+    Item = SWAMPERTITE
+#-------------------------------
+[KAELTHAS,Kael'thas]
+LoseText = ¿Cómo he perdido con semejante poder?
+Items = MEGARING
+Pokemon = DELPHOX,86
+    Moves = MYSTICALFIRE,WILLOWISP,PSYCHIC,SHADOWBALL
+Pokemon = SOLROCK,86
+    Moves = MORNINGSUN,STONEEDGE,ZENHEADBUTT,HYPNOSIS
+Pokemon = MISMAGIUS,86
+    Moves = CONFUSERAY,DAZZLINGGLEAM,SHADOWBALL,FUTURESIGHT
+Pokemon = ALAKAZAM,86
+    Moves = PSYSTRIKE,PSYCHIC,DARKPULSE,SUBSTITUTE
+Pokemon = DARKRAI,87
+    Moves = DARKVOID,DREAMEATER,DARKPULSE,TAUNT
+Pokemon = MEDICHAM,87
+    Moves = PSYCHOCUT,HIGHJUMPKICK,DRAINPUNCH,THUNDERPUNCH
+    Item = MEDICHAMITE
+#-------------------------------
+[ILLIDAN,Illidan Tempestira]
+LoseText = Está bien, me rindo.
+Items = MEGARING
+Pokemon = CROBAT,87
+    Moves = BRAVEBIRD,CROSSPOISON,UTURN,CONFUSERAY
+Pokemon = WEAVILE,87
+    Moves = KNOCKOFF,ICESHARD,SWORDSDANCE,LOWKICK
+Pokemon = ABSOL,87
+    Moves = KNOCKOFF,PLAYROUGH,SUCKERPUNCH,SWORDSDANCE
+Pokemon = HYDREIGON,88
+    Moves = DARKPULSE,DRACOMETEOR,FLAMETHROWER,FOCUSBLAST
+Pokemon = YVELTAL,88
+    Moves = OBLIVIONWING,DARKPULSE,HEATWAVE,ROOST
+Pokemon = RAYQUAZA,88
+    Moves = DRAGONASCENT,EXTREMESPEED,DRAGONCLAW,THUNDER
+#==============================
+# NAGRAND
+#==============================
+[NAGA,Seth]
+LoseText = Maldición.
+Pokemon = GRENINJA,78
+Pokemon = TOXICROAK,78
+#-------------------------------
+[NAGA,Alyss]
+LoseText = Maldición.
+Pokemon = GASTRODON,78
+Pokemon = SEVIPER,78
+#-------------------------------
+[NAGA,Asura]
+LoseText = Maldición.
+Pokemon = GOLDUCK,78
+Pokemon = TENTACRUEL,78
+#-------------------------------
+[NAGA,Vashira]
+LoseText = Maldición.
+Pokemon = SLOWBRO,78
+Pokemon = KINGDRA,78
+#-------------------------------
+[NAGA,Azsuna]
+LoseText = Maldición.
+Pokemon = POLITOED,78
+Pokemon = VAPOREON,78
+#-------------------------------
+[NAGA,Zanjir]
+LoseText = Maldición.
+Pokemon = HUNTAIL,78
+Pokemon = GOREBYSS,78
+#-------------------------------
+[NAGA,Nebula]
+LoseText = Maldición.
+Pokemon = JELLICENT,78
+Pokemon = STARMIE,78
+#-------------------------------

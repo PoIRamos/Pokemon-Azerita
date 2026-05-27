@@ -4768,6 +4768,86 @@ Flags = Fling_90
 Move = LANDSWRATH
 Description = Acumula energía de la corteza terrestre y la concentra contra los oponentes, dañándolos.
 #-------------------------------
+[TM108]
+Name = MT108
+NamePlural = MT108
+Pocket = 4
+Price = 2000
+FieldUse = TR
+Flags = Fling_90
+Move = FIREPUNCH
+Description = Puñetazo ardiente. Puede quemar.
+#-------------------------------
+[TM109]
+Name = MT109
+NamePlural = MT109
+Pocket = 4
+Price = 2000
+FieldUse = TR
+Flags = Fling_90
+Move = THUNDERPUNCH
+Description = Puñetazo eléctrico. Puede paralizar.
+#-------------------------------
+[TM110]
+Name = MT110
+NamePlural = MT110
+Pocket = 4
+Price = 2000
+FieldUse = TR
+Flags = Fling_90
+Move = ICEPUNCH
+Description = Puñetazo helado. Puede congelar.
+#-------------------------------
+[TM111]
+Name = MT111
+NamePlural = MT111
+Pocket = 4
+Price = 2000
+FieldUse = TR
+Flags = Fling_90
+Move = POWERUPPUNCH
+Description = Cada vez que golpea a un oponente se endurecen sus puños. Si acierta al objetivo, el Ataque del usuario aumenta.
+#-------------------------------
+[TM112]
+Name = MT112
+NamePlural = MT112
+Pocket = 4
+Price = 2000
+FieldUse = TR
+Flags = Fling_90
+Move = BARRIER
+Description = Crea una barrera para aumentar mucho la Defensa.
+#-------------------------------
+[TM113]
+Name = MT113
+NamePlural = MT113
+Pocket = 4
+Price = 2000
+FieldUse = TR
+Flags = Fling_90
+Move = LIGHTSCREEN
+Description = Pared de luz que reduce durante cinco turnos el daño producido por los ataques especiales.
+#-------------------------------
+[TM114]
+Name = MT114
+NamePlural = MT114
+Pocket = 4
+Price = 2000
+FieldUse = TR
+Flags = Fling_90
+Move = TAILWIND
+Description = Crea un fuerte remolino que aumenta la Velocidad de los Pokémon de tu equipo durante cuatro turnos.
+#-------------------------------
+[TM115]
+Name = MT115
+NamePlural = MT115
+Pocket = 4
+Price = 2000
+FieldUse = TR
+Flags = Fling_90
+Move = TRICKROOM
+Description = Se crea un espacio extraño en el que los Pokémon lentos se mueven primero durante cinco turnos.
+#-------------------------------
 [HM01]
 Name = MO01
 NamePlural = MO01
@@ -6192,13 +6272,13 @@ Price = 0
 Flags = KeyItem
 Description = Sello del Barón Geddon, debe colocarse en el blasón del Monte Piedra Negra para abrir el acceso a la cumbre.
 #-------------------------------
-[LLAVES_JONAN]
-Name = Llaves del Jonan
-NamePlural = Llaves del Jonan
+[LLAVES_RENO]
+Name = Llaves de furgoneta
+NamePlural = Llaves de furgoneta
 Pocket = 8
 Price = 0
 Flags = KeyItem
-Description = Llaves del buga del Jonan. Huele a Red Bull y sólo tiene DVDs de DJ Tiesto.
+Description = Llaves de la furgoneta de la Liga de Exploradores.
 #-------------------------------
 [SANGRE_LOA_ARAÑA]
 Name = Sangre del Loa araña
@@ -6320,3 +6400,18 @@ Price = 0
 Flags = KeyItem
 Description = Yelmo del Rey Exánime que muestra que has derrotado a Sistine y convertido en campeón de la Liga.
 #-------------------------------
+[GOREHOWL]
+Name = Aullavísceras
+NamePlural = Aullavísceras
+Pocket = 1
+Price = 20000
+Flags = Fling_10
+Description = La legendaria hacha de Grito Infernal. Aumenta el ataque y la velocidad del portador en un 30%.
+#-------------------------------
+[WARGLAIVES]
+Name = Gujas gemelas
+NamePlural = Gujas gemelas
+Pocket = 1
+Price = 20000
+Flags = Fling_10
+Description = Las legendarias Gujas de Azzinoth. Aumenta el ataque especial y la velocidad del portador en un 30%.

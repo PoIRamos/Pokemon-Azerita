@@ -12,6 +12,18 @@ Flags = Contact,CanProtect,CanMirrorMove
 FunctionCode = TriplePowerIfTargetFrozen
 Description = Golpe de hielo asolador. Triplica el daño si el objetivo está congelado destrozando el hielo que lo atrapa.
 #-------------------------------
+[JADEBREATH]
+Name = Aliento de Jade
+Type = FAIRY
+Category = Special
+Power = 60
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+Flags = CanProtect,CanMirrorMove
+FunctionCode = SwitchOutUserDamagingMoveHealReplacement
+Description = Ataca con una niebla y regresa al equipo. Cura al pokemon que entra a sustituirlo.
+#-------------------------------
 [MEGAHORN]
 Name = Megacuerno
 Type = BUG
