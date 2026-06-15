@@ -84,7 +84,7 @@ Pokedex = Sus bigotes son órganos olfativos muy agudos que le permiten localiza
 Generation = 7
 Flags = InheritFormWithEverStone
 WildItemUncommon = PECHABERRY
-Evolutions = RATICATE,LevelNight,20
+Evolutions = RATICATE,Item,DUSKSTONE
 #-------------------------------
 [RATICATE,1]
 FormName = Alolan
@@ -214,7 +214,7 @@ Color = Blue
 Pokedex = Posee una gran inteligencia y es muy orgulloso. Su fama de rebelde no ha hecho sino granjearle popularidad entre algunos Entrenadores.
 Generation = 7
 Flags = InheritFormWithEverStone
-Evolutions = PERSIAN,Happiness,
+Evolutions = PERSIAN,Item,MOONSTONE
 #-------------------------------
 [MEOWTH,2]
 FormName = Galarian
@@ -381,7 +381,7 @@ Pokedex = Los Farfetch'd de Galar han adoptado esta forma de tanto blandir los p
 Generation = 8
 Flags = InheritFormWithEverStone
 WildItemCommon = LEEK
-Evolutions = SIRFETCHD,BattleDealCriticalHit,3
+Evolutions = SIRFETCHD,Level,30
 #-------------------------------
 [GRIMER,1]
 FormName = Alolan
@@ -437,7 +437,7 @@ Generation = 7
 #-------------------------------
 [CUBONE,1]
 Generation = 7
-Evolutions = MAROWAK,LevelNight,28
+Evolutions = MAROWAK,Item,DUSKSTONE
 #-------------------------------
 [MAROWAK,1]
 FormName = Alolan
@@ -603,7 +603,7 @@ Generation = 6
 [PICHU,2]
 FormName = Spiky-Eared
 Generation = 4
-Evolutions = PIKACHU,None,
+Evolutions = PIKACHU,Level,16
 #-------------------------------
 [AMPHAROS,1]
 FormName = Mega Ampharos
@@ -1391,7 +1391,7 @@ TutorMoves = ALLYSWITCH,ATTRACT,BRUTALSWING,CALMMIND,DARKPULSE,EARTHPOWER,EARTHQ
 Pokedex = Se dice que este Pokémon no es sino un alma lastrada por un intenso rencor, atraída por una antigua tabla de arcilla.
 Generation = 8
 Flags = InheritFormWithEverStone
-Evolutions = RUNERIGUS,EventAfterDamageTaken,2
+Evolutions = RUNERIGUS,Level,30
 #-------------------------------
 [DEERLING,1]
 FormName = Summer Form
@@ -1619,7 +1619,7 @@ BaseExp = 243
 Moves = 1,TACKLE,1,VINEWHIP,1,FAIRYWIND,6,FAIRYWIND,10,LUCKYCHANT,15,RAZORLEAF,20,WISH,25,MAGICALLEAF,27,GRASSYTERRAIN,33,PETALBLIZZARD,38,AROMATHERAPY,43,MISTYTERRAIN,46,MOONBLAST,50,LIGHTOFRUIN,51,PETALDANCE,58,SOLARBEAM
 EggGroups = Undiscovered
 Pokedex = Hoy en día, la flor que lleva ya no se ve en la naturaleza. Se cree que alberga un temible poder.
-Evolutions = FLORGES,None,
+Evolutions = FLORGES,Item,MOONSTONE
 #-------------------------------
 [FLORGES,1]
 FormName = Yellow Flower
@@ -1805,7 +1805,7 @@ Pokedex = Forma que toma Oricorio al libar Néctar Violeta. Hay bailarines que s
 Abilities = OWNTEMPO
 HiddenAbilities = OWNTEMPO
 Flags = InheritFormFromMother
-Evolutions = LYCANROC,LevelEvening,25
+Evolutions = LYCANROC,Level,25
 #-------------------------------
 [LYCANROC,1]
 FormName = Midnight Form

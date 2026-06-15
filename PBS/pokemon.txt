@@ -2225,7 +2225,7 @@ Category = Pato Salvaje
 Pokedex = Lleva siempre una especie de palo de algún tipo de planta y dicen que éste puede ser mejor o peor. Tiene fama de haber luchado contra otros Pokémon por algún palo.
 Generation = 1
 WildItemUncommon = LEEK
-Evolutions = SIRFETCHD,None,
+Evolutions = SIRFETCHD,Level,36
 #-------------------------------
 [DODUO]
 Name = Doduo
@@ -2883,7 +2883,7 @@ Category = Lametazo
 Pokedex = Cada vez que se encuentra con algo que no conoce, le da un lametazo. Así memoriza las cosas: por la textura y el sabor. No soporta los sabores ácidos.
 Generation = 1
 WildItemUncommon = LAGGINGTAIL
-Evolutions = LICKILICKY,HasMove,ROLLOUT
+Evolutions = LICKILICKY,Level,36
 #-------------------------------
 [KOFFING]
 Name = Koffing
@@ -3018,7 +3018,7 @@ Category = Huevo
 Pokedex = Pone a diario huevos con un enorme valor nutritivo. Están tan ricos que hasta quien no tenga hambre se los comerá en un abrir y cerrar de ojos.
 Generation = 1
 WildItemCommon = LUCKYPUNCH
-Evolutions = BLISSEY,Happiness,
+Evolutions = BLISSEY,Level,36
 #-------------------------------
 [TANGELA]
 Name = Tangela
@@ -3262,7 +3262,7 @@ Habitat = Urban
 Category = Barrera
 Pokedex = Domina la pantomima. Con sus gestos puede convencer a sus espectadores de la existencia de algo invisible y, cuando se lo creen, las ilusiones se hacen realidad.
 Generation = 1
-Evolutions = MRRIME,None,
+Evolutions = MRRIME,Item,ICESTONE
 #-------------------------------
 [SCYTHER]
 Name = Scyther
@@ -3552,7 +3552,7 @@ Habitat = Urban
 Category = Evolución
 Pokedex = Su configuración genética le permite mutar y adaptarse enseguida a cualquier medio. Evoluciona gracias a las radiaciones emitidas por varias piedras.
 Generation = 1
-Evolutions = VAPOREON,Item,WATERSTONE,JOLTEON,Item,THUNDERSTONE,FLAREON,Item,FIRESTONE,LEAFEON,LocationFlag,MossRock,LEAFEON,Item,LEAFSTONE,GLACEON,LocationFlag,IceRock,GLACEON,Item,ICESTONE,SYLVEON,HappinessMoveType,FAIRY,ESPEON,HappinessDay,,UMBREON,HappinessNight,
+Evolutions = VAPOREON,Item,WATERSTONE,JOLTEON,Item,THUNDERSTONE,FLAREON,Item,FIRESTONE,LEAFEON,LocationFlag,MossRock,LEAFEON,Item,LEAFSTONE,GLACEON,LocationFlag,IceRock,GLACEON,Item,ICESTONE,SYLVEON,Item,MOONSTONE,ESPEON,Item,DAWNSTONE,UMBREON,Item,DUSKSTONE
 #-------------------------------
 [VAPOREON]
 Name = Vaporeon
@@ -4568,7 +4568,7 @@ Habitat = Forest
 Category = Ratoncito
 Pokedex = Sigue sin poder contener o retener electricidad. Cuando se asusta, descarga energía de forma accidental. Con todo, a medida que pasa el tiempo va mejorando.
 Generation = 2
-Evolutions = PIKACHU,Happiness,
+Evolutions = PIKACHU,Level,16
 #-------------------------------
 [CLEFFA]
 Name = Cleffa
@@ -4596,7 +4596,7 @@ Category = Estrellada
 Pokedex = Cuando hay lluvia de estrellas, se les ve danzando en círculos durante la noche. Sólo paran de día; entonces, dejan de bailar y beben el rocío de la mañana.
 Generation = 2
 WildItemUncommon = MOONSTONE
-Evolutions = CLEFAIRY,Happiness,
+Evolutions = CLEFAIRY,Level,16
 #-------------------------------
 [IGGLYBUFF]
 Name = Igglybuff
@@ -4623,7 +4623,7 @@ Habitat = Grassland
 Category = Globo
 Pokedex = Es suave, flexible y capaz de botar. Cuando canta sin parar con todas sus fuerzas, se va poniendo de un color rosa cada vez más intenso.
 Generation = 2
-Evolutions = JIGGLYPUFF,Happiness,
+Evolutions = JIGGLYPUFF,Level,16
 #-------------------------------
 [TOGEPI]
 Name = Togepi
@@ -4650,7 +4650,7 @@ Habitat = Forest
 Category = Bolaclavos
 Pokedex = Usa la compasión y la alegría que emanan de la gente y de los Pokémon como energía. Almacena sentimientos positivos en su interior y después los comparte con otros.
 Generation = 2
-Evolutions = TOGETIC,Happiness,
+Evolutions = TOGETIC,Level,20
 #-------------------------------
 [TOGETIC]
 Name = Togetic
@@ -5041,7 +5041,7 @@ Habitat = Forest
 Category = Cola Larga
 Pokedex = Su cola termina en una especie de mano a la que puede dar muy buen uso. Pero, como se ha acostumbrado a usarla mucho, las de verdad se le han vuelto algo torpes.
 Generation = 2
-Evolutions = AMBIPOM,HasMove,DOUBLEHIT
+Evolutions = AMBIPOM,Level,22
 #-------------------------------
 [SUNKERN]
 Name = Sunkern
@@ -5121,7 +5121,7 @@ Category = Ala Clara
 Pokedex = Tiene un ángulo de visión de 360 grados. Es capaz de pararse de repente y cambiar de dirección mientras vuela, lo que le resulta útil para dar caza a sus presas.
 Generation = 2
 WildItemUncommon = WIDELENS
-Evolutions = YANMEGA,HasMove,ANCIENTPOWER
+Evolutions = YANMEGA,Level,30
 #-------------------------------
 [WOOPER]
 Name = Wooper
@@ -5483,7 +5483,7 @@ Habitat = Mountain
 Category = Escorpiala
 Pokedex = Planea por el aire sin hacer ruido. Se agarra a la cara del rival con las garras traseras y las pinzas delanteras, inyectándole veneno por el aguijón.
 Generation = 2
-Evolutions = GLISCOR,NightHoldItem,RAZORFANG
+Evolutions = GLISCOR,Item,RAZORFANG
 #-------------------------------
 [STEELIX]
 Name = Steelix
@@ -5696,7 +5696,7 @@ Category = Garra Filo
 Pokedex = Trepa a los árboles clavando en la corteza sus garras curvadas. Busca nidos desprovistos de vigilancia paterna para robar huevos y comérselos.
 Generation = 2
 WildItemUncommon = QUICKCLAW
-Evolutions = WEAVILE,NightHoldItem,RAZORCLAW
+Evolutions = WEAVILE,Item,RAZORCLAW
 #-------------------------------
 [TEDDIURSA]
 Name = Teddiursa
@@ -5881,7 +5881,7 @@ Category = Coral
 Pokedex = Corsola vive en las cálidas aguas de los mares del Sur. Cuando hay contaminación, las bellas ramas coralinas que le cubren se decoloran y se caen a pedazos.
 Generation = 2
 WildItemUncommon = LUMINOUSMOSS
-Evolutions = CURSOLA,None,
+Evolutions = CURSOLA,Item,DUSKSTONE
 #-------------------------------
 [REMORAID]
 Name = Remoraid
@@ -6985,7 +6985,7 @@ Pokedex = Es tremendamente rápido si corre en línea recta. Cuando detecta a su
 Generation = 3
 WildItemCommon = POTION
 WildItemUncommon = MAXREVIVE
-Evolutions = OBSTAGOON,None,
+Evolutions = OBSTAGOON,Level,36
 #-------------------------------
 [WURMPLE]
 Name = Wurmple
@@ -7883,7 +7883,7 @@ Habitat = WatersEdge
 Category = A Topos
 Pokedex = Su cola es una especie de pelota de goma que bota y contiene los nutrientes que necesita. En días soleados, se reúne con otros en la orilla para jugar chapoteando.
 Generation = 3
-Evolutions = MARILL,Happiness,
+Evolutions = MARILL,Level,16
 #-------------------------------
 [NOSEPASS]
 Name = Nosepass
@@ -10708,7 +10708,7 @@ Category = Brote
 Pokedex = En invierno cierra su capullo para protegerse del frío. En primavera el capullo se abre y esparce polen.
 Generation = 4
 WildItemUncommon = POISONBARB
-Evolutions = ROSELIA,HappinessDay,
+Evolutions = ROSELIA,Level,14
 #-------------------------------
 [ROSERADE]
 Name = Roserade
@@ -11244,7 +11244,7 @@ Shape = BipedalTail
 Category = Conejo
 Pokedex = Ataca a sus enemigos con un golpe rápido de sus orejas. Sus picotazos son muy dolorosos.
 Generation = 4
-Evolutions = LOPUNNY,Happiness,
+Evolutions = LOPUNNY,Level,16
 #-------------------------------
 [LOPUNNY]
 Name = Lopunny
@@ -11392,7 +11392,7 @@ Category = Campana
 Pokedex = Emite chillidos al agitar la esfera de su garganta. Se mueve con enérgicos saltos.
 Generation = 4
 WildItemUncommon = CLEANSETAG
-Evolutions = CHIMECHO,HappinessNight,
+Evolutions = CHIMECHO,Level,18
 #-------------------------------
 [STUNKY]
 Name = Stunky
@@ -11520,7 +11520,7 @@ Shape = HeadLegs
 Category = Bonsái
 Pokedex = Parece que siempre está llorando, pero en realidad está eliminando el exceso de fluidos corporales.
 Generation = 4
-Evolutions = SUDOWOODO,HasMove,MIMIC
+Evolutions = SUDOWOODO,Level,20
 #-------------------------------
 [MIMEJR]
 Name = Mime Jr.
@@ -11547,7 +11547,7 @@ Shape = Bipedal
 Category = Mimo
 Pokedex = Suele imitar a sus enemigos. Cuando lo hace, su rival no puede apartar los ojos de él.
 Generation = 4
-Evolutions = MRMIME,HasMove,MIMIC
+Evolutions = MRMIME,Level,20
 #-------------------------------
 [HAPPINY]
 Name = Happiny
@@ -11575,7 +11575,7 @@ Category = Casita
 Pokedex = Le encantan las cosas blancas y redondas. Imita a Chansey llevando una roca en forma de huevo.
 Generation = 4
 WildItemCommon = OVALSTONE
-Evolutions = CHANSEY,DayHoldItem,OVALSTONE
+Evolutions = CHANSEY,Item,OVALSTONE
 #-------------------------------
 [CHATOT]
 Name = Chatot
@@ -11731,7 +11731,7 @@ Generation = 4
 WildItemCommon = LEFTOVERS
 WildItemUncommon = LEFTOVERS
 WildItemRare = LEFTOVERS
-Evolutions = SNORLAX,Happiness,
+Evolutions = SNORLAX,Level,40
 #-------------------------------
 [RIOLU]
 Name = Riolu
@@ -11757,7 +11757,7 @@ Shape = BipedalTail
 Category = Emanación
 Pokedex = Su aura se intensifica para alertar a otros cuando está triste o tiene miedo.
 Generation = 4
-Evolutions = LUCARIO,HappinessDay,
+Evolutions = LUCARIO,Level,20
 #-------------------------------
 [LUCARIO]
 Name = Lucario
@@ -12036,7 +12036,7 @@ Shape = Winged
 Category = Milano
 Pokedex = Vive en las profundidades marinas. Atrae a sus presas con parpadeos del dibujo de sus cuatro aletas.
 Generation = 4
-Evolutions = MANTINE,HasInParty,REMORAID
+Evolutions = MANTINE,Level,24
 #-------------------------------
 [SNOVER]
 Name = Snover
@@ -13739,7 +13739,7 @@ Shape = Winged
 Category = Murciélago
 Pokedex = Este peculiar Pókemon pega sus fosas nasales a la pared para dormir y, cuando las retira, deja un corazón marcado.
 Generation = 5
-Evolutions = SWOOBAT,Happiness,
+Evolutions = SWOOBAT,Level,20
 #-------------------------------
 [SWOOBAT]
 Name = Swoobat
@@ -14093,7 +14093,7 @@ Category = Arropado
 Pokedex = Se guarece del frío envolviéndose en hojas. se desplaza por el bosque comiendo a su paso hojas caídas.
 Generation = 5
 WildItemUncommon = MENTALHERB
-Evolutions = LEAVANNY,Happiness,
+Evolutions = LEAVANNY,Level,16
 #-------------------------------
 [LEAVANNY]
 Name = Leavanny
@@ -14638,7 +14638,7 @@ Category = Espíritu
 Pokedex = Nació del alma de un humano enterrado hace milenios. Aún conserva recuerdos del pasado.
 Generation = 5
 WildItemUncommon = SPELLTAG
-Evolutions = COFAGRIGUS,Level,34,RUNERIGUS,None,
+Evolutions = COFAGRIGUS,Level,34,RUNERIGUS,Item,DUSKSTONE
 #-------------------------------
 [COFAGRIGUS]
 Name = Cofagrigus
@@ -15292,7 +15292,7 @@ Shape = Bipedal
 Category = Bocado
 Pokedex = Cuando presiente el peligro, expulsa por la boca ácido que lanza a sus enemigos. Siempre va tras los Shelmet.
 Generation = 5
-Evolutions = ESCAVALIER,TradeSpecies,SHELMET
+Evolutions = ESCAVALIER,Level,20
 #-------------------------------
 [ESCAVALIER]
 Name = Escavalier
@@ -15991,7 +15991,7 @@ Shape = Head
 Category = Caracol
 Pokedex = Evoluciona si entra en contacto con energía eléctrica junto a Karrablast. Aún no se ha esclarecido el porqué.
 Generation = 5
-Evolutions = ACCELGOR,TradeSpecies,KARRABLAST
+Evolutions = ACCELGOR,Level,20
 #-------------------------------
 [ACCELGOR]
 Name = Accelgor
@@ -17439,7 +17439,7 @@ Category = Juguetón
 Pokedex = Se esfuerza mucho para que el enemigo no lo menosprecie, pero su mirada no intimida demasiado. Se caracteriza por mascar siempre una hoja.
 Generation = 6
 WildItemUncommon = MENTALHERB
-Evolutions = PANGORO,LevelDarkInParty,32
+Evolutions = PANGORO,Level,32
 #-------------------------------
 [PANGORO]
 Name = Pangoro
@@ -18037,7 +18037,7 @@ Shape = Quadruped
 Category = Tundra
 Pokedex = Pokémon que ha sido regenerado a partir de un trozo de su antiguo cuerpo, que quedó congelado hace unos 100 millones de años.
 Generation = 6
-Evolutions = AURORUS,LevelNight,39
+Evolutions = AURORUS,Level,39
 #-------------------------------
 [AURORUS]
 Name = Aurorus
@@ -18935,7 +18935,7 @@ Category = Patrulla
 Pokedex = Deambula todo el día en busca de alimento. Al anochecer, exhausto, se deja caer en cualquier lugar y se queda dormido.
 Generation = 7
 WildItemUncommon = PECHABERRY
-Evolutions = GUMSHOOS,LevelDay,20
+Evolutions = GUMSHOOS,Level,20
 #-------------------------------
 [GUMSHOOS]
 Name = Gumshoos
@@ -19423,7 +19423,7 @@ Category = Filo Hoja
 Pokedex = Mientras que de día duerme tranquilamente a la luz del sol, al caer la noche busca un sitio más seguro para dormir.
 Generation = 7
 WildItemUncommon = MIRACLESEED
-Evolutions = LURANTIS,LevelDay,34
+Evolutions = LURANTIS,Level,34
 #-------------------------------
 [LURANTIS]
 Name = Lurantis
@@ -19657,7 +19657,7 @@ Category = Fruto
 Pokedex = El cáliz de su cabeza se ha desarrollado y le protege todo el cuerpo. Es tan duro que no le importa que lo picoteen los Pokémon pájaro.
 Generation = 7
 WildItemUncommon = GRASSYSEED
-Evolutions = TSAREENA,HasMove,STOMP
+Evolutions = TSAREENA,Level,30
 #-------------------------------
 [TSAREENA]
 Name = Tsareena
@@ -19907,7 +19907,7 @@ Shape = Quadruped
 Category = Multigénico
 Pokedex = La pesada máscara le impide liberar toda su fuerza, que se cree que es extraordinaria.
 Generation = 7
-Evolutions = SILVALLY,Happiness,
+Evolutions = SILVALLY,Level,30
 #-------------------------------
 [SILVALLY]
 Name = Silvally
@@ -20353,7 +20353,7 @@ Shape = Head
 Category = Protostrella
 Pokedex = Permanece inmóvil, como si estuviera muerto, aunque al tocarlo se percibe un ligero calor. Antaño se le llamaba Crisálida de las Estrellas.
 Generation = 7
-Evolutions = SOLGALEO,LevelDay,53,LUNALA,LevelNight,53
+Evolutions = SOLGALEO,Item,DAWNSTONE,LUNALA,Item,DUSKSTONE
 #-------------------------------
 [SOLGALEO]
 Name = Solgaleo
@@ -20661,7 +20661,7 @@ Category = Pin Veneno
 Pokedex = En su mundo, este Ultraente se considera tan entrañable como para ser elegido compañero de viaje.
 Generation = 7
 Flags = UltraBeast
-Evolutions = NAGANADEL,HasMove,DRAGONPULSE
+Evolutions = NAGANADEL,Level,30
 #-------------------------------
 [NAGANADEL]
 Name = Naganadel
@@ -22287,7 +22287,7 @@ Shape = Head
 Category = Nata
 Pokedex = Su cremoso cuerpo surgió a partir de la unión de partículas odoríferas de dulces aromas presentes en el aire.
 Generation = 8
-Evolutions = ALCREMIE,HoldItem,STRAWBERRYSWEET,ALCREMIE,HoldItem,BERRYSWEET,ALCREMIE,HoldItem,LOVESWEET,ALCREMIE,HoldItem,STARSWEET,ALCREMIE,HoldItem,CLOVERSWEET,ALCREMIE,HoldItem,FLOWERSWEET,ALCREMIE,HoldItem,RIBBONSWEET
+Evolutions = ALCREMIE,Level,30
 #-------------------------------
 [ALCREMIE]
 Name = Alcremie
@@ -22388,7 +22388,7 @@ Category = Gusano
 Pokedex = Teje un hilo gélido que le permite aferrarse a las ramas y simula ser un carámbano mientras duerme.
 Generation = 8
 WildItemUncommon = SNOWBALL
-Evolutions = FROSMOTH,HappinessNight,
+Evolutions = FROSMOTH,Level,32
 #-------------------------------
 [FROSMOTH]
 Name = Frosmoth
@@ -22861,7 +22861,7 @@ Shape = BipedalTail
 Category = Kung-fu
 Pokedex = Al tirar de los mechones blancos de la cabeza, acrecienta su espíritu luchador y empieza a acumular fuerza en el órgano de su bajo vientre.
 Generation = 8
-Evolutions = URSHIFU,Event,1
+Evolutions = URSHIFU,Level,50
 #-------------------------------
 [URSHIFU]
 Name = Urshifu
