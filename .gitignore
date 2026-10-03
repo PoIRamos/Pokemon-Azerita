@@ -1,0 +1,55 @@
+# ==========================================
+# RPG Maker XP / desarrollo
+# ==========================================
+
+Game.rxproj
+Game_original.exe
+
+# Herramientas de desarrollo
+animmaker.exe
+animmaker.txt
+extendtext.exe
+extendtext.txt
+townmapgen.html
+Essential Docs Wiki.url
+
+# Imágenes auxiliares de edición
+knownpoint.bmp
+selpoint.bmp
+
+# ==========================================
+# Archivos de desarrollo de Essentials
+# ==========================================
+
+scripts_extract.rb
+scripts_combine.rb
+
+# ==========================================
+# Partidas guardadas
+# ==========================================
+
+*.rxdata
+*.rxsave
+
+# ==========================================
+# Logs / temporales / backups
+# ==========================================
+
+*.log
+*.tmp
+*.bak
+
+# ==========================================
+# Editores
+# ==========================================
+
+.vscode/
+.idea/
+*.code-workspace
+
+# ==========================================
+# Windows
+# ==========================================
+
+Thumbs.db
+desktop.ini

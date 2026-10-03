@@ -1,4 +1,4 @@
-﻿# Consulta la documentación en la wiki para aprender a editar este archivo.
+﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
 [POKEMONTRAINER_Red]
 Name = Entrenador Pokémon
@@ -350,90 +350,6 @@ BaseMoney = 60
 SkillLevel = 32
 IntroBGM = Trainers Eyes Meet
 #-------------------------------
-[LEADER_Brock]
-Name = Líder de Gimnasio
-Gender = Male
-BaseMoney = 100
-BattleBGM = Battle Gym Leader
-VictoryBGM = Battle victory leader
-#-------------------------------
-[LEADER_Misty]
-Name = Líder de Gimnasio
-Gender = Female
-BaseMoney = 100
-BattleBGM = Battle Gym Leader
-VictoryBGM = Battle victory leader
-#-------------------------------
-[LEADER_Surge]
-Name = Líder de Gimnasio
-Gender = Male
-BaseMoney = 100
-BattleBGM = Battle Gym Leader
-VictoryBGM = Battle victory leader
-#-------------------------------
-[LEADER_Erika]
-Name = Líder de Gimnasio
-Gender = Female
-BaseMoney = 100
-BattleBGM = Battle Gym Leader
-VictoryBGM = Battle victory leader
-#-------------------------------
-[LEADER_Koga]
-Name = Líder de Gimnasio
-Gender = Male
-BaseMoney = 100
-BattleBGM = Battle Gym Leader
-VictoryBGM = Battle victory leader
-#-------------------------------
-[LEADER_Sabrina]
-Name = Líder de Gimnasio
-Gender = Female
-BaseMoney = 100
-BattleBGM = Battle Gym Leader
-VictoryBGM = Battle victory leader
-#-------------------------------
-[LEADER_Blaine]
-Name = Líder de Gimnasio
-Gender = Male
-BaseMoney = 100
-BattleBGM = Battle Gym Leader
-VictoryBGM = Battle victory leader
-#-------------------------------
-[LEADER_Giovanni]
-Name = Líder de Gimnasio
-Gender = Male
-BaseMoney = 100
-BattleBGM = Battle Gym Leader
-VictoryBGM = Battle victory leader
-#-------------------------------
-[ELITEFOUR_Lorelei]
-Name = Alto Mando
-Gender = Female
-BaseMoney = 100
-BattleBGM = Battle Elite
-VictoryBGM = Battle victory leader
-#-------------------------------
-[ELITEFOUR_Bruno]
-Name = Alto Mando
-Gender = Male
-BaseMoney = 100
-BattleBGM = Battle Elite
-VictoryBGM = Battle victory leader
-#-------------------------------
-[ELITEFOUR_Agatha]
-Name = Alto Mando
-Gender = Female
-BaseMoney = 100
-BattleBGM = Battle Elite
-VictoryBGM = Battle victory leader
-#-------------------------------
-[ELITEFOUR_Lance]
-Name = Alto Mando
-Gender = Male
-BaseMoney = 100
-BattleBGM = Battle Elite
-VictoryBGM = Battle victory leader
-#-------------------------------
 [MOIRA]
 Name = Princesa Hierro Negro
 Gender = Female
@@ -546,35 +462,35 @@ IntroBGM = Trainers Eyes Meet
 Name = Alto Mando
 Gender = Male
 BaseMoney = 100
-BattleBGM = Battle Elite
+BattleBGM = AltoMando1
 VictoryBGM = Battle victory leader
 #-------------------------------
 [ELITEFOUR_Varok]
 Name = Alto Mando
 Gender = Male
 BaseMoney = 100
-BattleBGM = Battle Elite
+BattleBGM = AltoMando2
 VictoryBGM = Battle victory leader
 #-------------------------------
 [ELITEFOUR_Anubarak]
 Name = Alto Mando
 Gender = Male
 BaseMoney = 100
-BattleBGM = Battle Elite
+BattleBGM = AltoMando3
 VictoryBGM = Battle victory leader
 #-------------------------------
 [ELITEFOUR_Kelthuzad]
 Name = Alto Mando
 Gender = Male
 BaseMoney = 100
-BattleBGM = Battle Elite
+BattleBGM = AltoMando4
 VictoryBGM = Battle victory leader
 #-------------------------------
 [CHAMPION]
 Name = Campeona
 Gender = Female
 BaseMoney = 120
-BattleBGM = Battle Champion
+BattleBGM = Invincible
 VictoryBGM = Battle victory leader
 #-------------------------------
 [TEAMROCKET_M]
@@ -628,12 +544,12 @@ BattleBGM = Battle Gym Leader
 VictoryBGM = Battle victory leader
 #-------------------------------
 [HANSGAR]
-Name =
+Name = Forjador
 Gender = Male
 BaseMoney = 100
 #-------------------------------
 [FRANZOK]
-Name =
+Name = Forjador
 Gender = Male
 BaseMoney = 100
 #-------------------------------
@@ -642,7 +558,7 @@ Name = Operador
 Gender = Male
 BaseMoney = 100
 #-------------------------------
-[PUÑONEGRO]
+[BLACKHAND]
 Name = Señor de la guerra
 Gender = Male
 BaseMoney = 100

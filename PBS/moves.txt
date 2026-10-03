@@ -1,28 +1,4 @@
-﻿# Consulta la documentación en la wiki para aprender a editar este archivo.
-#-------------------------------
-[OBLITERATE]
-Name = Obliterar
-Type = ICE
-Category = Physical
-Power = 60
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-Flags = Contact,CanProtect,CanMirrorMove
-FunctionCode = TriplePowerIfTargetFrozen
-Description = Golpe de hielo asolador. Triplica el daño si el objetivo está congelado destrozando el hielo que lo atrapa.
-#-------------------------------
-[JADEBREATH]
-Name = Aliento de Jade
-Type = FAIRY
-Category = Special
-Power = 60
-Accuracy = 100
-TotalPP = 10
-Target = NearOther
-Flags = CanProtect,CanMirrorMove
-FunctionCode = SwitchOutUserDamagingMoveHealReplacement
-Description = Ataca con una niebla y regresa al equipo. Cura al pokemon que entra a sustituirlo.
+﻿# See the documentation on the wiki to learn how to edit this file.
 #-------------------------------
 [MEGAHORN]
 Name = Megacuerno
@@ -34,7 +10,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove
-Description = Usando su cuerno resistente e impresionante, el usuario embiste al objetivo sin descanso.
+Description = Violenta embestida con cuernos imponentes.
 #-------------------------------
 [ATTACKORDER]
 Name = Al Ataque
@@ -46,7 +22,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
-Description = El usuario llama a sus amigos para que golpeen al objetivo. Suele ser crítico.
+Description = El usuario llama a sus amigos para que ataquen al rival. Suele ser crítico.
 #-------------------------------
 [BUGBUZZ]
 Name = Zumbido
@@ -59,7 +35,7 @@ Target = NearOther
 FunctionCode = LowerTargetSpDef1
 Flags = CanProtect,CanMirrorMove,Sound
 EffectChance = 10
-Description = El movimiento de las alas crea una onda sónica dañina. También puede disminuir la Defensa Especial del objetivo.
+Description = El movimiento de las alas crea una onda sónica dañina. Puede disminuir la Defensa Especial del objetivo.
 #-------------------------------
 [FIRSTIMPRESSION]
 Name = Escaramuza
@@ -72,7 +48,7 @@ Target = NearOther
 Priority = 2
 FunctionCode = FailsIfNotUserFirstTurn
 Flags = Contact,CanProtect,CanMirrorMove
-Description = Movimiento de gran potencia que solo puede usarse en el turno en que el usuario sale al combate.
+Description = Movimiento de gran potencia y prioridad que solo puede usarse en el primer turno del usuario.
 #-------------------------------
 [POLLENPUFF]
 Name = Bola de Polen
@@ -120,7 +96,7 @@ Accuracy = 100
 TotalPP = 15
 Target = NearOther
 FunctionCode = None
-Flags = Contact,CanProtect,CanMirrorMove
+Flags = Contact,CanProtect,CanMirrorMove,Slicing
 Description = Cruza las guadañas o las garras para atacar al rival como si fueran unas tijeras.
 #-------------------------------
 [SIGNALBEAM]
@@ -147,7 +123,7 @@ Target = NearOther
 FunctionCode = LowerTargetSpAtk1
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 100
-Description = El usuario se desliza detrás del objetivo para atacar. Esto también reduce el Ataque Especial del objetivo.
+Description = Ataca al objetivo por la espalda de forma subrepticia y además reduce su Ataque Especial.
 #-------------------------------
 [UTURN]
 Name = Ida y Vuelta
@@ -172,7 +148,7 @@ Target = NearOther
 FunctionCode = FlinchTarget
 Flags = Contact,CanProtect,CanMirrorMove,TramplesMinimize
 EffectChance = 30
-Description = El usuario se hace una bola y arrolla al objetivo con su cuerpo. Puede hacerlo retroceder.
+Description = El usuario se hace una bola y arrolla al objetivo con su cuerpo. Puede amedrentar.
 #-------------------------------
 [BUGBITE]
 Name = Picadura
@@ -209,7 +185,7 @@ TotalPP = 25
 Target = NearOther
 FunctionCode = RaiseUserAttack3IfTargetFaints
 Flags = Contact,CanProtect,CanMirrorMove
-Description = Al derrotar al objetivo utilizando este movimiento, aumenta mucho el Ataque del usuario.
+Description = Al derrotar al objetivo utilizando este movimiento, aumenta muchísimo el Ataque del usuario.
 #-------------------------------
 [STRUGGLEBUG]
 Name = Estoicismo
@@ -233,8 +209,8 @@ Accuracy = 95
 TotalPP = 20
 Target = NearOther
 FunctionCode = PowerHigherWithConsecutiveUse
-Flags = Contact,CanProtect,CanMirrorMove
-Description = Ataque con garras o guadaña que crece en intensidad si se usa repetidas veces.
+Flags = Contact,CanProtect,CanMirrorMove,Slicing
+Description = Ataque con garras o guadañas que crece en intensidad si se usa repetidas veces.
 #-------------------------------
 [PINMISSILE]
 Name = Pin Misil
@@ -271,7 +247,7 @@ TotalPP = 20
 Target = NearOther
 FunctionCode = BindTarget
 Flags = Contact,CanProtect,CanMirrorMove
-Description = Oprime al enemigo de cuatro a cinco turno, durante los cuales no podrá huir.
+Description = Oprime al enemigo de cuatro a cinco turnos, durante los cuales no podrá huir.
 #-------------------------------
 [DEFENDORDER]
 Name = A Defender
@@ -281,7 +257,7 @@ Accuracy = 0
 TotalPP = 10
 Target = User
 FunctionCode = RaiseUserDefSpDef1
-Description = El usuario llama a sus amigos para que formen un escudo viviente. Sube la Def. y la Def. Esp.
+Description = El usuario llama a sus amigos para que formen un escudo viviente. Sube la Defensa y la Def. Esp.
 #-------------------------------
 [HEALORDER]
 Name = Auxilio
@@ -302,7 +278,7 @@ TotalPP = 20
 Target = NearOther
 FunctionCode = TargetNextFireMoveDamagesTarget
 Flags = CanProtect,CanMirrorMove,Powder
-Description = Esparce un polvo sobre el Pokémon objetivo. Si este usa un movimiento de tipo Fuego en el mismo turno, el polvo explota y le inflige daño.
+Description = Si el objetivo usa un movimiento de tipo Fuego en ese turno, el polvo explota y le inflige daño.
 #-------------------------------
 [QUIVERDANCE]
 Name = Danza Aleteo
@@ -346,7 +322,7 @@ Accuracy = 0
 TotalPP = 20
 Target = FoeSide
 FunctionCode = AddStickyWebToFoeSide
-Description = Coloca una red pegajosa alrededor del equipo rival, haciendo que baje la Velocidad de cualquier Pokémon adversario que entre al combate.
+Description = Coloca una red pegajosa en el bando rival que baja la Velocidad de cualquier Pokémon que entre.
 #-------------------------------
 [STRINGSHOT]
 Name = Disparo Demora
@@ -379,7 +355,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = HoopaRemoveProtectionsBypassSubstituteLowerUserDef1
 Flags = CanMirrorMove,CannotMetronome
-Description = Ataca al objetivo con una ráfaga de golpes que pasan por alto los efectos de movimientos como Protección o Detección. Hace que baje la Def. del usuario.
+Description = Ataca ignorando efectos de movimientos como Protección. Baja la Defensa del usuario.
 #-------------------------------
 [FOULPLAY]
 Name = Juego Sucio
@@ -391,7 +367,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = UseTargetAttackInsteadOfUserAttack
 Flags = Contact,CanProtect,CanMirrorMove
-Description = El usuario emplea la fuerza del objetivo para atacarlo. Cuanto mayor es el atq. del objetivo, más daño provoca.
+Description = El usuario emplea el Ataque del objetivo para golpear.
 #-------------------------------
 [FIERYWRATH]
 Name = Furia Candente
@@ -404,7 +380,7 @@ Target = AllNearFoes
 FunctionCode = FlinchTarget
 Flags = CanProtect,CanMirrorMove,CannotMetronome
 EffectChance = 20
-Description = El usuario convierte su ira en un aura flamígera para lanzar su ataque. Puede amedrentar al objetivo.
+Description = El usuario transforma su ira en un aura de fuego para atacar. Puede amedrentar al objetivo.
 #-------------------------------
 [DARKESTLARIAT]
 Name = Lariat Oscuro
@@ -416,7 +392,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = IgnoreTargetDefSpDefEvaStatStages
 Flags = Contact,CanProtect,CanMirrorMove
-Description = Gira sobre sí mismo y golpea al oponente con ambos brazos. Ignora los cambios en las características del objetivo.
+Description = Gira y golpea al oponente, ignorando los cambios en las características del objetivo.
 #-------------------------------
 [NIGHTDAZE]
 Name = Pulso Noche
@@ -455,7 +431,7 @@ Target = Other
 FunctionCode = FlinchTarget
 Flags = CanProtect,CanMirrorMove,Pulse
 EffectChance = 20
-Description = Libera una horrible aura llena de malos pensamientos y puede hacer retroceder al objetivo.
+Description = Libera una horrible aura llena de malos pensamientos y puede amedrentar al objetivo.
 #-------------------------------
 [FALSESURRENDER]
 Name = Irreverencia
@@ -467,7 +443,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
-Description = El usuario finge hacer una reverencia y aprovecha la ocasión para ensartar al objetivo con su cabello alborotado. Siempre acierta.
+Description = El usuario finge hacer una reverencia y ensarta al objetivo con su cabello alborotado. No falla.
 #-------------------------------
 [JAWLOCK]
 Name = Presa Maxilar
@@ -479,8 +455,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = TrapUserAndTargetInBattle
 Flags = Contact,CanProtect,CanMirrorMove
-EffectChance = 100
-Description = Este movimiento prohibe al objetivo y al usuario abandonar el combate hasta que uno de los dos se debilite.
+Description = Prohibe al objetivo y al usuario abandonar el combate hasta que uno de los dos se debilite.
 #-------------------------------
 [THROATCHOP]
 Name = Golpe Mordaza
@@ -499,13 +474,13 @@ Description = Inflige al rival un dolor tan abrumador que le impide utilizar dur
 Name = Golpe Oscuro
 Type = DARK
 Category = Physical
-Power = 80
+Power = 75
 Accuracy = 100
 TotalPP = 5
 Target = NearOther
 FunctionCode = AlwaysCriticalHit
 Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
-Description = Golpe devastador que requiere un absoluto dominio de las artes siniestras. Siempre asesta un golpe crítico.
+Description = Golpe devastador que requiere un absoluto dominio de las artes siniestras. Siempre es crítico.
 #-------------------------------
 [LASHOUT]
 Name = Desahogo
@@ -517,7 +492,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = DoublePowerIfUserStatsLoweredThisTurn
 Flags = Contact,CanProtect,CanMirrorMove
-Description = Ataca al rival presa de la rabia. Si el usuario ha sufrido una reducción de características en ese turno, la potencia del movimiento se duplica.
+Description = Si el usuario ha sufrido una reducción de características en ese turno duplica la potencia.
 #-------------------------------
 [NIGHTSLASH]
 Name = Tajo Umbrío
@@ -528,7 +503,7 @@ Accuracy = 100
 TotalPP = 15
 Target = NearOther
 FunctionCode = None
-Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate
+Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate,Slicing
 Description = Ataca al objetivo a la primera oportunidad. Suele ser crítico.
 #-------------------------------
 [SUCKERPUNCH]
@@ -579,7 +554,7 @@ Target = NearOther
 FunctionCode = FlinchTarget
 Flags = Contact,CanProtect,CanMirrorMove,Biting
 EffectChance = 30
-Description = Un voraz bocado que puede hacer retroceder al objetivo.
+Description = Un voraz bocado que puede amedrentar al objetivo.
 #-------------------------------
 [BRUTALSWING]
 Name = Giro Vil
@@ -591,7 +566,7 @@ TotalPP = 20
 Target = AllNearOthers
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove
-Description = Hace pivotar su cuerpo para infligir daño a su rival.
+Description = Hace pivotar su cuerpo para infligir daño a todos sus rivales.
 #-------------------------------
 [FEINTATTACK]
 Name = Finta
@@ -615,7 +590,7 @@ TotalPP = 25
 Target = NearOther
 FunctionCode = UserTakesTargetItem
 Flags = Contact,CanProtect,CanMirrorMove
-Description = Ataca y le quita al objetivo el objeto que lleve. Si el agresor lleva un objeto, no robará el del objetivo.
+Description = Ataca y le quita al objetivo su objeto. Si el agresor lleva un objeto, no robará el del objetivo.
 #-------------------------------
 [SNARL]
 Name = Alarido
@@ -628,7 +603,7 @@ Target = AllNearFoes
 FunctionCode = LowerTargetSpAtk1
 Flags = CanProtect,CanMirrorMove,Sound,CannotMetronome
 EffectChance = 100
-Description = Alarido agudo que reduce mucho la Defensa del objetivo.
+Description = Ataca lanzando un chillido insoportable que baja el Ataque Especial de los objetivos.
 #-------------------------------
 [PAYBACK]
 Name = Vendetta
@@ -676,7 +651,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = ThrowUserItemAtTarget
 Flags = CanProtect,CanMirrorMove
-Description = Lanza contra el objetivo el objeto que lleva. La fuerza del ataque y su efecto varían según el objeto.
+Description = Lanza contra el objetivo su objeto. La fuerza del ataque y su efecto varían según el objeto.
 #-------------------------------
 [POWERTRIP]
 Name = Chulería
@@ -688,7 +663,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = PowerHigherWithUserPositiveStatStages
 Flags = Contact,CanProtect,CanMirrorMove
-Description = Ataca al oponente presumiendo de su fuerza. Cuanto más hayan subido las características del usuario, mayor será el daño.
+Description = Cuanto más hayan subido las características del usuario, mayor será el daño.
 #-------------------------------
 [PUNISHMENT]
 Name = Castigo
@@ -700,7 +675,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = PowerHigherWithTargetPositiveStatStages
 Flags = Contact,CanProtect,CanMirrorMove
-Description = Inflige daño al rival, y si este ya ha hecho uso de algún movimiento, pierde su habilidad.
+Description = La fuerza del ataque aumenta cuanto más se ha fortalecido el rival con cambios de características.
 #-------------------------------
 [DARKVOID]
 Name = Brecha Negra
@@ -709,7 +684,7 @@ Category = Status
 Accuracy = 50
 TotalPP = 10
 Target = AllNearFoes
-FunctionCode = SleepTargetIfUserDarkrai
+FunctionCode = SleepTarget
 Flags = CanProtect,CanMirrorMove
 Description = El objetivo es enviado a un mundo de tinieblas que lo hace dormir.
 #-------------------------------
@@ -781,12 +756,12 @@ Description = Estimula su cerebro pensando en cosas malas. Aumenta considerablem
 Name = Obstrucción
 Type = DARK
 Category = Status
-Accuracy = 100
+Accuracy = 0
 TotalPP = 10
 Target = User
 Priority = 4
 FunctionCode = ProtectUserFromDamagingMovesObstruct
-Description = Frena todos los ataques, pero puede fallar si se usa repetidamente. Reduce mucho la Defensa de quien ejecute un movimiento de contacto contra el usuario.
+Description = Frena cualquier ataque y baja mucho la defensa si recibe un golpe de contacto. Si se usa mucho falla.
 #-------------------------------
 [PARTINGSHOT]
 Name = Última Palabra
@@ -797,7 +772,7 @@ TotalPP = 20
 Target = NearOther
 FunctionCode = LowerTargetAtkSpAtk1SwitchOutUser
 Flags = CanProtect,CanMirrorMove,Sound
-Description = El usuario se cambia por otro Pokémon de su equipo, pero antes amedrenta a su oponente y hace que disminuyan su Ataque y Ataque Especial.
+Description = Baja el Ataque y el Ataque Especial del rival y se cambia por otro Pokémon de su equipo.
 #-------------------------------
 [QUASH]
 Name = Último Lugar
@@ -819,7 +794,7 @@ TotalPP = 10
 Target = User
 Priority = 4
 FunctionCode = StealAndUseBeneficialStatusMove
-Description = Roba el efecto de movimientos de curación o de cambio de características que intente usar un combatiente.
+Description = Roba el efecto de movimientos de curación o de cambio de características de un combatiente.
 #-------------------------------
 [SWITCHEROO]
 Name = Trapicheo
@@ -875,7 +850,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = AttackAndSkipNextTurn
 Flags = CanProtect,CanMirrorMove,CannotMetronome
-Description = Este es el ataque más poderoso de Eternatus en su forma original. El usuario no se podrá mover en el siguiente turno.
+Description = Ataque más poderoso de Eternatus en su forma original. No se podrá mover en el siguiente turno.
 #-------------------------------
 [DRAGONENERGY]
 Name = Dracoenergía
@@ -887,7 +862,7 @@ TotalPP = 5
 Target = AllNearFoes
 FunctionCode = PowerHigherWithUserHP
 Flags = CanProtect,CanMirrorMove,CannotMetronome
-Description = El usurario convierte su fuerza vital en una energía con la que ataca al objetivo. Cuantos menos PS tenga el usuario, menor será la potencia del movimiento.
+Description = Ataca con su fuerza vital. Cuanto menos vida tenga el usuario, menos daño hará.
 #-------------------------------
 [ROAROFTIME]
 Name = Distorsión
@@ -899,7 +874,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = AttackAndSkipNextTurn
 Flags = CanProtect,CanMirrorMove
-Description = Ataca al objetivo usando tal energía que el tiempo se distorsiona. El usuario descansa el siguiente turno.
+Description = Ataca usando tal energía que el tiempo se distorsiona. El usuario descansa el siguiente turno.
 #-------------------------------
 [DRACOMETEOR]
 Name = Cometa Draco
@@ -919,7 +894,7 @@ Type = DRAGON
 Category = Physical
 Power = 120
 Accuracy = 100
-TotalPP = 10
+TotalPP = 15
 Target = RandomNearFoe
 FunctionCode = MultiTurnAttackConfuseUserAtEnd
 Flags = Contact,CanProtect,CanMirrorMove
@@ -935,7 +910,7 @@ TotalPP = 5
 Target = AllNearFoes
 FunctionCode = LowerUserDefense1
 Flags = CanProtect,CanMirrorMove,Sound
-Description = Frota todas las escamas de su cuerpo para crear un fuerte sonido con el que ataca, a costa de reducir su defensa.
+Description = Frota las escamas de su cuerpo para crear un fuerte sonido, a costa de reducir su Defensa.
 #-------------------------------
 [COREENFORCER]
 Name = Núcleo Castigo
@@ -960,7 +935,7 @@ Target = NearOther
 FunctionCode = FlinchTarget
 Flags = Contact,CanProtect,CanMirrorMove,TramplesMinimize
 EffectChance = 20
-Description = Ataca de forma brutal mientras intimida al objetivo. También puede hacerlo retroceder.
+Description = Ataca de forma brutal mientras intimida al objetivo. También puede amedrentarlo.
 #-------------------------------
 [DYNAMAXCANNON]
 Name = Cañón Dinamax
@@ -983,7 +958,7 @@ Accuracy = 95
 TotalPP = 5
 Target = NearOther
 FunctionCode = None
-Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate,Slicing
 Description = Desgarra al objetivo y el espacio a su alrededor. Suele ser crítico.
 #-------------------------------
 [DRAGONHAMMER]
@@ -1033,7 +1008,7 @@ Target = AllNearFoes
 FunctionCode = LowerTargetAttack1
 Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
 EffectChance = 100
-Description = El usuario azota con ímpetu con su cola al Pokémon enemigo. Esto hace que baje el Ataque del objetivo.
+Description = Azota con ímpetu con su cola al Pokémon enemigo. Esto hace que baje el Ataque del objetivo.
 #-------------------------------
 [DRAGONBREATH]
 Name = Dragoaliento
@@ -1071,7 +1046,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = HitTwoTimesTargetThenTargetAlly
 Flags = CanProtect,CanMirrorMove
-Description = El usuario ataca dos veces usando Dreepy. Si hay dos Pokémon enemigos, este ataque golpea una vez a cada uno.
+Description = El usuario ataca dos veces usando Dreepy. Si hay dos enemigos, golpea una vez a cada uno.
 #-------------------------------
 [DUALCHOP]
 Name = Golpe Bis
@@ -1089,14 +1064,14 @@ Description = Golpea dos veces seguidas con la cola u otras partes de su cuerpo.
 Name = Ciclón
 Type = DRAGON
 Category = Special
-Power = 40
+Power = 60
 Accuracy = 100
 TotalPP = 20
 Target = AllNearFoes
 FunctionCode = FlinchTargetDoublePowerIfTargetInSky
-Flags = CanProtect,CanMirrorMove
+Flags = CanProtect,CanMirrorMove,Wind
 EffectChance = 20
-Description = Crea un violento tornado para hacer trizas al rival. Puede hacerle retroceder.
+Description = Crea un violento tornado para hacer trizas al rival. Puede amedrentarlo.
 #-------------------------------
 [SCALESHOT]
 Name = Ráfaga Escamas
@@ -1108,7 +1083,7 @@ TotalPP = 20
 Target = NearOther
 FunctionCode = HitTwoToFiveTimesRaiseUserSpd1LowerUserDef1
 Flags = CanProtect,CanMirrorMove
-Description = Lanza escamas al objetivo de dos a cinco veces seguidas. Aumenta la Velocidad del usuario pero reduce su Defensa.
+Description = Lanza escamas de dos a cinco veces. Sube la Velocidad del usuario pero reduce su Defensa.
 #-------------------------------
 [DRAGONRAGE]
 Name = Furia Dragón
@@ -1126,11 +1101,11 @@ Description = Ráfaga de furiosas ondas de choque que quitan 40 PS.
 Name = Estruendo Escama
 Type = DRAGON
 Category = Status
-Accuracy = 100
+Accuracy = 0
 TotalPP = 5
 Target = User
 FunctionCode = RaiseUserMainStats1LoseThirdOfTotalHP
-Flags = Sound,CannotMetronome
+Flags = Sound,CannotMetronome,Dance
 Description = El usuario aumenta todas sus características a cambio de sus PS.
 #-------------------------------
 [DRAGONDANCE]
@@ -1194,7 +1169,7 @@ Target = NearOther
 FunctionCode = TypeDependsOnUserMorpekoFormRaiseUserSpeed1
 Flags = CanProtect,CanMirrorMove,CannotMetronome
 EffectChance = 100
-Description = Morpeko ataca y sube su Velocidad con la energía almacenada en sus mofletes. Este movimiento cambia de tipo dependiendo de la forma del usuario.
+Description = Ataca y sube su Velocidad del usuario. Cambia de tipo dependiendo de la forma del usuario.
 #-------------------------------
 [THUNDER]
 Name = Trueno
@@ -1204,7 +1179,7 @@ Power = 110
 Accuracy = 70
 TotalPP = 10
 Target = NearOther
-FunctionCode = ParalyzeTargetAlwaysHitsInRainHitsTargetInSky
+FunctionCode = ParalyzeTargetAlwaysHitsInRainHitsDecreasesInSunTargetInSky
 Flags = CanProtect,CanMirrorMove
 EffectChance = 30
 Description = Un poderoso rayo que daña al objetivo y puede paralizarlo.
@@ -1219,7 +1194,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = DoublePowerAfterFusionFlare
 Flags = CanProtect,CanMirrorMove
-Description = Ataca con una enorme descarga eléctrica. Aumenta su potencia si es influenciada por una gigantesca llamarada.
+Description = Enorme descarga eléctrica. Aumenta su potencia si es influenciada por una gigantesca llamarada.
 #-------------------------------
 [PLASMAFISTS]
 Name = Puños Plasma
@@ -1231,7 +1206,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = NormalMovesBecomeElectric
 Flags = Contact,CanProtect,CanMirrorMove,Punching,CannotMetronome
-Description = El usuario ataca con puños cargados de electricidad. Convierte los movimientos de tipo Normal en movimientos de tipo Eléctrico.
+Description = Ataca con los puños. Convierte los movimientos de tipo Normal en tipo Eléctrico.
 #-------------------------------
 [THUNDERBOLT]
 Name = Rayo
@@ -1244,7 +1219,7 @@ Target = NearOther
 FunctionCode = ParalyzeTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
-Description = El usuario lanza un rayo de metal que recolecta de su cuerpo. Esto daña al usuario.
+Description = Potente ataque eléctrico que puede paralizar al objetivo.
 #-------------------------------
 [WILDCHARGE]
 Name = Voltio Cruel
@@ -1268,7 +1243,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = DoublePowerIfTargetNotActed
 Flags = Contact,CanProtect,CanMirrorMove
-Description = El usuario ataca con su pico electrificado. Si el usuario ataca antes que el objetivo, la potencia de este movimiento será duplicada.
+Description = Ataca con su pico electrificado. Si el usuario ataca antes que el objetivo, duplica la potencia.
 #-------------------------------
 [DISCHARGE]
 Name = Chispazo
@@ -1287,13 +1262,13 @@ Description = Una deslumbradora onda eléctrica afecta a los demás Pokémon del
 Name = Amplificador
 Type = ELECTRIC
 Category = Special
-Power = 80
+Power = 100
 Accuracy = 100
 TotalPP = 10
 Target = AllNearFoes
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove,Sound,CannotMetronome
-Description = El usuario rasguea la guitarra o el bajo para generar enormes vibraciones de intensa reverberación con las que ataca al objetivo.
+Description = El usuario rasguea su cuerpo para generar enormes vibraciones con las que ataca al objetivo.
 #-------------------------------
 [THUNDERCAGE]
 Name = Electrojaula
@@ -1305,7 +1280,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = BindTarget
 Flags = CanProtect,CanMirrorMove,CannotMetronome
-Description = El objetico queda atrapado en una jaula electrificada que permanece en el terreno de cuatro a cinco turnos.
+Description = El usuario atrapa al rival en una caja eléctrica que dura entre cuatro y cinco turnos.
 #-------------------------------
 [ZINGZAP]
 Name = Electropunzada
@@ -1318,7 +1293,7 @@ Target = NearOther
 FunctionCode = FlinchTarget
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 30
-Description = El usuario se lanza contra el objetivo y le suelta una potente descarga eléctrica que puede hacerlo retroceder.
+Description = El usuario se lanza contra el objetivo y le suelta una potente descarga que puede amedrentarlo.
 #-------------------------------
 [THUNDERPUNCH]
 Name = Puño Trueno
@@ -1343,7 +1318,7 @@ TotalPP = 20
 Target = NearOther
 FunctionCode = DoublePowerInElectricTerrain
 Flags = CanProtect,CanMirrorMove
-Description = Ataca con una descarga eléctrica que surge del terreno de combate. La potencia del movimiento se duplica si el rival se ve afectado por un campo eléctrico.
+Description = La potencia del movimiento se duplica si el rival se ve afectado por un campo eléctrico.
 #-------------------------------
 [VOLTSWITCH]
 Name = Voltiocambio
@@ -1361,13 +1336,13 @@ Description = Tras atacar, vuelve a toda prisa para dar paso a otro Pokémon del
 Name = Carga Parábola
 Type = ELECTRIC
 Category = Special
-Power = 65
+Power = 70
 Accuracy = 100
 TotalPP = 20
 Target = AllNearOthers
 FunctionCode = HealUserByHalfOfDamageDone
 Flags = CanProtect,CanMirrorMove
-Description = Inflige daño a todos los Pokémon a su alrededor. El usuario absorbe la mitad del daño producido para restaurar sus propios PS.
+Description = Inflige daño a los Pokémon a su alrededor, absorbiendo la mitad del daño producido.
 #-------------------------------
 [SPARK]
 Name = Chispa
@@ -1380,7 +1355,7 @@ Target = NearOther
 FunctionCode = ParalyzeTarget
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 30
-Description = Una deslumbradora onda eléctrica afecta a los demás Pokémon del combate. Puede paralizar.
+Description = Ataque eléctrico que puede llegar a paralizar.
 #-------------------------------
 [THUNDERFANG]
 Name = Colmillo Rayo
@@ -1392,8 +1367,8 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = ParalyzeFlinchTarget
 Flags = Contact,CanProtect,CanMirrorMove,Biting
-EffectChance = 100
-Description = Usa colmillos electrificados para morder. Puede hacer que el rival retroceda o se paralice.
+EffectChance = 101
+Description = Muerde con colmillos electrificados. Puede hacer que el rival se amedrente o paralice.
 #-------------------------------
 [SHOCKWAVE]
 Name = Onda Voltio
@@ -1408,7 +1383,7 @@ Flags = CanProtect,CanMirrorMove
 Description = Ataque eléctrico muy rápido e ineludible.
 #-------------------------------
 [ELECTROWEB]
-Name = Electroweb
+Name = Electrotela
 Type = ELECTRIC
 Category = Special
 Power = 55
@@ -1418,7 +1393,7 @@ Target = AllNearFoes
 FunctionCode = LowerTargetSpeed1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 100
-Description = The user captures and attacks foes by using an electric net, which lowers their Speed stat.
+Description = Atrapa y ataca a los objetivos con una telaraña eléctrica. También reduce su Velocidad.
 #-------------------------------
 [CHARGEBEAM]
 Name = Rayo Carga
@@ -1437,7 +1412,7 @@ Description = Lanza un rayo eléctrico contra el rival. Puede subir el Ataque Es
 Name = Impactrueno
 Type = ELECTRIC
 Category = Special
-Power = 40
+Power = 45
 Accuracy = 100
 TotalPP = 30
 Target = NearOther
@@ -1457,7 +1432,7 @@ Target = NearOther
 FunctionCode = ParalyzeTarget
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 100
-Description = Quien lo usa frota sus mofletes cargados de electricidad contra el Pokémon objetivo y consigue paralizarlo.
+Description = Frota sus mofletes cargados de electricidad contra el Pokémon objetivo y consigue paralizarlo.
 #-------------------------------
 [ELECTROBALL]
 Name = Bola Voltio
@@ -1469,7 +1444,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = PowerHigherWithUserFasterThanTarget
 Flags = CanProtect,CanMirrorMove,Bomb
-Description = Lanza una bola eléctrica. Cuanto mayor Velocidad del usuario, mayor será el daño causado.
+Description = Lanza una bola eléctrica. Cuanto mayor es la Velocidad del usuario, mayor será el daño causado.
 #-------------------------------
 [CHARGE]
 Name = Carga
@@ -1479,7 +1454,7 @@ Accuracy = 0
 TotalPP = 20
 Target = User
 FunctionCode = RaiseUserSpDef1PowerUpElectricMove
-Description = Recarga energía para potenciar el siguiente movimiento Eléctrico. También sube la Defensa Especial.
+Description = Recarga energía para potenciar el siguiente movimiento Eléctrico. Sube la Defensa Especial.
 #-------------------------------
 [EERIEIMPULSE]
 Name = Onda Anómala
@@ -1490,7 +1465,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = LowerTargetSpAtk2
 Flags = CanProtect,CanMirrorMove
-Description = Su cuerpo irradia unas raras ondas que, al alcanzar a un oponente, hacen que disminuya mucho su Ataque Especial.
+Description = Irradia unas raras ondas que disminuyen mucho el Ataque Especial del objetivo.
 #-------------------------------
 [ELECTRICTERRAIN]
 Name = Campo Eléctrico
@@ -1500,7 +1475,7 @@ Accuracy = 0
 TotalPP = 10
 Target = BothSides
 FunctionCode = StartElectricTerrain
-Description = Durante cinco turnos, crea un campo eléctrico en el terreno de combate que impide dormirse a los Pokémon que estén en contacto con el suelo.
+Description = Durante cinco turnos crea un campo eléctrico que impide dormirse a los Pokémon en el suelo.
 #-------------------------------
 [ELECTRIFY]
 Name = Electrificación
@@ -1522,7 +1497,7 @@ TotalPP = 25
 Target = BothSides
 Priority = 1
 FunctionCode = NormalMovesBecomeElectric
-Description = El Pokémon disemina partículas con carga eléctrica que convierten los movimientos de tipo Normal en tipo Eléctrico.
+Description = Disemina partículas con carga que convierten los movimientos de tipo Normal en tipo Eléctrico.
 #-------------------------------
 [MAGNETRISE]
 Name = Levitón
@@ -1542,7 +1517,7 @@ Accuracy = 0
 TotalPP = 20
 Target = UserAndAllies
 FunctionCode = RaisePlusMinusUserAndAlliesDefSpDef1
-Description = Manipula el campo magnético y logra aumentar la Defensa y la Def. Esp. de los Pokémon aliados que cuenten con las habilidades Más y Menos.
+Description = Aumentar la Defensa y la Defensa Espepecial de los aliados con las habilidades Más y Menos.
 #-------------------------------
 [THUNDERWAVE]
 Name = Onda Trueno
@@ -1565,7 +1540,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = RecoilHalfOfDamageDealt
 Flags = CanProtect,CanMirrorMove,CannotMetronome
-Description = El usuario emplea el poder de la Flor Eterna para lanzar un potente rayo de luz, pero sufre bastante daño al hacerlo.
+Description = Emplea el poder de la Flor Eterna para lanzar un potente rayo de luz, pero sufre bastante daño.
 #-------------------------------
 [FLEURCANNON]
 Name = Cañón Floral
@@ -1583,13 +1558,13 @@ Description = El usuario emite un potente rayo, pero su Ataque Especial se reduc
 Name = Bruma Explosiva
 Type = FAIRY
 Category = Special
-Power = 100
+Power = 70
 Accuracy = 100
-TotalPP = 5
-Target = AllNearOthers
-FunctionCode = UserFaintsPowersUpInMistyTerrainExplosive
+TotalPP = 20
+Target = NearOther
+FunctionCode = HigherPriorityInMistyTerrain
 Flags = CanProtect,CanMirrorMove
-Description = El usuario ataca a todos a su alrededor, pero se debilita de inmediato. La potencia del movimiento aumenta si el terreno está cubierto por un campo de niebla.
+Description = Bruma misteriosa con prioridad alta en campo de niebla.
 #-------------------------------
 [MOONBLAST]
 Name = Fuerza Lunar
@@ -1602,7 +1577,7 @@ Target = NearOther
 FunctionCode = LowerTargetSpAtk1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 30
-Description = Invoca el poder de la luna para atacar al objetivo. Puede disminuir el Ataque Especial del objetivo.
+Description = Invoca el poder de la luna para atacar. Puede disminuir el Ataque Especial del objetivo.
 #-------------------------------
 [PLAYROUGH]
 Name = Carantoña
@@ -1615,20 +1590,20 @@ Target = NearOther
 FunctionCode = LowerTargetAttack1
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 10
-Description = El Pokémon que lo usa le hace cucamonas al objetivo y lo ataca. Puede disminuir el Ataque del objetivo.
+Description = Hace cucamonas al objetivo y lo ataca. Puede disminuir el Ataque del objetivo.
 #-------------------------------
 [STRANGESTEAM]
 Name = Cautivapor
 Type = FAIRY
 Category = Special
-Power = 90
+Power = 95
 Accuracy = 95
 TotalPP = 10
 Target = NearOther
 FunctionCode = ConfuseTarget
 Flags = CanProtect,CanMirrorMove,CannotMetronome
 EffectChance = 20
-Description = El usuario ataca al enemigo emitiendo vapor. Esto puede dejar confuso al objetivo.
+Description = El usuario ataca al enemigo emitiendo vapor. Puede dejar confuso al objetivo.
 #-------------------------------
 [DAZZLINGGLEAM]
 Name = Brillo Mágico
@@ -1653,19 +1628,19 @@ Target = NearOther
 FunctionCode = LowerTargetSpAtk1
 Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
 EffectChance = 100
-Description = El usuario ataca al objetivo con tal ímpetu que acaba minando su moral y, en consecuencia, reduce su Ataque Especial.
+Description = Ataca al objetivo con tal ímpetu que acaba minando su moral y reduce su Ataque Especial.
 #-------------------------------
 [DRAININGKISS]
 Name = Beso Drenaje
 Type = FAIRY
 Category = Special
-Power = 50
+Power = 60
 Accuracy = 100
 TotalPP = 10
 Target = NearOther
 FunctionCode = HealUserByThreeQuartersOfDamageDone
 Flags = Contact,CanProtect,CanMirrorMove
-Description = Absorbe PS del objetivo con un beso y restaura su propia energía en una cantidad igual o superior a la mitad del daño infligido.
+Description = Absorbe PS del objetivo con un beso y restaura sus PS.
 #-------------------------------
 [DISARMINGVOICE]
 Name = Voz Cautivadora
@@ -1677,18 +1652,18 @@ TotalPP = 15
 Target = AllNearFoes
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove,Sound
-Description = Obnubila a los oponentes con su fascinante voz y les provoca daños emocionales. Siempre acierta al objetivo.
+Description = Obnubila a los oponentes con su voz y les provoca daños emocionales. Siempre acierta.
 #-------------------------------
 [FAIRYWIND]
 Name = Viento Feérico
 Type = FAIRY
 Category = Special
-Power = 40
+Power = 50
 Accuracy = 100
 TotalPP = 30
 Target = NearOther
 FunctionCode = None
-Flags = CanProtect,CanMirrorMove
+Flags = CanProtect,CanMirrorMove,Wind
 Description = El Pokémon que lo usa desata un vendaval feérico que arremete contra el objetivo.
 #-------------------------------
 [NATURESMADNESS]
@@ -1723,7 +1698,7 @@ Target = NearOther
 Priority = 1
 FunctionCode = LowerTargetAttack1
 Flags = CanProtect,CanMirrorMove
-Description = Lanza una mirada al Pokémon objetivo con sus ojos acaramelados, con lo que logra que su Ataque se reduzca. El que lo usa siempre ataca primero.
+Description = Lanza una mirada al Pokémon objetivo, reduciendo su Ataque. Siempre va primero.
 #-------------------------------
 [CHARM]
 Name = Encanto
@@ -1745,7 +1720,7 @@ TotalPP = 10
 Target = UserSide
 Priority = 3
 FunctionCode = ProtectUserSideFromStatusMoves
-Description = Usa unos misteriosos poderes para protegerse a sí mismo y a sus aliados de ataques de estado, pero no de otro tipo de ataques.
+Description = Se protege a sí mismo y a sus aliados de ataques de estado, pero no de otro tipo de ataques.
 #-------------------------------
 [DECORATE]
 Name = Decoración
@@ -1756,7 +1731,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = RaiseTargetAtkSpAtk2
 Flags = CannotMetronome
-Description = El usuario sube dos niveles el Ataque y el Ataque Especial del objetivo decorandolo.
+Description = El usuario aumenta el Ataque y el Ataque Especial del objetivo decorándolo.
 #-------------------------------
 [FAIRYLOCK]
 Name = Cerrojo Feérico
@@ -1778,7 +1753,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = HealTargetDependingOnGrassyTerrain
 Flags = CanProtect
-Description = Restaura la mitad de los PS máximos del objetivo. Es más efectivo cuando se usa en conjunción con Campo de Hierba.
+Description = Restaura la mitad de los PS máximos del objetivo. Cura más con campo de hierba.
 #-------------------------------
 [FLOWERSHIELD]
 Name = Defensa Floral
@@ -1788,7 +1763,7 @@ Accuracy = 0
 TotalPP = 10
 Target = AllBattlers
 FunctionCode = RaiseGrassBattlersDef1
-Description = Aumenta la Defensa de todos los Pokémon de tipo Planta que hay en el combate usando unos misteriosos poderes.
+Description = Aumenta la Defensa de los Pokémon de tipo Planta en combate usando unos misteriosos poderes.
 #-------------------------------
 [GEOMANCY]
 Name = Geocontrol
@@ -1798,7 +1773,7 @@ Accuracy = 0
 TotalPP = 10
 Target = User
 FunctionCode = TwoTurnAttackRaiseUserSpAtkSpDefSpd2
-Description = Concentra energía durante el primer turno, de forma que su Velocidad, Ataque Especial y Defensa Especial aumenten mucho en el segundo.
+Description = Concentra energía un turno, y en el segundo aumenta mucho su At. Esp., Def. Esp. y Velocidad.
 #-------------------------------
 [MISTYTERRAIN]
 Name = Campo de Niebla
@@ -1808,7 +1783,7 @@ Accuracy = 0
 TotalPP = 10
 Target = BothSides
 FunctionCode = StartMistyTerrain
-Description = Cubre de niebla el terreno de combate durante cinco turnos. Los Pokémon que estén en el suelo no se ven afectados por cambios de estado.
+Description = Cubre de niebla el terreno cinco turnos. Los Pokémon en el suelo no reciben cambios de estado.
 #-------------------------------
 [MOONLIGHT]
 Name = Luz Lunar
@@ -1857,7 +1832,7 @@ Flags = CanProtect,CanMirrorMove,CannotMetronome
 Description = El usuario arremete con su puerro. El usuario no se podrá mover en el siguiente turno.
 #-------------------------------
 [HIGHJUMPKICK]
-Name = Pat. Salto Alta
+Name = Patada Salto Alta
 Type = FIGHTING
 Category = Physical
 Power = 130
@@ -1865,7 +1840,7 @@ Accuracy = 90
 TotalPP = 10
 Target = NearOther
 FunctionCode = CrashDamageIfFailsUnusableInGravity
-Flags = Contact,CanProtect,CanMirrorMove
+Flags = Contact,CanProtect,CanMirrorMove,Kicking
 Description = Salta muy alto y lanza una patada. Si falla, dañará al usuario.
 #-------------------------------
 [CLOSECOMBAT]
@@ -1878,7 +1853,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = LowerUserDefSpDef1
 Flags = Contact,CanProtect,CanMirrorMove
-Description = Lucha abiertamente contra el rival sin defenderse. También reduce la Defensa y la Def. Esp. del usuario.
+Description = Lucha abiertamente contra el rival. Reduce la Defensa y la Defensa Especial del usuario.
 #-------------------------------
 [FOCUSBLAST]
 Name = Onda Certera
@@ -1918,7 +1893,7 @@ Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate
 Description = Corte doble que suele propinar un golpe crítico.
 #-------------------------------
 [DYNAMICPUNCH]
-Name = Tajo Cruzado
+Name = Puño Dinámico
 Type = FIGHTING
 Category = Physical
 Power = 100
@@ -1928,7 +1903,7 @@ Target = NearOther
 FunctionCode = ConfuseTarget
 Flags = Contact,CanProtect,CanMirrorMove,Punching
 EffectChance = 100
-Description = Corte doble que suele propinar un golpe crítico.
+Description = Puñetazo con toda la fuerza concentrada. Causa confusión si atina.
 #-------------------------------
 [FLYINGPRESS]
 Name = Plancha Voladora
@@ -1940,7 +1915,7 @@ TotalPP = 10
 Target = Other
 FunctionCode = EffectivenessIncludesFlyingType
 Flags = Contact,CanProtect,CanMirrorMove,TramplesMinimize
-Description = El Pokémon que lo usa se lanza sobre su oponente. Este movimiento es de tipo Lucha y tipo Volador al mismo tiempo.
+Description = Se lanza sobre su oponente. Este movimiento es de tipo Lucha y tipo Volador al mismo tiempo.
 #-------------------------------
 [HAMMERARM]
 Name = Machada
@@ -1952,7 +1927,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = LowerUserSpeed1
 Flags = Contact,CanProtect,CanMirrorMove,Punching
-Description = Gira con fuerza el puño y da un gran golpe. No obstante, baja la Velocidad.
+Description = Gira con fuerza el puño y da un gran golpe. No obstante, baja la Velocidad del usuario.
 #-------------------------------
 [JUMPKICK]
 Name = Patada Salto
@@ -1963,8 +1938,8 @@ Accuracy = 95
 TotalPP = 10
 Target = NearOther
 FunctionCode = CrashDamageIfFailsUnusableInGravity
-Flags = Contact,CanProtect,CanMirrorMove
-Description = Da un salto y pega una patada. Si falla, se lesiona.
+Flags = Contact,CanProtect,CanMirrorMove,Kicking
+Description = Da un salto y pega una patada. Si falla, dañará al usuario.
 #-------------------------------
 [SACREDSWORD]
 Name = Espada Santa
@@ -1975,7 +1950,7 @@ Accuracy = 100
 TotalPP = 15
 Target = NearOther
 FunctionCode = IgnoreTargetDefSpDefEvaStatStages
-Flags = Contact,CanProtect,CanMirrorMove
+Flags = Contact,CanProtect,CanMirrorMove,Slicing
 Description = El usuario ataca con una espada, ignorando cualquier cambio en las características del objetivo.
 #-------------------------------
 [THUNDEROUSKICK]
@@ -1987,9 +1962,9 @@ Accuracy = 100
 TotalPP = 10
 Target = NearOther
 FunctionCode = LowerTargetDefense1
-Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome,Kicking
 EffectChance = 100
-Description = El usuario desconcierta al rival con movimientos centelleantes y le propina una patada. Baja la Defensa del objetivo.
+Description = El usuario arremete contra el rival con una poderosa patada que siempre baja la Defensa.
 #-------------------------------
 [SECRETSWORD]
 Name = Sable Místico
@@ -2000,7 +1975,7 @@ Accuracy = 100
 TotalPP = 10
 Target = NearOther
 FunctionCode = UseTargetDefenseInsteadOfTargetSpDef
-Flags = CanProtect,CanMirrorMove,CannotMetronome
+Flags = CanProtect,CanMirrorMove,CannotMetronome,Slicing
 Description = Ensarta al objetivo con un sable, hiriéndolo con su místico poder.
 #-------------------------------
 [SKYUPPERCUT]
@@ -2035,9 +2010,9 @@ Power = 80
 Accuracy = 100
 TotalPP = 10
 Target = NearOther
-FunctionCode = UseUserBaseDefenseInsteadOfUserBaseAttack
+FunctionCode = UseUserDefenseInsteadOfUserAttack
 Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
-Description = El usuario ataca embistiendo conta el objetivo. Cuanto más alta sea la defensa del usuario, más daño inflingirá al objetivo.
+Description = El usuario embistie al objetivo. Cuanto más alta sea la Defensa del usuario, más daño inflingirá.
 #-------------------------------
 [SUBMISSION]
 Name = Sumisión
@@ -2061,7 +2036,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = RemoveScreens
 Flags = Contact,CanProtect,CanMirrorMove
-Description = Potente ataque que también es capaz de destruir barreras como Pantalla de Luz y Reflejo.
+Description = Potente ataque que también es capaz de destruir barreras como pantalla de luz y reflejo.
 #-------------------------------
 [DRAINPUNCH]
 Name = Puño Drenaje
@@ -2109,7 +2084,7 @@ Accuracy = 100
 TotalPP = 20
 Target = NearOther
 FunctionCode = LowerTargetSpeed1
-Flags = Contact,CanProtect,CanMirrorMove
+Flags = Contact,CanProtect,CanMirrorMove,Kicking
 EffectChance = 100
 Description = Un veloz ataque a los pies que reduce la Velocidad del objetivo.
 #-------------------------------
@@ -2161,9 +2136,9 @@ Accuracy = 85
 TotalPP = 15
 Target = NearOther
 FunctionCode = FlinchTarget
-Flags = Contact,CanProtect,CanMirrorMove
+Flags = Contact,CanProtect,CanMirrorMove,Kicking
 EffectChance = 30
-Description = Una patada rápida y circular. También puede hacer retroceder al objetivo.
+Description = Una patada rápida y circular. También puede amedrentar al objetivo.
 #-------------------------------
 [STORMTHROW]
 Name = Llave Corsé
@@ -2213,13 +2188,13 @@ Target = NearOther
 FunctionCode = RaiseUserAttack1
 Flags = Contact,CanProtect,CanMirrorMove,Punching
 EffectChance = 100
-Description = Cada vez que golpea a un oponente se endurecen sus puños. Si acierta al objetivo, el Ataque del usuario aumenta.
+Description = Cada vez que golpea se endurecen sus puños. Si acierta, el Ataque del usuario aumenta.
 #-------------------------------
 [ROCKSMASH]
 Name = Golpe Roca
 Type = FIGHTING
 Category = Physical
-Power = 40
+Power = 50
 Accuracy = 100
 TotalPP = 15
 Target = NearOther
@@ -2250,14 +2225,14 @@ Accuracy = 100
 TotalPP = 30
 Target = NearOther
 FunctionCode = HitTwoTimes
-Flags = Contact,CanProtect,CanMirrorMove
+Flags = Contact,CanProtect,CanMirrorMove,Kicking
 Description = Una patada doble. Golpea dos veces.
 #-------------------------------
 [ARMTHRUST]
 Name = Empujón
 Type = FIGHTING
 Category = Physical
-Power = 15
+Power = 20
 Accuracy = 100
 TotalPP = 20
 Target = NearOther
@@ -2274,7 +2249,7 @@ Accuracy = 90
 TotalPP = 10
 Target = NearOther
 FunctionCode = HitThreeTimesPowersUpWithEachHit
-Flags = Contact,CanProtect,CanMirrorMove
+Flags = Contact,CanProtect,CanMirrorMove,Kicking
 Description = Patea hasta tres veces seguidas y cada vez más fuerte.
 #-------------------------------
 [COUNTER]
@@ -2311,7 +2286,7 @@ Accuracy = 100
 TotalPP = 20
 Target = NearOther
 FunctionCode = PowerHigherWithTargetWeight
-Flags = Contact,CanProtect,CanMirrorMove
+Flags = Contact,CanProtect,CanMirrorMove,Kicking
 Description = Patada baja. Cuanto más pesa el objetivo, más daño causa.
 #-------------------------------
 [REVERSAL]
@@ -2355,7 +2330,7 @@ Category = Status
 Accuracy = 0
 TotalPP = 10
 Target = AllAllies
-FunctionCode = RaiseUserAndAlliesAtkDef1
+FunctionCode = RaiseAlliesAtkDef1
 Flags = CanMirrorMove
 Description = El usuario imparte indicaciones precisas a sus aliados, que ven aumentados su Ataque y su Defensa.
 #-------------------------------
@@ -2368,8 +2343,7 @@ TotalPP = 5
 Target = User
 Priority = 4
 FunctionCode = ProtectUser
-Description = Frena todos los ataques, pero puede fallar si se usa repetidamente.
-#-------------------------------
+Description = Frena los ataques, pero puede fallar si se usa repetidamente.
 [MATBLOCK]
 Name = Escudo Tatami
 Type = FIGHTING
@@ -2388,7 +2362,7 @@ Accuracy = 0
 TotalPP = 5
 Target = User
 FunctionCode = RaiseUserMainStats1TrapUserInBattle
-Description = El usuario aumenta todas sus características, pero ya no puede huir ni ser cambiado por otro.
+Description = El usuario aumenta todas sus características, pero no puede huir ni ser cambiado por otro.
 #-------------------------------
 [OCTOLOCK]
 Name = Octopresa
@@ -2410,10 +2384,10 @@ TotalPP = 15
 Target = UserSide
 Priority = 3
 FunctionCode = ProtectUserSideFromPriorityMoves
-Description = Protege a todo el equipo de ataques que se adelantan. Puede fallar si se utiliza repetidamente.
+Description = Protege a  el equipo de ataques con prioridad. Puede fallar si se utiliza repetidamente.
 #-------------------------------
 [VCREATE]
-Name = V de fuego
+Name = V de Fuego
 Type = FIRE
 Category = Physical
 Power = 180
@@ -2422,7 +2396,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = LowerUserDefSpDefSpd1
 Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
-Description = Golpea con una V de llamas al objetivo. Baja la Defensa, la Defensa Especial y la Velocidad de quien lo usa.
+Description = Golpea con una V de llamas. Baja la Defensa, la Def. Esp. y la Velocidad del usuario.
 #-------------------------------
 [BLASTBURN]
 Name = Anillo Ígneo
@@ -2458,7 +2432,7 @@ TotalPP = 5
 Target = AllNearOthers
 FunctionCode = UserLosesHalfOfTotalHPExplosive
 Flags = CanProtect,CanMirrorMove,CannotMetronome
-Description = El usuario hace explotar su cabeza para atacar a todos los Pokémon que se hallan a su alrededor, aunque también se hiere a sí mismo.
+Description = Hace explotar su cabeza para atacar a todos a su alrededor, aunque también se hiere a sí mismo.
 #-------------------------------
 [SHELLTRAP]
 Name = Coraza Trampa
@@ -2471,10 +2445,10 @@ Target = AllNearFoes
 Priority = -3
 FunctionCode = UsedAfterUserTakesPhysicalDamage
 Flags = CanProtect
-Description = El caparazón del Pokémon se convierte en una trampa. Si le alcanza un ataque físico, la trampa estalla y el atacante sufre daño.
+Description = Si le alcanza un ataque físico, la trampa del caparazón estalla y el atacante sufre daño.
 #-------------------------------
 [BLUEFLARE]
-Name = Blue Flare
+Name = Llama Azul
 Type = FIRE
 Category = Special
 Power = 130
@@ -2484,7 +2458,7 @@ Target = NearOther
 FunctionCode = BurnTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 20
-Description = The user attacks by engulfing the foe in a beautiful, yet intense, blue flame. It may also burn the foe.
+Description = Ataca con una bella pero potente llama azul que rodea al objetivo. Puede quemarlo.
 #-------------------------------
 [BURNUP]
 Name = Llama Final
@@ -2496,7 +2470,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = UserLosesFireType
 Flags = CanProtect,CanMirrorMove,ThawsUser
-Description = Utiliza hasta el último resquicio de llamas de su cuerpo para infligir un grave daño al oponente. Tras el ataque, el usuario deja de ser de tipo Fuego.
+Description = Usa hasta el último resquicio de llamas de su cuerpo para atacar, pero pierde el tipo Fuego.
 #-------------------------------
 [OVERHEAT]
 Name = Sofoco
@@ -2534,7 +2508,7 @@ Target = NearOther
 FunctionCode = BurnTarget
 Flags = CanProtect,CanMirrorMove,ThawsUser,Bomb,CannotMetronome
 EffectChance = 10
-Description = El usuario prende una pequeña piedra para crear una bola de fuego con la que ataca al rival. Puede causar quemaduras.
+Description = Prende una pequeña piedra para crear una bola de fuego con la que ataca. Puede causar quemaduras.
 #-------------------------------
 [FIREBLAST]
 Name = Llamarada
@@ -2547,7 +2521,7 @@ Target = NearOther
 FunctionCode = BurnTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
-Description = Ataca con una enorme descarga eléctrica. Aumenta su potencia si es influenciada por una gigantesca llamarada.
+Description = Llama intensa que lo chamusca  y puede causar quemaduras.
 #-------------------------------
 [FUSIONFLARE]
 Name = Llama Fusión
@@ -2559,7 +2533,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = DoublePowerAfterFusionBolt
 Flags = CanProtect,CanMirrorMove,ThawsUser
-Description = Ataca con una llamarada gigantesca. Aumenta su potencia si es influenciada por una gran energía eléctrica.
+Description = Llamarada gigantesca. Aumenta su potencia si es influenciada por una gran energía eléctrica.
 #-------------------------------
 [INFERNO]
 Name = Infierno
@@ -2621,7 +2595,7 @@ Accuracy = 90
 TotalPP = 10
 Target = AllNearFoes
 FunctionCode = BurnTarget
-Flags = CanProtect,CanMirrorMove
+Flags = CanProtect,CanMirrorMove,Wind
 EffectChance = 10
 Description = Provoca un viento abrasador que puede quemar al objetivo.
 #-------------------------------
@@ -2642,12 +2616,12 @@ Description = Ataca con una gran ráfaga de fuego que puede causar quemaduras.
 Name = Patada Ígnea
 Type = FIRE
 Category = Physical
-Power = 85
+Power = 90
 Accuracy = 90
 TotalPP = 10
 Target = NearOther
 FunctionCode = BurnTarget
-Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate
+Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate,Kicking
 EffectChance = 10
 Description = Patada que suele ser un golpe crítico y puede causar quemaduras.
 #-------------------------------
@@ -2687,7 +2661,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = FirePledge
 Flags = CanProtect,CanMirrorMove
-Description = Ataca con columnas de fuego. Combinado con un ataque tipo planta crea un mar de llamas y aumenta su potencia.
+Description = Ataca con columnas de fuego. Combinado con un Voto Planta crea un mar de llamas y aumenta su potencia.
 #-------------------------------
 [LAVAPLUME]
 Name = Humareda
@@ -2726,10 +2700,10 @@ Target = NearOther
 FunctionCode = LowerTargetSpAtk1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 100
-Description = Lanza por su boca una singular llama a gran temperatura con la que ataca a su oponente y baja su Ataque Especial.
+Description = Lanza una llama a gran temperatura a su rival, la cual le baja el Ataque Especial.
 #-------------------------------
 [BURNINGJEALOUSY]
-Name = Envidia Ardiente
+Name = Envidia ardiente
 Type = FIRE
 Category = Special
 Power = 70
@@ -2739,7 +2713,7 @@ Target = AllNearFoes
 FunctionCode = BurnTargetIfTargetStatsRaisedThisTurn
 Flags = CanProtect,CanMirrorMove
 EffectChance = 100
-Description = Ataca al objetivo con la energía generada por la envidia y causa quemaduras a los Pokémon cuyas características hayan aumentado en ese turno.
+Description = Causa quemaduras a los Pokémon cuyas características hayan aumentado en ese turno.
 #-------------------------------
 [FLAMEBURST]
 Name = Pirotecnia
@@ -2763,8 +2737,8 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = BurnFlinchTarget
 Flags = Contact,CanProtect,CanMirrorMove,Biting
-EffectChance = 100
-Description = Usa colmillos en llamas para morder. Puede hacer que el objetivo retroceda o reciba quemaduras.
+EffectChance = 101
+Description = Usa colmillos en llamas para morder. Puede hacer que el objetivo se amedrente o se queme.
 #-------------------------------
 [FLAMEWHEEL]
 Name = Rueda Fuego
@@ -2789,7 +2763,7 @@ TotalPP = 15
 Target = AllNearFoes
 FunctionCode = DestroyTargetBerryOrGem
 Flags = CanProtect,CanMirrorMove
-Description = Llamas que golpean a los objetivos adyacentes. Si estos llevan Bayas, estas se quemarán y ya no se podrán usar.
+Description = Llamas que golpean a los objetivos adyacentes. Si llevan Bayas, se quemarán y desaparecerán.
 #-------------------------------
 [FLAMECHARGE]
 Name = Nitrocarga
@@ -2808,7 +2782,7 @@ Description = Llamas que golpean al objetivo y aumentan la Velocidad del atacant
 Name = Ascuas
 Type = FIRE
 Category = Special
-Power = 40
+Power = 45
 Accuracy = 100
 TotalPP = 25
 Target = NearOther
@@ -2839,7 +2813,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = PowerHigherWithUserHeavierThanTarget
 Flags = Contact,CanProtect,CanMirrorMove,TramplesMinimize
-Description = El usuario ataca con su cuerpo ardiente. Cuanto mayor sea su peso comparado con el del objetivo, más daño causará.
+Description = Cuanto mayor sea su peso comparado con el del objetivo, más daño causará.
 #-------------------------------
 [SUNNYDAY]
 Name = Día Soleado
@@ -2849,7 +2823,7 @@ Accuracy = 0
 TotalPP = 5
 Target = BothSides
 FunctionCode = StartSunWeather
-Description = Quien lo usa intensifica el sol durante cinco turnos, lo que potencia los movimientos de tipo Fuego.
+Description = Intensifica el sol durante cinco turnos, lo que potencia los movimientos de tipo Fuego.
 #-------------------------------
 [WILLOWISP]
 Name = Fuego Fatuo
@@ -2873,7 +2847,7 @@ Target = Other
 FunctionCode = TwoTurnAttackFlinchTarget
 Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
 EffectChance = 30
-Description = Ataque en dos turnos que suele ser crítico. Puede hacer retroceder al objetivo.
+Description = Ataque en dos turnos que suele ser crítico. Puede amedrentar al objetivo.
 #-------------------------------
 [BRAVEBIRD]
 Name = Pájaro Osado
@@ -2897,7 +2871,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = LowerUserDefSpDef1
 Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
-Description = El usuario se precipita desde el cielo a una velocidad de vértigo para atacar al objetivo, pero hace que bajen la Def. y Def. Esp. del usuario.
+Description = Se precipita desde el cielo a mucha velocidad, pero hace que bajen la Def. y Def. Esp.
 #-------------------------------
 [HURRICANE]
 Name = Vendaval
@@ -2908,9 +2882,9 @@ Accuracy = 70
 TotalPP = 10
 Target = Other
 FunctionCode = ConfuseTargetAlwaysHitsInRainHitsTargetInSky
-Flags = CanProtect,CanMirrorMove
+Flags = CanProtect,CanMirrorMove,Wind
 EffectChance = 30
-Description = Ataca con un viento tan frío que estremece el cuerpo y la mente y además puede dejar helado al objetivo.
+Description = Golpea al objetivo con un fuerte torbellino que envuelve al rival y puede confundirlo.
 #-------------------------------
 [AEROBLAST]
 Name = Aerochorro
@@ -2941,20 +2915,20 @@ Description = Carga el pico antes de atacar. Quema al rival si recibe un ataque 
 Name = Vuelo
 Type = FLYING
 Category = Physical
-Power = 90
-Accuracy = 95
+Power = 100
+Accuracy = 100
 TotalPP = 15
 Target = Other
 FunctionCode = TwoTurnAttackInvulnerableInSky
 Flags = Contact,CanProtect,CanMirrorMove
-Description = Primer turno: vuela. Segundo turno: ataca. Fuera de combate, permite ir a sitios ya conocidos.
+Description = El primer turno el Pokémon alza el vuelo, para posteriormente en el segundo atacar a su objetivo.
 #-------------------------------
 [BOUNCE]
 Name = Bote
 Type = FLYING
 Category = Physical
-Power = 85
-Accuracy = 85
+Power = 90
+Accuracy = 90
 TotalPP = 5
 Target = Other
 FunctionCode = TwoTurnAttackInvulnerableInSkyParalyzeTarget
@@ -2984,20 +2958,20 @@ TotalPP = 10
 Target = Other
 FunctionCode = HealUserByThreeQuartersOfDamageDone
 Flags = CanProtect,CanMirrorMove
-Description = El usuario absorbe energía del Pokémon objetivo y aumenta sus PS en una cantidad igual o superior a la mitad del daño infligido.
+Description = Absorbe energía del Pokémon objetivo y recupera más de la mitad del daño inflingido.
 #-------------------------------
 [AIRSLASH]
 Name = Tajo Aéreo
 Type = FLYING
 Category = Special
-Power = 75
+Power = 80
 Accuracy = 95
 TotalPP = 15
 Target = Other
 FunctionCode = FlinchTarget
-Flags = CanProtect,CanMirrorMove
+Flags = CanProtect,CanMirrorMove,Slicing
 EffectChance = 30
-Description = Ataca con una hoja de aire que incluso corta el cielo. También puede hacer retroceder al objetivo.
+Description = Ataca con una hoja de aire que incluso corta el cielo. También puede amedrentar al objetivo.
 #-------------------------------
 [CHATTER]
 Name = Cháchara
@@ -3021,7 +2995,7 @@ Accuracy = 0
 TotalPP = 20
 Target = Other
 FunctionCode = None
-Flags = Contact,CanProtect,CanMirrorMove
+Flags = Contact,CanProtect,CanMirrorMove,Slicing
 Description = El usuario lanza un ataque muy rápido e ineludible.
 #-------------------------------
 [AIRCUTTER]
@@ -3033,7 +3007,7 @@ Accuracy = 95
 TotalPP = 25
 Target = AllNearFoes
 FunctionCode = None
-Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate,Slicing,Wind
 Description = Viento cortante que azota. Suele ser un golpe crítico.
 #-------------------------------
 [PLUCK]
@@ -3058,7 +3032,7 @@ TotalPP = 10
 Target = Other
 FunctionCode = TwoTurnAttackInvulnerableInSkyTargetCannotAct
 Flags = Contact,CanProtect,CanMirrorMove
-Description = Primer turno: lanza al objetivo al aire. Segundo turno: lo hace caer. Mientras está en el aire, no lo deja moverse.
+Description = 1º turno: lanza al objetivo al aire. 2º: lo hace caer. En el aire no lo deja moverse.
 #-------------------------------
 [WINGATTACK]
 Name = Ataque Ala
@@ -3105,8 +3079,8 @@ Accuracy = 100
 TotalPP = 35
 Target = Other
 FunctionCode = DoublePowerIfTargetInSky
-Flags = CanProtect,CanMirrorMove
-Description = Crea un violento tornado para hacer trizas al rival. Puede hacerle retroceder.
+Flags = CanProtect,CanMirrorMove,Wind
+Description = Crea un tornado con las alas y lo lanza contra el objetivo.
 #-------------------------------
 [PECK]
 Name = Picotazo
@@ -3118,7 +3092,7 @@ TotalPP = 35
 Target = Other
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove
-Description = Picotazo giratorio y perforador muy potente.
+Description = Ensarta al objetivo con un cuerno o pico punzante.
 #-------------------------------
 [DEFOG]
 Name = Despejar
@@ -3129,7 +3103,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = LowerTargetEvasion1RemoveSideEffects
 Flags = CanProtect,CanMirrorMove
-Description = Potente viento que barre el Reflejo o Pantalla de Luz del objetivo y puede reducir su Evasión.
+Description = Potente viento que barre el reflejo o pantalla de luz del objetivo y puede reducir su Evasión.
 #-------------------------------
 [FEATHERDANCE]
 Name = Danza Pluma
@@ -3157,7 +3131,7 @@ Name = Respiro
 Type = FLYING
 Category = Status
 Accuracy = 0
-TotalPP = 10
+TotalPP = 5
 Target = User
 FunctionCode = HealUserHalfOfTotalHPLoseFlyingTypeThisTurn
 Description = Aterriza sobre la superficie para descansar. Recupera hasta la mitad del total de sus PS.
@@ -3170,7 +3144,8 @@ Accuracy = 0
 TotalPP = 15
 Target = UserSide
 FunctionCode = StartUserSideDoubleSpeed
-Description = Crea un fuerte remolino que aumenta la Velocidad de los Pokémon de tu equipo durante cuatro turnos.
+Flags = Wind
+Description = Fuerte remolino que duplica la Velocidad de los Pokémon de tu equipo durante cuatro turnos.
 #-------------------------------
 [ASTRALBARRAGE]
 Name = Orbes Espectro
@@ -3182,7 +3157,7 @@ TotalPP = 5
 Target = AllNearFoes
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove,CannotMetronome
-Description = El usuario ataca enviando una espantosa cantidad de pequeños fantasmas a los Pokémon rivales.
+Description = El usuario ataca lanzando una ráfaga de fantasmas que daña a ambos rivales.
 #-------------------------------
 [SHADOWFORCE]
 Name = Golpe Umbrío
@@ -3206,7 +3181,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = FailsIfTargetHasNoItem
 Flags = CanProtect,CanMirrorMove
-Description = El usuario ataca utilizando el objeto que lleva el rival. Si no tiene ninguno equipado, el movimiento falla.
+Description = El usuario ataca utilizando el objeto que lleva el rival. Si no tiene, falla.
 #-------------------------------
 [MOONGEISTBEAM]
 Name = Rayo Umbrío
@@ -3218,7 +3193,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = IgnoreTargetAbility
 Flags = CanProtect,CanMirrorMove,CannotMetronome
-Description = Ataca al objetivo con un rayo misterioso de energía lunar.
+Description = Ataca al objetivo con un rayo misterioso de energía lunar. Este movimiento ignora la habilidad del objetivo.
 #-------------------------------
 [PHANTOMFORCE]
 Name = Golpe Fantasma
@@ -3230,7 +3205,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = TwoTurnAttackInvulnerableRemoveProtections
 Flags = Contact,CanMirrorMove
-Description = El usuario desaparece en el primer turno y ataca a su objetivo en el segundo. Permite acertar aunque el objetivo esté protegiéndose.
+Description = Desaparece en el primer turno y ataca en el segundo. Acierta aunque el objetivo se proteja.
 #-------------------------------
 [SPECTRALTHIEF]
 Name = Robasombra
@@ -3242,7 +3217,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = UserStealTargetPositiveStatStages
 Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
-Description = El usuario se esconde en la sombra del objetivo y lo ataca tras robarle las mejoras en sus características.
+Description = Se esconde en la sombra del objetivo y lo ataca tras robarle las mejoras en sus características.
 #-------------------------------
 [SHADOWBONE]
 Name = Hueso Sombrío
@@ -3255,7 +3230,7 @@ Target = NearOther
 FunctionCode = LowerTargetDefense1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 20
-Description = Ataca al oponente golpeándole con un hueso poseído por un espíritu. Puede reducir la Defensa del objetivo.
+Description = Golpea al oponente con un hueso poseído por un espíritu. Puede reducir su Defensa.
 #-------------------------------
 [SHADOWBALL]
 Name = Bola Sombra
@@ -3324,7 +3299,7 @@ Description = Produce un viento horripilante. Puede subir de golpe todas las car
 Name = Puño Sombra
 Type = GHOST
 Category = Physical
-Power = 60
+Power = 75
 Accuracy = 0
 TotalPP = 20
 Target = NearOther
@@ -3356,7 +3331,7 @@ Target = NearOther
 FunctionCode = FlinchTarget
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 30
-Description = Impresiona tanto que puede hacer retroceder al objetivo.
+Description = Impresiona tanto que puede amedrentar al objetivo.
 #-------------------------------
 [LICK]
 Name = Lengüetazo
@@ -3422,7 +3397,7 @@ Accuracy = 0
 TotalPP = 5
 Target = User
 FunctionCode = SetAttackerMovePPTo0IfUserFaints
-Description = Si el usuario se debilita al recibir un ataque, todos los PP de este último ataque serán eliminados.
+Description = Si el usuario se debilita al recibir un ataque, los PP de este último ataque serán eliminados.
 #-------------------------------
 [NIGHTMARE]
 Name = Pesadilla
@@ -3455,7 +3430,7 @@ TotalPP = 20
 Target = NearOther
 FunctionCode = AddGhostTypeToTarget
 Flags = CanProtect,CanMirrorMove
-Description = Invita al objetivo a celebrar Halloween, haciendo que pase a ser también de tipo Fantasma además de conservar sus propios tipos.
+Description = Invita al objetivo a celebrar Halloween, volviéndolo de tipo Fantasma además de los suyos.
 #-------------------------------
 [FRENZYPLANT]
 Name = Planta Feroz
@@ -3485,13 +3460,13 @@ Description = Cae una lluvia de hojas afiladas. Baja mucho el Ataque Especial de
 Name = Cuchilla Solar
 Type = GRASS
 Category = Physical
-Power = 125
+Power = 130
 Accuracy = 100
 TotalPP = 10
 Target = NearOther
 FunctionCode = TwoTurnAttackOneTurnInSun
-Flags = Contact,CanProtect,CanMirrorMove
-Description = El usuario dedica un turno a absorber energía lumínica y concentrarla en forma de cuchilla con la que ataca al rival al turno siguiente.
+Flags = Contact,CanProtect,CanMirrorMove,Slicing
+Description = Dedica un turno a concentrar energía en forma de cuchilla con la que ataca en el segundo turno.
 #-------------------------------
 [PETALDANCE]
 Name = Danza Pétalo
@@ -3534,7 +3509,7 @@ Description = Una onda de choque se libera del cuerpo. Puede bajar la Defensa Es
 Name = Rayo Solar
 Type = GRASS
 Category = Special
-Power = 120
+Power = 130
 Accuracy = 100
 TotalPP = 10
 Target = NearOther
@@ -3565,10 +3540,10 @@ Target = NearOther
 FunctionCode = LowerTargetSpDef1
 Flags = CanProtect,CanMirrorMove,Bomb
 EffectChance = 10
-Description = Aúna fuerzas de la naturaleza y libera su ataque. Puede disminuir la Def. Esp. del objetivo.
+Description = Aúna fuerzas de la naturaleza y libera su ataque. Puede disminuir la Defensa Especial del objetivo.
 #-------------------------------
 [LEAFBLADE]
-Name = Leaf Blade
+Name = Hoja Aguda
 Type = GRASS
 Category = Physical
 Power = 90
@@ -3576,11 +3551,11 @@ Accuracy = 100
 TotalPP = 15
 Target = NearOther
 FunctionCode = None
-Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate
-Description = The user handles a sharp leaf like a sword and attacks by slashing. It has a high critical-hit ratio.
+Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate,Slicing
+Description = Acuchilla con una hoja fina. Suele dar un golpe crítico.
 #-------------------------------
 [PETALBLIZZARD]
-Name = Hoja Aguda
+Name = Tormenta Floral
 Type = GRASS
 Category = Physical
 Power = 90
@@ -3588,8 +3563,8 @@ Accuracy = 100
 TotalPP = 15
 Target = AllNearOthers
 FunctionCode = None
-Flags = CanProtect,CanMirrorMove
-Description = Acuchilla con una hoja fina. Suele dar un golpe crítico.
+Flags = CanProtect,CanMirrorMove,Wind
+Description = El usuario desata un intenso vendaval de pétalos que daña a los Pokémon a su alrededor.
 #-------------------------------
 [APPLEACID]
 Name = Ácido Málico
@@ -3602,7 +3577,7 @@ Target = NearOther
 FunctionCode = LowerTargetSpDef1
 Flags = CanProtect,CanMirrorMove,CannotMetronome
 EffectChance = 100
-Description = Ataca al objetivo con el fluido corrosivo que desprende una manzana ácida, lo que también disminuye la Defensa Especial de este.
+Description = Ataca con el fluido corrosivo de una manzana ácida, y reduce la Defensa Especial.
 #-------------------------------
 [DRUMBEATING]
 Name = Batería Asalto
@@ -3613,7 +3588,7 @@ Accuracy = 100
 TotalPP = 10
 Target = NearOther
 FunctionCode = LowerTargetSpeed1
-Flags = CanProtect,CanMirrorMove,CannotMetronome
+Flags = CanProtect,CanMirrorMove,CannotMetronome,Sound
 EffectChance = 100
 Description = El usuario controla un tocón mediante la percusión y al atacar reduce la Velocidad del objetivo.
 #-------------------------------
@@ -3627,7 +3602,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = GrassPledge
 Flags = CanProtect,CanMirrorMove
-Description = Ataca con columnas de hojas. Combinado con un ataque de agua crea un pantano y aumenta su potencia.
+Description = Ataca con columnas de hojas. Combinado con Voto Agua crea un pantano y aumenta su potencia.
 #-------------------------------
 [GRAVAPPLE]
 Name = Fuerza G
@@ -3640,7 +3615,7 @@ Target = NearOther
 FunctionCode = LowerTargetDefense1PowersUpInGravity
 Flags = CanProtect,CanMirrorMove,CannotMetronome
 EffectChance = 100
-Description = El usuario causa daño dejando caer una manzana desde una gran altura. Esto hace que baje la Defensa del objetivo.
+Description = Causa daño dejando caer una manzana desde una gran altura. Baja la Defensa del objetivo.
 #-------------------------------
 [SEEDBOMB]
 Name = Bomba Germen
@@ -3682,13 +3657,13 @@ Description = Un golpe que drena energía. El Pokémon recupera la mitad de los 
 Name = Fitoimpulso
 Type = GRASS
 Category = Physical
-Power = 70
+Power = 55
 Accuracy = 100
 TotalPP = 20
 Target = NearOther
 FunctionCode = HigherPriorityInGrassyTerrain
 Flags = Contact,CanProtect,CanMirrorMove
-Description = Ataca al objetivo deslizándose sobre el terreno de combate. Este movimiento tiene prioridad alta cuando el terreno está cubierto por un campo de hierba.
+Description = Ataca deslizándose sobre el terreno. Cuando hay campo de hierba tiene prioridad.
 #-------------------------------
 [TROPKICK]
 Name = Patada Tropical
@@ -3699,7 +3674,7 @@ Accuracy = 100
 TotalPP = 15
 Target = NearOther
 FunctionCode = LowerTargetAttack1
-Flags = Contact,CanProtect,CanMirrorMove
+Flags = Contact,CanProtect,CanMirrorMove,Kicking
 EffectChance = 100
 Description = Lanza una patada con la fuerza del trópico que golpea al rival y reduce su Ataque.
 #-------------------------------
@@ -3739,18 +3714,18 @@ Target = NearOther
 FunctionCode = FlinchTarget
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 30
-Description = Pega con brazos de pinchos y puede hacer retroceder al objetivo.
+Description = Pega con brazos de pinchos y puede amedrentar al objetivo.
 #-------------------------------
 [RAZORLEAF]
 Name = Hoja Afilada
 Type = GRASS
 Category = Physical
-Power = 55
-Accuracy = 95
+Power = 60
+Accuracy = 100
 TotalPP = 25
 Target = AllNearFoes
 FunctionCode = None
-Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate,Slicing
 Description = Corta con hojas afiladas. Suele ser crítico.
 #-------------------------------
 [VINEWHIP]
@@ -3793,7 +3768,7 @@ Description = Ataca al oponente lanzando hojas.
 Name = Megaagotar
 Type = GRASS
 Category = Special
-Power = 40
+Power = 55
 Accuracy = 100
 TotalPP = 15
 Target = NearOther
@@ -3829,7 +3804,7 @@ Description = Dispara rápido de dos a cinco ráfagas de semillas de manera cons
 Name = Absorber
 Type = GRASS
 Category = Special
-Power = 20
+Power = 30
 Accuracy = 100
 TotalPP = 25
 Target = NearOther
@@ -3857,7 +3832,7 @@ Accuracy = 0
 TotalPP = 5
 Target = UserAndAllies
 FunctionCode = CureUserPartyStatus
-Description = Cura todos los problemas de estado del equipo con un suave aroma.
+Description = Cura los problemas de estado del equipo con un suave aroma.
 #-------------------------------
 [COTTONGUARD]
 Name = Rizo Algodón
@@ -3889,7 +3864,7 @@ TotalPP = 20
 Target = NearOther
 FunctionCode = AddGrassTypeToTarget
 Flags = CanProtect,CanMirrorMove
-Description = El objetivo es presa de la maldición del bosque, por lo que pasa a ser un Pokémon de tipo Planta, además de conservar sus tipos habituales.
+Description = Presa de la maldición del bosque, el rival pasa a ser de tipo Planta, además de los suyos.
 #-------------------------------
 [GRASSWHISTLE]
 Name = Silbato
@@ -3910,7 +3885,7 @@ Accuracy = 0
 TotalPP = 10
 Target = BothSides
 FunctionCode = StartGrassyTerrain
-Description = Convierte el terreno de combate en un campo de hierba durante cinco turnos. Los Pokémon que estén en el suelo recuperan PS en cada turno.
+Description = Invoca un campo de hierba 5 turnos. Al final del turno los Pokémon en el suelo recuperan PS.
 #-------------------------------
 [INGRAIN]
 Name = Arraigo
@@ -3931,7 +3906,7 @@ TotalPP = 10
 Target = UserAndAllies
 FunctionCode = HealUserAndAlliesQuarterOfTotalHPCureStatus
 Flags = CannotMetronome
-Description = Utiliza lianas para envolver árboles y absorber su energía. Restaura los PS y cura los problemas de estado del usuario y sus aliados.
+Description = Restaura los PS y cura los problemas de estado del usuario y sus aliados.
 #-------------------------------
 [LEECHSEED]
 Name = Drenadoras
@@ -3964,7 +3939,7 @@ TotalPP = 10
 Target = User
 Priority = 4
 FunctionCode = ProtectUserFromTargetingMovesSpikyShield
-Description = Evita el ataque de su oponente y, al mismo tiempo, le inflige daño si ha entrado en contacto con él.
+Description = Evita el ataque de su oponente y le inflige daño si ha entrado en contacto con él.
 #-------------------------------
 [SPORE]
 Name = Espora
@@ -3975,7 +3950,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = SleepTarget
 Flags = CanProtect,CanMirrorMove,Powder
-Description = Adhiere esporas al objetivo para reducir mucho su Velocidad.
+Description = Esparce esporas que inducen al sueño.
 #-------------------------------
 [STRENGTHSAP]
 Name = Absorbefuerza
@@ -3986,7 +3961,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = HealUserByTargetAttackLowerTargetAttack1
 Flags = CanProtect,CanMirrorMove
-Description = Restaura una cantidad de PS equivalente al valor de Ataque del rival, que además verá reducida esta característica.
+Description = Baja el Ataque del rival y restaura una cantidad de PS equivalente al valor de Ataque del rival.
 #-------------------------------
 [STUNSPORE]
 Name = Paralizador
@@ -4000,7 +3975,7 @@ Flags = CanProtect,CanMirrorMove,Powder
 Description = Esparce polvo que paraliza al objetivo.
 #-------------------------------
 [SYNTHESIS]
-Name = Síntesis
+Name = Fotosíntesis
 Type = GRASS
 Category = Status
 Accuracy = 0
@@ -4018,7 +3993,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = SetTargetAbilityToInsomnia
 Flags = CanProtect,CanMirrorMove
-Description = Se planta una semilla en el objetivo que le causa pesar.
+Description = Se planta una semilla en el objetivo que le causa pesar y le induce Insomnio.
 #-------------------------------
 [PRECIPICEBLADES]
 Name = Filo del Abismo
@@ -4030,7 +4005,7 @@ TotalPP = 10
 Target = AllNearFoes
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove,CannotMetronome
-Description = Hace que el poder latente de la tierra se manifieste en forma de hojas afiladas y ataca al objetivo con ellas.
+Description = Manifiesta el poder latente de la tierra en forma de hojas afiladas y ataca al objetivo.
 #-------------------------------
 [EARTHQUAKE]
 Name = Terremoto
@@ -4054,7 +4029,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove
-Description = Asesta un golpe devastador usando todo su cuerpo.
+Description = Asesta un golpe devastador usando  su cuerpo.
 #-------------------------------
 [EARTHPOWER]
 Name = Tierra Viva
@@ -4067,7 +4042,7 @@ Target = NearOther
 FunctionCode = LowerTargetSpDef1
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
-Description = La tierra a los pies del rival erupciona violentamente. Puede disminuir la Defensa Especial del rival.
+Description = Erupciona la tierra a los pies del rival. Puede disminuir la Defensa Especial.
 #-------------------------------
 [LANDSWRATH]
 Name = Fuerza Telúrica
@@ -4101,9 +4076,9 @@ Power = 90
 Accuracy = 100
 TotalPP = 10
 Target = AllNearFoes
-FunctionCode = TrapTargetInBattle
+FunctionCode = TrapTargetInBattleMainEffect
 Flags = CanProtect,CanMirrorMove,CannotMetronome
-Description = El usuario genera ondas sísmicas que se propagan por el suelo y sacuden a los oponentes. Los Pokémon alcanzados no podrán huir del combate.
+Description = Ondas sísmicas que se propagan por el suelo a todos los rivales. Los alcanzados no podrán huir.
 #-------------------------------
 [DIG]
 Name = Excavar
@@ -4139,7 +4114,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = DoublePowerIfUserLastMoveFailed
 Flags = Contact,CanProtect,CanMirrorMove
-Description = Usa la frustración para atacar, duplicando la potencia si el usuario ha fallado su último movimiento.
+Description = Usa la frustración para atacar, duplicando la potencia si ha fallado su último movimiento.
 #-------------------------------
 [SCORCHINGSANDS]
 Name = Arenas Ardientes
@@ -4165,14 +4140,14 @@ Target = NearOther
 FunctionCode = FlinchTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
-Description = Aporrea con un hueso. Puede hacer retroceder al objetivo.
+Description = Aporrea con un hueso. Puede amedrentar al objetivo.
 #-------------------------------
 [MUDBOMB]
 Name = Bomba Fango
 Type = GROUND
 Category = Special
 Power = 65
-Accuracy = 85
+Accuracy = 95
 TotalPP = 10
 Target = NearOther
 FunctionCode = LowerTargetAccuracy1
@@ -4191,7 +4166,7 @@ Target = AllNearOthers
 FunctionCode = LowerTargetSpeed1WeakerInGrassyTerrain
 Flags = CanProtect,CanMirrorMove
 EffectChance = 100
-Description = Ataca con una sacudida sísmica que afecta a los Pokémon adyacentes en combate y baja su Velocidad.
+Description = Ataca con una sacudida sísmica que afecta a los Pokémon adyacentes y baja su Velocidad.
 #-------------------------------
 [MUDSHOT]
 Name = Disparo Lodo
@@ -4246,7 +4221,7 @@ Description = Hueso en ristre, aporrea al objetivo de dos a cinco veces.
 Name = Bofetón Lodo
 Type = GROUND
 Category = Special
-Power = 20
+Power = 35
 Accuracy = 100
 TotalPP = 10
 Target = NearOther
@@ -4287,7 +4262,7 @@ Accuracy = 0
 TotalPP = 15
 Target = BothSides
 FunctionCode = StartWeakenElectricMoves
-Description = El usuario se cubre de lodo y debilita los movimientos de tipo Eléctrico mientras está en combate.
+Description = Se cubre de lodo y debilita los movimientos de tipo Eléctrico mientras está en combate.
 #-------------------------------
 [ROTOTILLER]
 Name = Fertilizante
@@ -4297,7 +4272,7 @@ Accuracy = 0
 TotalPP = 10
 Target = AllBattlers
 FunctionCode = RaiseGroundedGrassBattlersAtkSpAtk1
-Description = Labra la tierra haciendo que sea más fácil cultivarla y consigue que aumente el Ataque y el Ataque Especial de los Pokémon de tipo Planta.
+Description = Labra la tierra y consigue que aumente el Ataque y el Ataque Especial de los Pokémon Planta.
 #-------------------------------
 [SANDATTACK]
 Name = Ataque Arena
@@ -4318,7 +4293,7 @@ Accuracy = 0
 TotalPP = 10
 Target = User
 FunctionCode = HealUserDependingOnSandstorm
-Description = Restaura la mitad de los PS máximos del usuario. Durante las tormentas de arena, restaura aún más PS.
+Description = Restaura la mitad de los PS máximos del usuario. Si hay tormentas de arena restaura más PS.
 #-------------------------------
 [SPIKES]
 Name = Púas
@@ -4328,7 +4303,7 @@ Accuracy = 0
 TotalPP = 20
 Target = FoeSide
 FunctionCode = AddSpikesToFoeSide
-Description = El usuario se hace una bola y arrolla al objetivo con su cuerpo. Puede hacerle retroceder.
+Description = Esparce púas en el terreno rival. Las púas hieren a los Pokémon rivales que entran en combate.
 #-------------------------------
 [FREEZESHOCK]
 Name = Rayo Gélido
@@ -4341,7 +4316,7 @@ Target = NearOther
 FunctionCode = TwoTurnAttackParalyzeTarget
 Flags = CanProtect,CanMirrorMove,CannotMetronome
 EffectChance = 30
-Description = El usuario carga un bloque de hielo con electricidad en el primer turno y ataca con él en el segundo. Puede paralizar.
+Description = Carga un bloque de hielo con electricidad en el 1º turno y ataca con él en el 2º. Puede paralizar.
 #-------------------------------
 [ICEBURN]
 Name = Llama Gélida
@@ -4360,13 +4335,13 @@ Description = Ataca al objetivo en el segundo turno rodeándolo de un aire géli
 Name = Lanza Glacial
 Type = ICE
 Category = Physical
-Power = 130
+Power = 120
 Accuracy = 100
 TotalPP = 5
 Target = AllNearFoes
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove,CannotMetronome
-Description = El usuario ataca al objetivo lánzandole un carambano de hielo envuelto en una ventisca.
+Description = El usuario ataca lanzando una poderosa lanza de hielo que daña a ambos rivales.
 #-------------------------------
 [BLIZZARD]
 Name = Ventisca
@@ -4377,7 +4352,7 @@ Accuracy = 70
 TotalPP = 5
 Target = AllNearFoes
 FunctionCode = FreezeTargetAlwaysHitsInHail
-Flags = CanProtect,CanMirrorMove
+Flags = CanProtect,CanMirrorMove,Wind
 EffectChance = 10
 Description = Tormenta de hielo que puede llegar a congelar.
 #-------------------------------
@@ -4417,7 +4392,7 @@ Target = NearOther
 FunctionCode = FlinchTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 30
-Description = Lanza grandes carámbanos. Puede hacer retroceder al objetivo.
+Description = Lanza grandes carámbanos. Puede amedrentar al objetivo.
 #-------------------------------
 [ICEPUNCH]
 Name = Puño Hielo
@@ -4436,7 +4411,7 @@ Description = Puñetazo helado. Puede congelar.
 Name = Liofilización
 Type = ICE
 Category = Special
-Power = 70
+Power = 80
 Accuracy = 100
 TotalPP = 20
 Target = NearOther
@@ -4449,7 +4424,7 @@ Description = Enfría súbitamente al objetivo e incluso puede congelarlo. Es su
 Name = Rayo Aurora
 Type = ICE
 Category = Special
-Power = 65
+Power = 80
 Accuracy = 100
 TotalPP = 20
 Target = NearOther
@@ -4481,8 +4456,8 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = FreezeFlinchTarget
 Flags = Contact,CanProtect,CanMirrorMove,Biting
-EffectChance = 100
-Description = Usa colmillos helados para morder. Puede hacer que el objetivo retroceda o congelarlo.
+EffectChance = 101
+Description = Usa colmillos helados para morder. Puede hacer que el objetivo se amedrente o congelarlo.
 #-------------------------------
 [AVALANCHE]
 Name = Alud
@@ -4518,7 +4493,7 @@ Accuracy = 95
 TotalPP = 15
 Target = AllNearFoes
 FunctionCode = LowerTargetSpeed1
-Flags = CanProtect,CanMirrorMove
+Flags = CanProtect,CanMirrorMove,Wind
 EffectChance = 100
 Description = Ataque con aire helado que baja la Velocidad del objetivo.
 #-------------------------------
@@ -4539,7 +4514,7 @@ Description = Crea bolas de hielo y las lanza a gran velocidad. Este movimiento 
 Name = Nieve Polvo
 Type = ICE
 Category = Special
-Power = 40
+Power = 50
 Accuracy = 100
 TotalPP = 25
 Target = AllNearFoes
@@ -4581,7 +4556,7 @@ Accuracy = 90
 TotalPP = 10
 Target = NearOther
 FunctionCode = HitThreeTimesPowersUpWithEachHit
-Flags = Contact,CanProtect,CanMirrorMove
+Flags = Contact,CanProtect,CanMirrorMove,Kicking
 Description = Patea hasta tres veces seguidas y cada vez más fuerte.
 #-------------------------------
 [SHEERCOLD]
@@ -4604,7 +4579,7 @@ Accuracy = 0
 TotalPP = 20
 Target = UserSide
 FunctionCode = StartWeakenDamageAgainstUserSideIfHail
-Description = Reduce el daño de los ataques físicos y especiales que ejecuta el rival durante cinco turnos. Solo puede usarse cuando está granizando.
+Description = Reduce el daño de los ataques físicos y especiales que ejecuta el rival durante cinco turnos. Solo puede usarse cuando está nevando.
 #-------------------------------
 [HAIL]
 Name = Granizo
@@ -4614,7 +4589,7 @@ Accuracy = 0
 TotalPP = 10
 Target = BothSides
 FunctionCode = StartHailWeather
-Description = Tormenta de granizo que dura cinco turnos. Hiere a todos, excepto a los de tipo Hielo.
+Description = Tormenta de nieve que dura cinco turnos. Aumenta la defensa de los Pokémon tipo Hielo en un 50%.
 #-------------------------------
 [HAZE]
 Name = Niebla
@@ -4637,7 +4612,7 @@ FunctionCode = StartUserSideImmunityToStatStageLowering
 Description = Rodea de fina niebla al usuario y protege las características de su equipo durante cinco turnos.
 #-------------------------------
 [EXPLOSION]
-Name = Explosión
+Name = Explosion
 Type = NORMAL
 Category = Physical
 Power = 250
@@ -4682,7 +4657,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = AttackAndSkipNextTurn
 Flags = CanProtect,CanMirrorMove
-Description = Es eficaz, pero el atacante deberá descansar en el siguiente turno.
+Description = Un rayo fulminante, pero el atacante deberá descansar en el siguiente turno.
 #-------------------------------
 [BOOMBURST]
 Name = Estruendo
@@ -4706,7 +4681,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = FailsIfUserHasUnusedMove
 Flags = Contact,CanProtect,CanMirrorMove
-Description = Este movimiento solo puede usarse tras haber usado todos los demás conocidos por el Pokémon.
+Description = Este movimiento solo puede usarse tras haber usado los demás conocidos por el Pokémon.
 #-------------------------------
 [SKULLBASH]
 Name = Cabezazo
@@ -4718,7 +4693,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = TwoTurnAttackChargeRaiseUserDefense1
 Flags = Contact,CanProtect,CanMirrorMove
-Description = Propina un tremendo cabezazo. También daña al usuario un poco.
+Description = Primer turno: se prepara y sube la Defensa. Segundo turno: da el cabezazo.
 #-------------------------------
 [DOUBLEEDGE]
 Name = Doble Filo
@@ -4753,7 +4728,7 @@ Accuracy = 75
 TotalPP = 5
 Target = NearOther
 FunctionCode = None
-Flags = Contact,CanProtect,CanMirrorMove
+Flags = Contact,CanProtect,CanMirrorMove,Kicking
 Description = Patada de extrema fuerza.
 #-------------------------------
 [MULTIATTACK]
@@ -4766,7 +4741,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = TypeDependsOnUserMemory
 Flags = Contact,CanProtect,CanMirrorMove
-Description = El Pokémon se rodea de una potente energía con la que golpea al rival. El tipo del movimiento depende del disco que lleva el usuario.
+Description = Se rodea de una potente energía con la que golpea al rival. El tipo depende del disco que lleva.
 #-------------------------------
 [TECHNOBLAST]
 Name = Tecno Shock
@@ -4814,7 +4789,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = TypeDependsOnUserPlate
 Flags = CanProtect,CanMirrorMove
-Description = Emite incontables haces de luz. Varía según el tipo de Tabla que lleve el usuario.
+Description = Emite incontables haces de luz. Varía según el tipo de tabla que lleve el usuario.
 #-------------------------------
 [HYPERVOICE]
 Name = Vozarrón
@@ -4838,7 +4813,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = TypeIsUserFirstType
 Flags = CanProtect,CanMirrorMove,Dance
-Description = Ataque que consiste en un baile muy enérgico y cuyo tipo se corresponde con el del Pokémon que lo ejecuta.
+Description = Baile enérgico cuyo tipo será el primero del Pokémon que lo ejecuta. Si lo pierde, usará el segundo.
 #-------------------------------
 [ROCKCLIMB]
 Name = Treparrocas
@@ -4888,7 +4863,7 @@ Target = NearOther
 FunctionCode = ParalyzeTarget
 Flags = Contact,CanProtect,CanMirrorMove,TramplesMinimize
 EffectChance = 30
-Description = Salta sobre el objetivo con todo su peso. Puede paralizar.
+Description = Salta sobre el objetivo con  su peso. Puede paralizar.
 #-------------------------------
 [EXTREMESPEED]
 Name = Velocidad Extrema
@@ -4901,7 +4876,7 @@ Target = NearOther
 Priority = 2
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove
-Description = Ataque muy rápido que siempre se realiza el primero.
+Description = Ataque muy rápido que siempre va en primer lugar.
 #-------------------------------
 [HYPERFANG]
 Name = Hipercolmillo
@@ -4914,7 +4889,7 @@ Target = NearOther
 FunctionCode = FlinchTarget
 Flags = Contact,CanProtect,CanMirrorMove,Biting
 EffectChance = 10
-Description = Ataque con finos colmillos. Puede causar retroceso.
+Description = Ataque con finos colmillos. Puede amedrentar.
 #-------------------------------
 [MEGAPUNCH]
 Name = Megapuño
@@ -4932,13 +4907,13 @@ Description = Un puñetazo de gran potencia.
 Name = Viento Cortante
 Type = NORMAL
 Category = Special
-Power = 80
+Power = 75
 Accuracy = 100
 TotalPP = 10
 Target = AllNearFoes
-FunctionCode = TwoTurnAttack
-Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
-Description = Primer turno: prepara. Segundo turno: ataca. Suele ser crítico.
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate,Wind,Slicing
+Description = Ataca con viento cortante. Suele ser crítico.
 #-------------------------------
 [SLAM]
 Name = Atizar
@@ -4954,15 +4929,15 @@ Description = Golpea con las extremidades.
 #-------------------------------
 [STRENGTH]
 Name = Fuerza
-Type = NORMAL
+Type = ROCK
 Category = Physical
-Power = 80
+Power = 90
 Accuracy = 100
 TotalPP = 15
 Target = NearOther
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove
-Description = Potente puñetazo. Fuera de combate sirve para mover piedras.
+Description = Potente puñetazo.
 #-------------------------------
 [TRIATTACK]
 Name = Triataque
@@ -5013,7 +4988,7 @@ TotalPP = 20
 Target = NearOther
 FunctionCode = IgnoreTargetDefSpDefEvaStatStages
 Flags = Contact,CanProtect,CanMirrorMove
-Description = Un ataque que busca los puntos débiles del objetivo y puede causarle daño aunque cambien sus características.
+Description = Busca los puntos débiles del objetivo y causa daño aunque cambien sus características.
 #-------------------------------
 [DIZZYPUNCH]
 Name = Puño Mareo
@@ -5029,7 +5004,7 @@ EffectChance = 20
 Description = Rítmicos puñetazos que pueden causar confusión.
 #-------------------------------
 [FACADE]
-Name = Imagen
+Name = Fachada
 Type = NORMAL
 Category = Physical
 Power = 70
@@ -5051,7 +5026,7 @@ Target = NearOther
 FunctionCode = FlinchTarget
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 30
-Description = Lanza un potente cabezazo que puede hacer retroceder al objetivo.
+Description = Lanza un potente cabezazo que puede amedrentar al objetivo.
 #-------------------------------
 [RETALIATE]
 Name = Represalia
@@ -5063,7 +5038,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = DoublePowerIfAllyFaintedLastTurn
 Flags = Contact,CanProtect,CanMirrorMove
-Description = Venga a los amigos derrotados. Si en el turno anterior han derrotado a uno, la potencia del ataque aumentará.
+Description = Si en el turno anterior han derrotado a un compañero, la potencia del ataque aumentará.
 #-------------------------------
 [SECRETPOWER]
 Name = Daño Secreto
@@ -5087,8 +5062,8 @@ Accuracy = 100
 TotalPP = 20
 Target = NearOther
 FunctionCode = None
-Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate
-Description = Ataca con cuchillas o con pinzas. Suele dar un golpe crítico.
+Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate,Slicing
+Description = Ataca con cuchillas o con pinzas. Suele ser un golpe crítico.
 #-------------------------------
 [SMELLINGSALTS]
 Name = Estímulo
@@ -5125,7 +5100,7 @@ Target = NearOther
 FunctionCode = FlinchTarget
 Flags = Contact,CanProtect,CanMirrorMove,TramplesMinimize
 EffectChance = 30
-Description = Tremendo pisotón que puede hacer retroceder al objetivo.
+Description = Tremendo pisotón que puede amedrentar al objetivo.
 #-------------------------------
 [COVET]
 Name = Antojo
@@ -5133,7 +5108,7 @@ Type = NORMAL
 Category = Physical
 Power = 60
 Accuracy = 100
-TotalPP = 25
+TotalPP = 40
 Target = NearOther
 FunctionCode = UserTakesTargetItem
 Flags = Contact,CanProtect,CanMirrorMove
@@ -5189,14 +5164,14 @@ Description = Atrapa con potentes pinzas.
 #-------------------------------
 [CUT]
 Name = Corte
-Type = NORMAL
+Type = STEEL
 Category = Physical
-Power = 50
+Power = 65
 Accuracy = 95
 TotalPP = 30
 Target = NearOther
 FunctionCode = None
-Flags = Contact,CanProtect,CanMirrorMove
+Flags = Contact,CanProtect,CanMirrorMove,Slicing
 Description = Corta con garras, guadañas, etc. También sirve para cortar árboles finos.
 #-------------------------------
 [RAPIDSPIN]
@@ -5210,7 +5185,7 @@ Target = NearOther
 FunctionCode = RemoveUserBindingAndEntryHazards
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 100
-Description = Ataque giratorio que puede eliminar movimientos como Atadura, Repetición, Drenadoras y Púas.
+Description = Ataque giratorio que sube la Velocidad y elimina movimientos como atadura, drenadoras o púas.
 #-------------------------------
 [SNORE]
 Name = Ronquido
@@ -5223,19 +5198,7 @@ Target = NearOther
 FunctionCode = FlinchTargetFailsIfUserNotAsleep
 Flags = CanProtect,CanMirrorMove,Sound
 EffectChance = 30
-Description = Fuerte ronquido que debe usarse dormido. Puede hacer retroceder al objetivo.
-#-------------------------------
-[STRUGGLE]
-Name = Forcejeo
-Type = NORMAL
-Category = Physical
-Power = 50
-Accuracy = 0
-TotalPP = 1
-Target = RandomNearFoe
-FunctionCode = Struggle
-Flags = Contact,CanProtect
-Description = Solo se usa como último recurso al acabarse los PP. Hiere un poco al agresor.
+Description = Fuerte ronquido que debe usarse dormido. Puede amedrentar al objetivo.
 #-------------------------------
 [TERRAINPULSE]
 Name = Pulso de Campo
@@ -5247,7 +5210,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = TypeAndPowerDependOnTerrain
 Flags = CanProtect,CanMirrorMove,Pulse
-Description = El usuario ataca aprovechando la energía del campo activo, que determina tanto el tipo como la potencia del movimiento.
+Description = Ataca aprovechando la energía del campo activo, que determina el tipo y la potencia del movimiento.
 #-------------------------------
 [WEATHERBALL]
 Name = Meteorobola
@@ -5285,7 +5248,7 @@ Priority = 3
 FunctionCode = FlinchTargetFailsIfNotUserFirstTurn
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 100
-Description = Ataca primero y, además, hace retroceder al rival. Solo sirve en el primer turno.
+Description = Ataca primero y, además, amedrenta al rival. Solo sirve en el primer turno.
 #-------------------------------
 [FALSESWIPE]
 Name = Falso Tortazo
@@ -5370,7 +5333,7 @@ TotalPP = 35
 Target = NearOther
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove
-Description = Placaje de alto riesgo que hiere también al atacante.
+Description = Embiste con  el cuerpo.
 #-------------------------------
 [DOUBLEHIT]
 Name = Doble Golpe
@@ -5413,7 +5376,7 @@ Description = Golpea con la cola u otras partes de su cuerpo de dos a cinco vece
 Name = Furia
 Type = NORMAL
 Category = Physical
-Power = 20
+Power = 30
 Accuracy = 100
 TotalPP = 20
 Target = NearOther
@@ -5423,9 +5386,9 @@ Description = Al usarse, aumenta el Ataque del usuario cada vez que es golpeado.
 #-------------------------------
 [SPIKECANNON]
 Name = Clavo Cañón
-Type = NORMAL
+Type = WATER
 Category = Physical
-Power = 20
+Power = 25
 Accuracy = 100
 TotalPP = 15
 Target = NearOther
@@ -5541,7 +5504,7 @@ Target = None
 Priority = 1
 FunctionCode = MultiTurnAttackBideThenReturnDoubleDamage
 Flags = Contact,CanProtect
-Description = Resiste 2 golpes para liberar la energia acumulada.
+Description = Resiste dos golpes para liberar la energia acumulada.
 #-------------------------------
 [CRUSHGRIP]
 Name = Agarrón
@@ -5553,7 +5516,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = PowerHigherWithTargetHP
 Flags = Contact,CanProtect,CanMirrorMove
-Description = Estruja al objetivo con gran fuerza. Cuantos más PS le queden al objetivo, más fuerte será el ataque.
+Description = Cuantos más PS le queden al objetivo, más fuerte será el ataque.
 #-------------------------------
 [ENDEAVOR]
 Name = Esfuerzo
@@ -5625,7 +5588,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = TypeAndPowerDependOnUserBerry
 Flags = CanProtect,CanMirrorMove
-Description = La Baya que lleva presta su fuerza para atacar. El tipo de ataque y su fuerza dependen de la Baya.
+Description = La baya que lleva presta su fuerza para atacar. El tipo de ataque y su fuerza dependen de la baya.
 #-------------------------------
 [PRESENT]
 Name = Presente
@@ -5673,7 +5636,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = PowerDependsOnUserStockpile
 Flags = CanProtect
-Description = Libera de una vez la energía acumulada con Reserva.
+Description = Libera de una vez la energía acumulada con reserva.
 #-------------------------------
 [SUPERFANG]
 Name = Superdiente
@@ -5719,7 +5682,7 @@ Accuracy = 0
 TotalPP = 30
 Target = UserOrNearAlly
 FunctionCode = RaiseTargetRandomStat2
-Description = La presión en puntos clave del cuerpo potencia una de sus características.
+Description = La presión en puntos clave del cuerpo potencia una de sus características al azar.
 #-------------------------------
 [AFTERYOU]
 Name = Cede Paso
@@ -5729,7 +5692,7 @@ Accuracy = 0
 TotalPP = 15
 Target = NearOther
 FunctionCode = TargetActsNext
-Description = Si el usuario es el más rápido, permite al objetivo usar un movimiento justo tras él, adelantándose a Pokémon más rápidos.
+Description = Si el usuario es el más rápido, permite al objetivo usar un movimiento justo tras él.
 #-------------------------------
 [ASSIST]
 Name = Ayuda
@@ -5834,7 +5797,7 @@ TotalPP = 20
 Target = NearOther
 FunctionCode = LowerTargetSpAtk1
 Flags = CanMirrorMove,Sound
-Description = Hace que el objetivo pierda la concentración contándole un secreto. Disminuye el Ataque Especial del oponente.
+Description = Desconcentra al oponente contándole un secreto, disminuyendo así su Ataque Especial.
 #-------------------------------
 [CONVERSION]
 Name = Conversión
@@ -5847,7 +5810,7 @@ FunctionCode = SetUserTypesToUserMoveType
 Description = Cambia el tipo del usuario por el de uno de sus movimientos.
 #-------------------------------
 [CONVERSION2]
-Name = Conversión 2
+Name = Conversión2
 Type = NORMAL
 Category = Status
 Accuracy = 0
@@ -5870,7 +5833,7 @@ Description = Imita el movimiento usado justo antes. El movimiento falla si no s
 Name = Cambio de Cancha
 Type = NORMAL
 Category = Status
-Accuracy = 100
+Accuracy = 0
 TotalPP = 10
 Target = BothSides
 FunctionCode = SwapSideEffects
@@ -5899,7 +5862,7 @@ Flags = CanProtect,CanMirrorMove
 Description = Desactiva el último movimiento del objetivo durante cuatro turnos.
 #-------------------------------
 [DOUBLETEAM]
-Name = Doble equipo
+Name = Doble Equipo
 Type = NORMAL
 Category = Status
 Accuracy = 0
@@ -5950,7 +5913,7 @@ TotalPP = 20
 Target = NearOther
 FunctionCode = LowerTargetAccuracy1
 Flags = CanProtect,CanMirrorMove
-Description = Luz cegadora que baja la Precisión del objetivo. Fuera de combate sirve para iluminar.
+Description = Luz cegadora que baja la Precisión del objetivo.
 #-------------------------------
 [FOCUSENERGY]
 Name = Foco Energía
@@ -5971,7 +5934,7 @@ TotalPP = 20
 Target = User
 Priority = 2
 FunctionCode = RedirectAllMovesToUser
-Description = Llama la atención para concentrar todos los ataques de todos los del equipo rival hacia sí mismo.
+Description = Llama la atención para concentrar los ataques de todos los del equipo rival hacia sí mismo.
 #-------------------------------
 [FORESIGHT]
 Name = Profecía
@@ -5985,7 +5948,7 @@ Flags = CanProtect,CanMirrorMove
 Description = Permite atacar con cualquier movimiento a objetivos de tipo Fantasma y golpear a Pokémon evasivos.
 #-------------------------------
 [GLARE]
-Name = Glare
+Name = Deslumbrar
 Type = NORMAL
 Category = Status
 Accuracy = 100
@@ -5993,7 +5956,7 @@ TotalPP = 30
 Target = NearOther
 FunctionCode = ParalyzeTarget
 Flags = CanProtect,CanMirrorMove
-Description = Deslumbrar
+Description = Intimida y asusta al objetivo con la mirada para dejarlo paralizado.
 #-------------------------------
 [GROWL]
 Name = Gruñido
@@ -6034,7 +5997,7 @@ Accuracy = 0
 TotalPP = 30
 Target = User
 FunctionCode = RaiseUserDefense1
-Description = Un misterioso poder fortaleza al usuario. Si su ofensiva es mayor que su defensiva, aumenta la primera. En caso contrario, aumenta la defensiva.
+Description = Tensa la musculatura del usuario para aumentar la Defensa.
 #-------------------------------
 [HEALBELL]
 Name = Cascabel Cura
@@ -6169,10 +6132,10 @@ Name = Batido
 Type = NORMAL
 Category = Status
 Accuracy = 0
-TotalPP = 10
+TotalPP = 5
 Target = User
 FunctionCode = HealUserHalfOfTotalHP
-Description = Restaura la mitad de los PS máximos del usuario. Fuera de combate se usa para transferir parte de sus PS a un aliado.
+Description = Restaura la mitad de sus PS máximos. Fuera de combate puede transferir sus PS a un aliado.
 #-------------------------------
 [MIMIC]
 Name = Mimético
@@ -6183,7 +6146,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = ReplaceMoveThisBattleWithTargetLastMoveUsed
 Flags = CanProtect
-Description = Copia el último movimiento usado por el objetivo. Dicho movimiento se podrá usar mientras el Pokémon no sea cambiado.
+Description = Copia el último movimiento usado por el objetivo. Solo lo podrá usar si no es cambiado.
 #-------------------------------
 [MINDREADER]
 Name = Telépata
@@ -6235,7 +6198,7 @@ TotalPP = 30
 Target = NearOther
 FunctionCode = LowerTargetAtkSpAtk1
 Flags = CanProtect,CanMirrorMove,Sound
-Description = Intimida a su oponente con un rugido de guerra, haciendo que disminuyan tanto su Ataque como su Ataque Especial.
+Description = Intimida a su oponente con un rugido de guerra, bajando su Ataque y su Ataque Especial.
 #-------------------------------
 [ODORSLEUTH]
 Name = Rastreo
@@ -6279,7 +6242,7 @@ TotalPP = 20
 Target = NearOther
 FunctionCode = LowerTargetAttack1BypassSubstitute
 Flags = CanMirrorMove
-Description = Se hace amigo de su oponente y consigue que a este se le quiten las ganas de combatir. Además, reduce su Ataque.
+Description = Se hace amigo de su oponente y consigue que no quiera combatir. Además, reduce su Ataque.
 #-------------------------------
 [PROTECT]
 Name = Protección
@@ -6290,7 +6253,7 @@ TotalPP = 10
 Target = User
 Priority = 4
 FunctionCode = ProtectUser
-Description = El usuario aparece junto a su objetivo usando un agujero interdimensional y le asesta un golpe que no puede esquivarse con Protección ni Detección.
+Description = Frena los ataques, pero puede fallar si se usa repetidamente.
 #-------------------------------
 [PSYCHUP]
 Name = Autosugestión
@@ -6300,14 +6263,14 @@ Accuracy = 0
 TotalPP = 10
 Target = NearOther
 FunctionCode = UserCopyTargetStatStages
-Description = Quien lo usa se hipnotiza y copia cualquier cambio que haya en las características de su objetivo.
+Description = Se hipnotiza y copia cualquier cambio que haya en las características de su objetivo.
 #-------------------------------
 [RECOVER]
 Name = Recuperación
 Type = NORMAL
 Category = Status
 Accuracy = 0
-TotalPP = 10
+TotalPP = 5
 Target = User
 FunctionCode = HealUserHalfOfTotalHP
 Description = Restaura hasta la mitad de los PS máximos.
@@ -6405,7 +6368,7 @@ Accuracy = 0
 TotalPP = 15
 Target = User
 FunctionCode = LowerUserDefSpDef1RaiseUserAtkSpAtkSpd2
-Description = El usuario rompe su coraza y baja su Defensa y Def. Esp., pero aumenta mucho su Ataque, Ataque Especial y Velocidad.
+Description = Rompe su coraza y baja su Defensa y Def. Esp., pero aumenta mucho su Ataque, At. Esp. y Velocidad.
 #-------------------------------
 [SIMPLEBEAM]
 Name = Onda Simple
@@ -6444,7 +6407,7 @@ Name = Relajo
 Type = NORMAL
 Category = Status
 Accuracy = 0
-TotalPP = 10
+TotalPP = 5
 Target = User
 FunctionCode = HealUserHalfOfTotalHP
 Description = El usuario se relaja y restaura la mitad de sus PS máximos.
@@ -6475,10 +6438,10 @@ Name = Ovocuración
 Type = NORMAL
 Category = Status
 Accuracy = 0
-TotalPP = 10
+TotalPP = 5
 Target = User
 FunctionCode = HealUserHalfOfTotalHP
-Description = Restaura la mitad de los PS máximos del usuario. Fuera de combate se usa para transferir parte de sus PS a un aliado.
+Description = Restaura la mitad de los PS máximos del usuario. Fuera de combate transfiere PS a un aliado.
 #-------------------------------
 [SPLASH]
 Name = Salpicadura
@@ -6500,7 +6463,7 @@ Target = NearOther
 Priority = 3
 FunctionCode = RedirectAllMovesToTarget
 Flags = CanProtect
-Description = El usuario concentra toda la luz del cuerpo y la libera. Puede bajar la Defensa Especial del objetivo.
+Description = Convierte a un Pokémon en el foco de atención, haciendo que los ataques se dirijan hacia él.
 #-------------------------------
 [STOCKPILE]
 Name = Reserva
@@ -6520,7 +6483,7 @@ Accuracy = 0
 TotalPP = 10
 Target = User
 FunctionCode = UserConsumeBerryRaiseDefense2
-Description = El usuario se come la Baya que lleve equipada y sube drásticamente su Defensa.
+Description = El usuario se come la baya que lleve equipada y sube drásticamente su Defensa.
 #-------------------------------
 [SUBSTITUTE]
 Name = Sustituto
@@ -6536,23 +6499,23 @@ Description = Utiliza parte de los PS propios para crear un sustituto que actúa
 Name = Supersónico
 Type = NORMAL
 Category = Status
-Accuracy = 55
+Accuracy = 65
 TotalPP = 20
 Target = NearOther
 FunctionCode = ConfuseTarget
 Flags = CanProtect,CanMirrorMove,Sound
-Description = Supersónico
+Description = Raras ondas sónicas que pueden confundir al objetivo.
 #-------------------------------
 [SWAGGER]
-Name = Contoneo
+Name = Fanfarronear
 Type = NORMAL
 Category = Status
-Accuracy = 85
+Accuracy = 90
 TotalPP = 15
 Target = NearOther
 FunctionCode = RaiseTargetAttack2ConfuseTarget
 Flags = CanProtect,CanMirrorMove
-Description = Provoca confusión en el objetivo, pero también sube mucho su Ataque."
+Description = Provoca confusión en el objetivo, pero también sube mucho su Ataque.
 #-------------------------------
 [SWALLOW]
 Name = Tragar
@@ -6562,7 +6525,7 @@ Accuracy = 0
 TotalPP = 10
 Target = User
 FunctionCode = HealUserDependingOnUserStockpile
-Description = Absorbe la energía acumulada con Reserva y restaura PS.
+Description = Absorbe la energía acumulada con reserva y restaura PS.
 #-------------------------------
 [SWEETSCENT]
 Name = Dulce Aroma
@@ -6587,7 +6550,7 @@ Flags = Dance
 Description = Baile frenético que aumenta mucho el Ataque.
 #-------------------------------
 [TAILWHIP]
-Name = Látigo
+Name = Agitacola
 Type = NORMAL
 Category = Status
 Accuracy = 100
@@ -6606,7 +6569,7 @@ TotalPP = 20
 Target = NearOther
 FunctionCode = LowerTargetAtkSpAtk1
 Flags = CanMirrorMove
-Description = Mira al objetivo con ojos llorosos para hacerle perder su espíritu combativo y reduce su Ataque y Ataque Especial.
+Description = Mira al objetivo para hacerle perder su espíritu combativo y reduce su Ataque y Ataque Especial.
 #-------------------------------
 [TEATIME]
 Name = Hora del Té
@@ -6616,7 +6579,7 @@ Accuracy = 0
 TotalPP = 10
 Target = AllBattlers
 FunctionCode = AllBattlersConsumeBerry
-Description = El usuario invita a tomar el té a todos los presentes en el terreno de combate, lo que hace que ingieran las bayas que lleven equipadas.
+Description = Invita a tomar el té a todos los presentes en el combate, haciendo que ingieran sus bayas equipadas.
 #-------------------------------
 [TEETERDANCE]
 Name = Danza Caos
@@ -6658,7 +6621,7 @@ Accuracy = 0
 TotalPP = 20
 Target = NearOther
 Priority = -6
-FunctionCode = SwitchOutTargetStatusMove
+FunctionCode = SwitchOutTargetStatusMove,Wind
 Flags = CanMirrorMove
 Description = Se lleva al rival, que es cambiado por otro Pokémon. Si es un Pokémon salvaje, acaba el combate.
 #-------------------------------
@@ -6697,20 +6660,20 @@ Description = Gran bostezo que induce al sueño al objetivo en el siguiente turn
 Name = Eructo
 Type = POISON
 Category = Special
-Power = 120
-Accuracy = 90
+Power = 130
+Accuracy = 100
 TotalPP = 10
 Target = NearOther
 FunctionCode = FailsIfUserNotConsumedBerry
 Flags = CanProtect
-Description = El Pokémon causa daño a su oponente lanzándole un eructo. Para poder utilizar este movimiento tiene que llevar una baya y comérsela.
+Description = Causa daño a su oponente lanzándole un eructo. Para usarlo tiene que llevar una Baya y comérsela.
 #-------------------------------
 [GUNKSHOT]
 Name = Lanzamugre
 Type = POISON
 Category = Physical
 Power = 120
-Accuracy = 80
+Accuracy = 90
 TotalPP = 5
 Target = NearOther
 FunctionCode = PoisonTarget
@@ -6742,7 +6705,7 @@ Target = NearOther
 FunctionCode = CategoryDependsOnHigherDamagePoisonTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 20
-Description = El usuario lanza un ataque físico o especial en función de cuál inflija más daño. Puede envenenar al objetivo.
+Description = Lanza un ataque físico o especial en función de cuál inflija más daño. Puede envenenar.
 #-------------------------------
 [SLUDGEBOMB]
 Name = Bomba Lodo
@@ -6779,7 +6742,7 @@ Accuracy = 100
 TotalPP = 20
 Target = NearOther
 FunctionCode = PoisonTarget
-Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate
+Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate,Slicing
 EffectChance = 10
 Description = Tajo que puede envenenar al objetivo. Suele ser crítico.
 #-------------------------------
@@ -6844,7 +6807,7 @@ Target = NearOther
 FunctionCode = PoisonTarget
 Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate
 EffectChance = 10
-Description = Puede envenenar y dar un golpe crítico.
+Description = Ataque con la cola que puede envenenar y dar un golpe crítico.
 #-------------------------------
 [ACID]
 Name = Ácido
@@ -6889,7 +6852,7 @@ Description = El objetivo es atacado con gases tóxicos que pueden llegar a enve
 Name = Picotazo Veneno
 Type = POISON
 Category = Physical
-Power = 15
+Power = 25
 Accuracy = 100
 TotalPP = 35
 Target = NearOther
@@ -6917,7 +6880,7 @@ TotalPP = 10
 Target = User
 Priority = 4
 FunctionCode = ProtectUserBanefulBunker
-Description = Protege de los ataques y, al mismo tiempo, envenena al Pokémon que use un movimiento de contacto contra el usuario.
+Description = Protege de ataques y, al mismo tiempo, envenena al que use un movimiento de contacto contra él.
 #-------------------------------
 [COIL]
 Name = Enrosque
@@ -6938,9 +6901,9 @@ TotalPP = 40
 Target = AllNearOthers
 FunctionCode = CorrodeTargetItem
 Flags = CanProtect,CanMirrorMove
-Description = El usuario libera un gas cáustico que envuelve a todos los que se encuentren alrededor y derrite por completo los objetos que lleven equipados.
+Description = Libera un gas cáustico que envuelve a todos alrededor y derrite los objetos que lleven equipados.
 #-------------------------------
-[GASTROACID]
+[GASTROACID] 
 Name = Bilis
 Type = POISON
 Category = Status
@@ -6955,7 +6918,7 @@ Description = El usuario arroja sus jugos biliares al objetivo, lo que anula el 
 Name = Gas Venenoso
 Type = POISON
 Category = Status
-Accuracy = 90
+Accuracy = 80
 TotalPP = 40
 Target = AllNearFoes
 FunctionCode = PoisonTarget
@@ -6993,7 +6956,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = BadPoisonTarget
 Flags = CanProtect,CanMirrorMove
-Description = Colmillos tóxicos que pueden envenenar gravemente al objetivo.
+Description = Envenena gravemente al objetivo y causa un daño mayor en cada turno.
 #-------------------------------
 [TOXICSPIKES]
 Name = Púas Tóxicas
@@ -7025,7 +6988,7 @@ TotalPP = 20
 Target = AllNearFoes
 FunctionCode = LowerPoisonedTargetAtkSpAtkSpd1
 Flags = CanProtect
-Description = Impregna a su objetivo con un líquido venenoso que disminuye el Ataque, el At. Esp. y la Velocidad. Solo afecta a Pokémon ya envenenados.
+Description = Disminuye el Ataque, el Ataque Especial y la Velocidad, pero solo a Pokémon ya envenenados.
 #-------------------------------
 [PRISMATICLASER]
 Name = Láser Prisma
@@ -7055,7 +7018,7 @@ Description = Ataque en toda regla que baja mucho el Ataque Especial de quien lo
 Name = Premonición
 Type = PSYCHIC
 Category = Special
-Power = 120
+Power = 130
 Accuracy = 100
 TotalPP = 10
 Target = NearOther
@@ -7078,7 +7041,7 @@ Description = Una extraña onda que daña a todos los Pokémon adyacentes del mi
 Name = Comesueños
 Type = PSYCHIC
 Category = Special
-Power = 100
+Power = 110
 Accuracy = 100
 TotalPP = 15
 Target = NearOther
@@ -7096,7 +7059,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = CategoryDependsOnHigherDamageIgnoreTargetAbility
 Flags = CanProtect,CanMirrorMove,CannotMetronome
-Description = El usuario ataca con una gran columna de luz. Compara sus valores de Atk. y At. Esp. para infligir daño con el más alto de los dos.
+Description = Compara sus valores de Ataque y Ataque Especial para infligir daño con el más alto de los dos.
 #-------------------------------
 [PSYSTRIKE]
 Name = Onda Mental
@@ -7121,7 +7084,7 @@ Target = NearOther
 FunctionCode = FreezeTarget
 Flags = CanProtect,CanMirrorMove,CannotMetronome
 EffectChance = 10
-Description = A tráves de sus ojos emite poderes psíquicos con los que ataca al objetivo, al que puede llegar a congelar.
+Description = El usuario ataca disparando poderes psíquicos por los ojos. Puede congelar.
 #-------------------------------
 [PSYCHIC]
 Name = Psíquico
@@ -7146,7 +7109,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = RemoveScreens
 Flags = Contact,CanProtect,CanMirrorMove,Biting
-Description = Ataca a sus rivales con poderes psíquicos que además destruyen barreras como Pantalla de Luz y Reflejo.
+Description = Ataca con poderes psíquicos que además destruyen barreras como pantalla de luz y reflejo.
 #-------------------------------
 [EERIESPELL]
 Name = Conjuro Funesto
@@ -7158,7 +7121,8 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = LowerPPOfTargetLastMoveBy3
 Flags = CanProtect,CanMirrorMove,Sound
-Description = El usuario ataca con un poder psíquico de inmensa potencia y elimina 3 PP del último movimiento que haya usado el objetivo.
+EffectChance = 100
+Description = El usuario ataca con su poder psíquico y reduce tres PP del último movimiento usado por el objetivo.
 #-------------------------------
 [EXPANDINGFORCE]
 Name = Vasta Fuerza
@@ -7170,7 +7134,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = HitsAllFoesAndPowersUpInPsychicTerrain
 Flags = CanProtect,CanMirrorMove
-Description = Ataca al objetivo con poder psíquico. Con Campo Psíquico, aumenta su potencia y daña a todos los rivales.
+Description = Ataca al objetivo con sus poderes psíquicos. En campo psíquico aumenta su potencia e inflige daño a todos los rivales.
 #-------------------------------
 [EXTRASENSORY]
 Name = Paranormal
@@ -7178,12 +7142,12 @@ Type = PSYCHIC
 Category = Special
 Power = 80
 Accuracy = 100
-TotalPP = 20
+TotalPP = 30
 Target = NearOther
 FunctionCode = FlinchTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 10
-Description = Energía muy extraña que puede hacer retroceder al objetivo.
+Description = Energía muy extraña que puede amedrentar al objetivo.
 #-------------------------------
 [HYPERSPACEHOLE]
 Name = Paso Dimensional
@@ -7195,7 +7159,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = RemoveProtectionsBypassSubstitute
 Flags = CanMirrorMove,CannotMetronome
-Description = El usuario aparece junto a su objetivo usando un agujero interdimensional y le asesta un golpe imposible de esquivar.
+Description = Golpea aunque el rival use Protección, Detección, Vastaguardia o Anticipo ese turno.
 #-------------------------------
 [PSYSHOCK]
 Name = Psicocarga
@@ -7207,26 +7171,26 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = UseTargetDefenseInsteadOfTargetSpDef
 Flags = CanProtect,CanMirrorMove
-Description = Crea una onda psíquica que golpea al objetivo y provoca un gran daño.
+Description = Crea una onda psíquica que golpea al objetivo y provoca un gran daño físico.
 #-------------------------------
 [ZENHEADBUTT]
 Name = Cabezazo Zen
 Type = PSYCHIC
 Category = Physical
-Power = 80
+Power = 90
 Accuracy = 90
 TotalPP = 15
 Target = NearOther
 FunctionCode = FlinchTarget
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 20
-Description = Concentra su energía psíquica en la cabeza para golpear. Puede hacer que el objetivo retroceda.
+Description = Concentra su energía psíquica en la cabeza para golpear. Puede hacer que el objetivo se amedrente.
 #-------------------------------
 [LUSTERPURGE]
 Name = Resplandor
 Type = PSYCHIC
 Category = Special
-Power = 70
+Power = 95
 Accuracy = 100
 TotalPP = 5
 Target = NearOther
@@ -7239,7 +7203,7 @@ Description = Fogonazo de luz que puede bajar la Defensa Especial del objetivo.
 Name = Bola Neblina
 Type = PSYCHIC
 Category = Special
-Power = 70
+Power = 95
 Accuracy = 100
 TotalPP = 5
 Target = NearOther
@@ -7257,7 +7221,7 @@ Accuracy = 100
 TotalPP = 20
 Target = NearOther
 FunctionCode = None
-Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate,Slicing
 Description = Ataca al objetivo con cuchillas formadas por energía psíquica. Suele ser crítico.
 #-------------------------------
 [PSYBEAM]
@@ -7284,7 +7248,7 @@ Target = NearOther
 FunctionCode = FlinchTarget
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 30
-Description = Grácil gesto que asesta un golpe tremendo al objetivo y puede hacerlo retroceder.
+Description = Grácil gesto que asesta un golpe tremendo al objetivo y puede amedrentarlo.
 #-------------------------------
 [CONFUSION]
 Name = Confusión
@@ -7309,7 +7273,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = PowerHigherWithUserPositiveStatStages
 Flags = CanProtect,CanMirrorMove
-Description = Acumula poder para golpear. Cuanto más suban las características del usuario, mayor será el daño.
+Description = Cuanto más suban las características del usuario, mayor será el daño.
 #-------------------------------
 [MIRRORCOAT]
 Name = Manto Espejo
@@ -7416,7 +7380,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = UserTargetAverageBaseDefSpDef
 Flags = CanProtect
-Description = El usuario emplea sus poderes para hacer la media de su Defensa y Defensa Especial con las de su objetivo y compartirlas.
+Description = Hace la media de su Defensa y Def. Esp. con las de su objetivo y las comparte.
 #-------------------------------
 [GUARDSWAP]
 Name = Cambiadefensa
@@ -7427,7 +7391,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = UserTargetSwapDefSpDefStages
 Flags = CanProtect,CanMirrorMove
-Description = El usuario emplea su poder mental para intercambiar los cambios en Defensa y Defensa Especial con el objetivo.
+Description = Con su poder mental intercambia los cambios en Defensa y Def. Especial con el objetivo.
 #-------------------------------
 [HEALBLOCK]
 Name = Anticura
@@ -7438,7 +7402,7 @@ TotalPP = 15
 Target = AllNearFoes
 FunctionCode = DisableTargetHealingMoves
 Flags = CanProtect,CanMirrorMove
-Description = Impide al objetivo usar movimientos, habilidades y objetos equipados que recuperan PS durante cinco turnos.
+Description = Impide al objetivo usar movimientos, habilidades y objetos que recuperan PS durante cinco turnos.
 #-------------------------------
 [HEALPULSE]
 Name = Pulso Cura
@@ -7545,7 +7509,7 @@ TotalPP = 15
 Target = User
 Priority = 4
 FunctionCode = BounceBackProblemCausingStatusMoves
-Description = Barrera capaz de devolver al agresor movimientos como Drenadoras y que alteran el estado.
+Description = Barrera capaz de devolver al agresor movimientos como drenadoras y que alteran el estado.
 #-------------------------------
 [MAGICPOWDER]
 Name = Polvo Mágico
@@ -7556,7 +7520,7 @@ TotalPP = 20
 Target = NearOther
 FunctionCode = SetTargetTypesToPsychic
 Flags = CanProtect,CanMirrorMove,Powder
-Description = El usuario lanza una nube de polvo mágico que combierte al objetivo en tipo Psíquico.
+Description = El usuario lanza una nube de polvo mágico que convierte al objetivo en tipo Psíquico.
 #-------------------------------
 [MAGICROOM]
 Name = Zona Mágica
@@ -7567,7 +7531,7 @@ TotalPP = 10
 Target = BothSides
 FunctionCode = StartNegateHeldItems
 Flags = CanMirrorMove
-Description = Crea un espacio misterioso que inutiliza todos los objetos de los Pokémon durante cinco turnos.
+Description = Crea un espacio misterioso que inutiliza los objetos de los Pokémon durante cinco turnos.
 #-------------------------------
 [MEDITATE]
 Name = Meditación
@@ -7599,7 +7563,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = UserTargetAverageBaseAtkSpAtk
 Flags = CanProtect
-Description = El usuario emplea sus poderes para hacer la media de su Ataque y Ataque Especial con los de su objetivo y compartirlos.
+Description = Hace la media de su Ataque y Ataque Especial con los de su objetivo y los comparte.
 #-------------------------------
 [POWERSWAP]
 Name = Cambiafuerza
@@ -7610,7 +7574,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = UserTargetSwapAtkSpAtkStages
 Flags = CanProtect,CanMirrorMove
-Description = El usuario emplea su poder mental para intercambiar los cambios en Ataque y Ataque Especial con el objetivo.
+Description = Intercambia los cambios en Ataque y At. Especial con el objetivo.
 #-------------------------------
 [POWERTRICK]
 Name = Truco Fuerza
@@ -7630,7 +7594,7 @@ Accuracy = 0
 TotalPP = 10
 Target = BothSides
 FunctionCode = StartPsychicTerrain
-Description = Durante cinco turnos, se potencian los movimientos de tipo Psíquico y los Pokémon quedan protegidos contra movimientos con prioridad.
+Description = Durante cinco turnos se potencian los movimientos Psíquico y los de prioridad fallan.
 #-------------------------------
 [PSYCHOSHIFT]
 Name = Psicocambio
@@ -7661,7 +7625,7 @@ Accuracy = 0
 TotalPP = 10
 Target = User
 FunctionCode = HealUserFullyAndFallAsleep
-Description = Restaura todos los PS y cura todos los problemas de estado del usuario. Duerme los dos próximos turnos.
+Description = Restaura los PS y cura los problemas de estado del usuario. Duerme los dos próximos turnos.
 #-------------------------------
 [ROLEPLAY]
 Name = Imitación
@@ -7704,7 +7668,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = StartTargetAirborneAndAlwaysHitByMoves
 Flags = CanProtect,CanMirrorMove
-Description = El usuario emplea su poder mental para hacer flotar al objetivo, haciéndolo blanco fácil de sus ataques durante tres turnos.
+Description = Hace flotar al objetivo, haciéndolo blanco fácil de sus ataques durante tres turnos.
 #-------------------------------
 [TELEPORT]
 Name = Teletransporte
@@ -7750,7 +7714,7 @@ Target = BothSides
 Priority = -7
 FunctionCode = StartSwapAllBattlersBaseDefensiveStats
 Flags = CanMirrorMove
-Description = Crea una zona misteriosa donde se intercambian la Defensa y Def. Especial en todos los Pokémon por cinco turnos.
+Description = Crea una zona que intercambia la Defensa y Def. Esp. de todos por 5 turnos.
 #-------------------------------
 [HEADSMASH]
 Name = Testarazo
@@ -7762,7 +7726,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = RecoilHalfOfDamageDealt
 Flags = Contact,CanProtect,CanMirrorMove
-Description = El usuario arriesga su vida y lanza un cabezazo con toda su fuerza. El agresor resulta seriamente dañado.
+Description = Arriesga su vida y lanza un cabezazo con toda su fuerza. El agresor resulta seriamente dañado.
 #-------------------------------
 [ROCKWRECKER]
 Name = Romperrocas
@@ -7780,16 +7744,16 @@ Description = Lanza una piedra enorme contra el objetivo, pero tiene que descans
 Name = Rayo Meteórico
 Type = ROCK
 Category = Special
-Power = 120
+Power = 130
 Accuracy = 90
 TotalPP = 10
 Target = NearOther
 FunctionCode = TwoTurnAttackChargeRaiseUserSpAtk1
 Flags = CanProtect,CanMirrorMove
-Description = El usuario dedica el primer turno a aumentar su Ataque Especial acumulando energía cósmica y lanza su ofensiva contra el objetivo en el segundo.
+Description = 1º turno: aumenta su At. Especial. 2º turno: lanza su ofensiva contra el objetivo.
 #-------------------------------
 [DIAMONDSTORM]
-Name = Tormenta de Diamantes
+Name = Torm. de Diamantes
 Type = ROCK
 Category = Physical
 Power = 100
@@ -7799,7 +7763,7 @@ Target = AllNearFoes
 FunctionCode = RaiseUserDefense2
 Flags = CanProtect,CanMirrorMove,CannotMetronome
 EffectChance = 50
-Description = Desata un devastador vendaval de diamantes para dañar a los oponentes. Puede aumentar la Defensa del usuario.
+Description = Devastador vendaval de diamantes. Puede aumentar la Defensa del usuario.
 #-------------------------------
 [STONEEDGE]
 Name = Roca Afilada
@@ -7829,14 +7793,14 @@ Description = Ataca con un rayo de luz que centellea como si lo formaran miles d
 Name = Avalancha
 Type = ROCK
 Category = Physical
-Power = 75
-Accuracy = 90
+Power = 80
+Accuracy = 95
 TotalPP = 10
 Target = AllNearFoes
 FunctionCode = FlinchTarget
 Flags = CanProtect,CanMirrorMove
 EffectChance = 30
-Description = Lanza grandes pedruscos. Puede hacer retroceder al objetivo.
+Description = Lanza grandes pedruscos. Puede amedrentar al objetivo.
 #-------------------------------
 [ANCIENTPOWER]
 Name = Poder Pasado
@@ -7880,13 +7844,13 @@ Description = Tira una pequeña roca al objetivo.
 Name = Antiaéreo
 Type = ROCK
 Category = Physical
-Power = 50
+Power = 60
 Accuracy = 100
 TotalPP = 15
 Target = NearOther
 FunctionCode = HitsTargetInSkyGroundsTarget
 Flags = CanProtect,CanMirrorMove
-Description = El usuario ataca lanzando una piedra o un proyectil. Puede estrellar contra el suelo al objetivo si vuela.
+Description = Ataca lanzando una piedra o un proyectil. Estrella contra el suelo al objetivo si vuela.
 #-------------------------------
 [ACCELEROCK]
 Name = Roca Veloz
@@ -7936,14 +7900,15 @@ FunctionCode = RaiseUserSpeed2
 Description = Reduce la resistencia puliendo su cuerpo. Aumenta la Velocidad considerablemente.
 #-------------------------------
 [SANDSTORM]
-Name = Tormenta de Arena
+Name = Tormenta Arena
 Type = ROCK
 Category = Status
 Accuracy = 0
 TotalPP = 10
 Target = BothSides
 FunctionCode = StartSandstormWeather
-Description = Tormenta de arena que dura cinco turnos y hiere a todos, excepto a los de tipo Roca, Tierra y Acero.
+Flags = Wind
+Description = Tormenta de arena que dura cinco turnos y hiere a s, excepto a los de tipo Roca, Tierra y Acero.
 #-------------------------------
 [STEALTHROCK]
 Name = Trampa Rocas
@@ -7964,7 +7929,7 @@ TotalPP = 15
 Target = NearOther
 FunctionCode = LowerTargetSpeed1MakeTargetWeakerToFire
 Flags = CanProtect,CanMirrorMove
-Description = El usuario lanza alquitran sobre el objetivo, bajando su Velocidad. El objetivo se vuelve débil ante los movimientos de tipo Fuego.
+Description = Lanza alquitran sobre el objetivo, bajando su Velocidad y volviéndolo débil ante los movs. Fuego.
 #-------------------------------
 [WIDEGUARD]
 Name = Vasta Guardia
@@ -7975,7 +7940,7 @@ TotalPP = 10
 Target = UserSide
 Priority = 3
 FunctionCode = ProtectUserSideFromMultiTargetDamagingMoves
-Description = Bloquea los ataques lanzados contra todo tu equipo durante un turno. Su eficacia merma si se usa repetidas veces.
+Description = Protege a todo tu bando de golpes que dan a múltiples objetivos. Falla si se usa repetidamente.
 #-------------------------------
 [DOOMDESIRE]
 Name = Deseo Oculto
@@ -8010,7 +7975,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = RemoveTerrain
 Flags = Contact,CanProtect,CanMirrorMove
-Description = El usuario lanza su ataque y destruye el campo activo en el terreno de combate, y falla si no hay ninguno en ese momento.
+Description = Lanza su ataque y destruye el campo activo. Falla si no hay ninguno en ese momento.
 #-------------------------------
 [BEHEMOTHBASH]
 Name = Embate Supremo
@@ -8022,7 +7987,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
-Description = El usuario se combierte en un escudo gigante y arremete contra el objetivo.
+Description = El usuario se convierte en un escudo gigante y arremete contra el objetivo.
 #-------------------------------
 [BEHEMOTHBLADE]
 Name = Tajo Supremo
@@ -8033,15 +7998,15 @@ Accuracy = 100
 TotalPP = 5
 Target = NearOther
 FunctionCode = None
-Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome,Slicing
 Description = El usuario se convierte en una espada gigante para rebanar al objetivo.
 #-------------------------------
 [IRONTAIL]
 Name = Cola Férrea
 Type = STEEL
 Category = Physical
-Power = 100
-Accuracy = 75
+Power = 110
+Accuracy = 85
 TotalPP = 15
 Target = NearOther
 FunctionCode = LowerTargetDefense1
@@ -8065,7 +8030,7 @@ Description = Ataca al objetivo con la potencia de un meteoro.
 Name = Puño Meteoro
 Type = STEEL
 Category = Physical
-Power = 90
+Power = 100
 Accuracy = 90
 TotalPP = 10
 Target = NearOther
@@ -8088,7 +8053,7 @@ EffectChance = 100
 Description = Ataca lanzando un ancla al oponente, que queda atrapado y no puede huir.
 #-------------------------------
 [FLASHCANNON]
-Name = Foco Resplandor
+Name = Cañón Resplandor
 Type = STEEL
 Category = Special
 Power = 80
@@ -8111,7 +8076,7 @@ Target = NearOther
 FunctionCode = FlinchTarget
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 30
-Description = Ataca con su dura cabeza de hierro. Puede hacer que el objetivo retroceda.
+Description = Ataca con su dura cabeza de hierro. Puede hacer que el objetivo se amedrente.
 #-------------------------------
 [SMARTSTRIKE]
 Name = Cuerno Certero
@@ -8149,7 +8114,7 @@ Target = NearOther
 FunctionCode = HitTwoTimesFlinchTarget
 Flags = Contact,CanProtect,Punching,CannotMetronome
 EffectChance = 30
-Description = Golpea 2 veces seguidas con los puños pudiendo hacer retroceder al rival.
+Description = Golpea dos veces seguidas con los puños pudiendo amedrentar al rival.
 #-------------------------------
 [MIRRORSHOT]
 Name = Disparo Espejo
@@ -8174,14 +8139,14 @@ TotalPP = 20
 Target = NearOther
 FunctionCode = None
 Flags = CanProtect,CanMirrorMove,Bomb
-Description = Lanza unas bombas de hierro que se pegan al adversario. No se puede esquivar.
+Description = Lanza unas bombas de hierro que se pegan al adversario. Este movimiento acierta siempre.
 #-------------------------------
 [GEARGRIND]
 Name = Rueda Doble
 Type = STEEL
 Category = Physical
-Power = 50
-Accuracy = 85
+Power = 55
+Accuracy = 90
 TotalPP = 15
 Target = NearOther
 FunctionCode = HitTwoTimes
@@ -8192,7 +8157,7 @@ Description = Rota dos engranajes de hierro sobre el objetivo. Golpea dos veces.
 Name = Garra Metal
 Type = STEEL
 Category = Physical
-Power = 50
+Power = 60
 Accuracy = 95
 TotalPP = 35
 Target = NearOther
@@ -8212,7 +8177,7 @@ Target = NearOther
 Priority = 1
 FunctionCode = None
 Flags = Contact,CanProtect,CanMirrorMove,Punching
-Description = Ataca con fuertes puñetazos tan rápidos como proyectiles. Este movimiento siempre va primero.
+Description = Fuerte puñetazo tan rápido como un proyectil. Este movimiento siempre va primero.
 #-------------------------------
 [GYROBALL]
 Name = Giro Bola
@@ -8224,7 +8189,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = PowerHigherWithTargetFasterThanUser
 Flags = Contact,CanProtect,CanMirrorMove,Bomb
-Description = Embiste al objetivo con un potente ataque giratorio. Cuanto más lento es el usuario, más daño causa.
+Description = Embiste con un potente ataque giratorio. Cuanto más lento es el usuario, más daño causa.
 #-------------------------------
 [HEAVYSLAM]
 Name = Cuerpo Pesado
@@ -8236,7 +8201,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = PowerHigherWithUserHeavierThanTarget
 Flags = Contact,CanProtect,CanMirrorMove,TramplesMinimize
-Description = El usuario golpea con todo su cuerpo. Cuanto mayor sea su peso comparado con el del objetivo, más daño causará.
+Description = Cuanto mayor sea su peso comparado con el del objetivo, más daño causará.
 #-------------------------------
 [METALBURST]
 Name = Represión Metal
@@ -8289,7 +8254,7 @@ TotalPP = 10
 Target = User
 Priority = 4
 FunctionCode = ProtectUserFromDamagingMovesKingsShield
-Description = Asume una estrategia defensiva a la par que se protege de cualquier daño. Disminuye mucho el Ataque de cualquier Pokémon que lo toque.
+Description = Protege al usuario de cualquier daño y baja el Ataque del rival si lo toca.
 #-------------------------------
 [METALSOUND]
 Name = Eco Metálico
@@ -8322,7 +8287,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = AttackAndSkipNextTurn
 Flags = CanProtect,CanMirrorMove
-Description = Disparo de agua. El atacante debe descansar el siguiente turno.
+Description = Disparo potente de agua. El atacante debe descansar el siguiente turno.
 #-------------------------------
 [WATERSPOUT]
 Name = Salpicar
@@ -8389,7 +8354,7 @@ Description = Golpea con fuerza con unas pinzas. Suele ser crítico.
 Name = Acua Cola
 Type = WATER
 Category = Physical
-Power = 90
+Power = 95
 Accuracy = 90
 TotalPP = 10
 Target = NearOther
@@ -8421,7 +8386,7 @@ Target = AllNearOthers
 FunctionCode = CureTargetBurn
 Flags = CanProtect,CanMirrorMove,Sound
 EffectChance = 100
-Description = Libera burbujas al cantar. Este movimiento cura las quemaduras de los Pokémon que reciban daño.
+Description = Libera burbujas al cantar. Cura las quemaduras de los Pokémon que reciban daño.
 #-------------------------------
 [SURF]
 Name = Surf
@@ -8433,7 +8398,7 @@ TotalPP = 15
 Target = AllNearOthers
 FunctionCode = DoublePowerIfTargetUnderwater
 Flags = CanProtect,CanMirrorMove
-Description = Inunda el campo de batalla con una ola gigante. Fuera de batalla sirve para moverse sobre el agua.
+Description = Inunda el campo de batalla con una ola gigante.
 #-------------------------------
 [FISHIOUSREND]
 Name = Branquibocado
@@ -8445,7 +8410,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = DoublePowerIfTargetNotActed
 Flags = Contact,CanProtect,CanMirrorMove
-Description = El usuario ataca al objetivo con sus branquias. Si el usuario ataca antes que el objetivo, la potencia de este movimiento será duplicada.
+Description = Ataca al objetivo con sus branquias. Si ataca antes que el objetivo, duplica la potencia.
 #-------------------------------
 [LIQUIDATION]
 Name = Hidroariete
@@ -8464,7 +8429,7 @@ Description = Ataca golpeando gracias a la fuerza del agua. También puede reduc
 Name = Buceo
 Type = WATER
 Category = Physical
-Power = 80
+Power = 90
 Accuracy = 100
 TotalPP = 10
 Target = NearOther
@@ -8494,8 +8459,8 @@ Accuracy = 100
 TotalPP = 15
 Target = NearOther
 FunctionCode = CannotBeRedirected
-Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
-Description = Permite atacar al objetivo seleccionando ignorando las habilidades o movimientos que permiten a un rival centrar la atención sobre sí.
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate,Pulse
+Description = Atacar al objetivo ignorando habilidades o movimientos que redirigen ataques.
 #-------------------------------
 [WATERPLEDGE]
 Name = Voto Agua
@@ -8507,7 +8472,7 @@ TotalPP = 10
 Target = NearOther
 FunctionCode = WaterPledge
 Flags = CanProtect,CanMirrorMove
-Description = Ataca con columnas de agua. Si se combina con un ataque de fuego, crea un arcoíris y aumenta su potencia.
+Description = Ataca con columnas de agua. Combinado con un Voto Fuego crea un arcoíris.
 #-------------------------------
 [WATERFALL]
 Name = Cascada
@@ -8520,7 +8485,7 @@ Target = NearOther
 FunctionCode = FlinchTarget
 Flags = Contact,CanProtect,CanMirrorMove
 EffectChance = 20
-Description = Embiste con un gran impulso que puede hacer retroceder. También sirve para remontar cascadas.
+Description = Embiste con un gran impulso que puede amedrentar. También sirve para remontar cascadas.
 #-------------------------------
 [RAZORSHELL]
 Name = Concha Filo
@@ -8531,7 +8496,7 @@ Accuracy = 95
 TotalPP = 10
 Target = NearOther
 FunctionCode = LowerTargetDefense1
-Flags = Contact,CanProtect,CanMirrorMove
+Flags = Contact,CanProtect,CanMirrorMove,Slicing
 EffectChance = 50
 Description = Una afilada vieira ataca al objetivo. También puede hacer disminuir su Defensa.
 #-------------------------------
@@ -8564,8 +8529,8 @@ Description = Diluvio de burbujas que puede bajar la Velocidad.
 Name = Pulpocañón
 Type = WATER
 Category = Special
-Power = 65
-Accuracy = 85
+Power = 85
+Accuracy = 90
 TotalPP = 10
 Target = NearOther
 FunctionCode = LowerTargetAccuracy1
@@ -8628,7 +8593,7 @@ Description = Lanza burbujas al contrincante y puede reducir su Velocidad.
 Name = Pistola Agua
 Type = WATER
 Category = Special
-Power = 40
+Power = 45
 Accuracy = 100
 TotalPP = 25
 Target = NearOther
@@ -8640,7 +8605,7 @@ Description = Ataca disparando agua con gran potencia.
 Name = Tenaza
 Type = WATER
 Category = Physical
-Power = 35
+Power = 50
 Accuracy = 85
 TotalPP = 15
 Target = NearOther
@@ -8670,7 +8635,7 @@ TotalPP = 5
 Target = NearOther
 FunctionCode = HitThreeTimesAlwaysCriticalHit
 Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
-Description = El usuario, dominador absoluto del líquido elemento, golpea hasta tres veces con movimientos fluidos. Siempre asesta un golpe crítico.
+Description = El usuario golpea tres veces con movimientos fluidos. Siempre asesta golpes críticos.
 #-------------------------------
 [WATERSHURIKEN]
 Name = Shuriken de Agua
@@ -8683,7 +8648,7 @@ Target = NearOther
 Priority = 1
 FunctionCode = HitTwoToFiveTimesOrThreeForAshGreninja
 Flags = CanProtect,CanMirrorMove
-Description = Golpea al oponente de 2 a 5 veces con estrellas arrojadizas hechas de mucosidad. El que lo usa siempre ataca primero.
+Description = Golpea de dos a cinco veces con estrellas arrojadizas. El que lo usa siempre ataca primero.
 #-------------------------------
 [AQUARING]
 Name = Acua Aro
@@ -8704,7 +8669,7 @@ TotalPP = 10
 Target = UserAndAllies
 FunctionCode = HealUserAndAlliesQuarterOfTotalHP
 Flags = CannotMetronome
-Description = El usuario rocia un agua misteriosa al rededor y recupera PS a él y a sus aliados en combate.
+Description = El usuario rocia un agua misteriosa que recupera PS para él y sus aliados en combate.
 #-------------------------------
 [RAINDANCE]
 Name = Danza Lluvia
@@ -8746,3 +8711,1403 @@ TotalPP = 40
 Target = User
 FunctionCode = RaiseUserDefense1
 Description = El usuario se protege en su coraza y sube la Defensa.
+#-------------------------------
+
+
+#----------------------------------
+# LEYENDAS ARCEUS Y NOVENA GEN
+#----------------------------------
+[DIRECLAW]
+Name = Garra Nociva
+Type = POISON
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = PoisonParalyzeOrSleepTarget
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 50
+Description = Ataca al punto débil del objetivo con unas garras letales que pueden envenenarlo, paralizarlo o dormirlo.
+#-------------------------------
+[SPRINGTIDESTORM]
+Name = Ciclón Primavera
+Type = FAIRY
+Category = Special
+Power = 100
+Accuracy = 80
+TotalPP = 5
+Target = AllNearFoes
+FunctionCode = LowerTargetAttack1
+Flags = Wind,CanProtect,CanMirrorMove,CannotMetronome
+EffectChance = 30
+Description = Desata una tormenta de amor y odio con la que envuelve al objetivo. Puede reducir su Ataque.
+#-------------------------------
+[RAGINGFURY]
+Name = Erupción de Ira
+Type = FIRE
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 10
+Target = RandomNearFoe
+FunctionCode = MultiTurnAttackConfuseUserAtEnd
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = Ataca con unas violentas llamas de dos a tres turnos seguidos y después se queda confuso.
+#-------------------------------
+[WAVECRASH]
+Name = Envite Acuático
+Type = WATER
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = RecoilThirdOfDamageDealt
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = El usuario se envuelve en agua y embiste contra el objetivo, pero también se hiere seriamente a sí mismo.
+#-------------------------------
+[CHLOROBLAST]
+Name = Clorofiláser
+Type = GRASS
+Category = Special
+Power = 150
+Accuracy = 95
+TotalPP = 5
+Target = NearOther
+FunctionCode = RecoilHalfOfTotalHP
+Flags = CanProtect,CanMirrorMove
+Description = El usuario concentra clorofila y la dispara en forma de rayo, pero también se hiere a sí mismo.
+#-------------------------------
+[MOUNTAINGALE]
+Name = Viento Carámbano
+Type = ICE
+Category = Physical
+Power = 100
+Accuracy = 85
+TotalPP = 10
+Target = NearOther
+FunctionCode = FlinchTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = Ataca con unos carámbanos grandes como icebergs que pueden amedrentar al objetivo.
+#-------------------------------
+[HEADLONGRUSH]
+Name = Arremetida
+Type = GROUND
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerUserDefSpDef1
+Flags = Contact,Punching,CanProtect,CanMirrorMove
+Description = El usuario arremete con todas sus fuerzas, pero se reducen su Defensa y su Defensa Especial.
+#-------------------------------
+[BARBBARRAGE]
+Name = Mil Púas Tóxicas
+Type = POISON
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = DoublePowerIfTargetPoisonedPoisonTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 50
+Description = Dispara púas tóxicas que pueden envenenar al objetivo. Duplica la potencia si está envenenado.
+#-------------------------------
+[ESPERWING]
+Name = Ala Aural
+Type = PSYCHIC
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = RaiseUserSpeed1
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
+EffectChance = 100
+Description = Corta con unas alas imbuidas de aura. Suele asestar un golpe crítico y aumenta la Velocidad.
+#-------------------------------
+[BITTERMALICE]
+Name = Rencor Reprimido
+Type = GHOST
+Category = Special
+Power = 75
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetAttack1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = Ataca al objetivo sometiéndolo a su frío rencor y reduce su Ataque. 
+#-------------------------------
+[TRIPLEARROWS]
+Name = Triple Flecha
+Type = FIGHTING
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetDefense1FlinchTarget
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
+EffectChance = 100
+Description = Asesta un talonazo y lanza tres flechas. Puede amedrentar o bajar la Defensa del objetivo. Alto índice de crítico.
+#-------------------------------
+[BLEAKWINDSTORM]
+Name = Vendaval Gélido
+Type = FLYING
+Category = Special
+Power = 100
+Accuracy = 80
+TotalPP = 10
+Target = AllNearFoes
+FunctionCode = LowerTargetSpeed1AlwaysHitsInRain
+Flags = CanProtect,CanMirrorMove,Wind
+EffectChance = 30
+Description = Viento muy frío que estremece el cuerpo y puede reducir la Velocidad del objetivo.
+#-------------------------------
+[WILDBOLTSTORM]
+Name = Electormenta
+Type = ELECTRIC
+Category = Special
+Power = 100
+Accuracy = 80
+TotalPP = 10
+Target = AllNearFoes
+FunctionCode = ParalyzeTargetAlwaysHitsInRain
+Flags = CanProtect,CanMirrorMove,Wind
+EffectChance = 20
+Description = Invoca una tormenta eléctrica que ataca al objetivo con fuertes vientos y relámpagos y puede paralizarlo.
+#-------------------------------
+[SANDSEARSTORM]
+Name = Simún de Arena
+Type = GROUND
+Category = Special
+Power = 100
+Accuracy = 80
+TotalPP = 10
+Target = AllNearFoes
+FunctionCode = BurnTargetAlwaysHitsInRain
+Flags = CanProtect,CanMirrorMove,Wind
+EffectChance = 20
+Description = Ataca envolviéndo al objetivo en unas arenas tórridas que pueden causar quemaduras.
+#-------------------------------
+[LUNARBLESSING]
+Name = Plegaria Lunar
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = UserAndAllies
+FunctionCode = HealUserAndAlliesQuarterOfTotalHPCureStatus
+Description = Dedica una oración a la luna que restaura PS y los problemas de estado del bando del usuario. 
+#-------------------------------
+[PSYSHIELDBASH]
+Name = Asalto Barrera
+Type = PSYCHIC
+Category = Physical
+Power = 70
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = RaiseUserDefense1
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = El usuario ataca envuelto en una energía psíquica que además aumenta su Defensa.
+#-------------------------------
+[POWERSHIFT]
+Name = Cambiapoder
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = UserSwapBaseAtkDef
+Flags = CannotMetronome
+Description = Intercambia su Ataque por su Defensa.
+#-------------------------------
+[STONEAXE]
+Name = Hachazo Pétreo
+Type = ROCK
+Category = Physical
+Power = 65
+Accuracy = 90
+TotalPP = 15
+Target = NearOther
+FunctionCode = DamageTargetAddStealthRocksToFoeSide
+Flags = Contact,CanProtect,CanMirrorMove,Slicing
+EffectChance = 100
+Description = Ataca con un hacha de piedra y, al hacerlo, se deprenden fragmentos que rodean al objetivo.
+#-------------------------------
+[MYSTICALPOWER]
+Name = Poder Místico
+Type = PSYCHIC
+Category = Special
+Power = 70
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = RaiseUserSpAtk1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Ataca desatando un misterioso poder, que también aumenta su Ataque Especial.
+#-------------------------------
+[VICTORYDANCE]
+Name = Danza Triunfal
+Type = FIGHTING
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = RaiseUserAtkDefSpd1
+Flags = Dance
+Description = Ejecuta una danza frenética que invoca la victoria y aumenta el Ataque, la Defensa y la Velocidad. 
+#-------------------------------
+[SHELTER]
+Name = Retracción
+Type = STEEL
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = RaiseUserDefense2
+Description = La piel del usuario se vuelve dura como un escudo de acero, lo que aumenta mucho su Defensa.
+#-------------------------------
+[INFERNALPARADE]
+Name = Marcha Espectral
+Type = GHOST
+Category = Special
+Power = 60
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = DoublePowerIfTargetStatusProblemBurnTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = Bolas de fuego que pueden causar quemaduras. Duplica la potencia si ya tiene un cambio de estado.
+#-------------------------------
+[CEASELESSEDGE]
+Name = Tajo Metralla
+Type = DARK
+Category = Physical
+Power = 65
+Accuracy = 90
+TotalPP = 15
+Target = NearOther
+FunctionCode = DamageTargetAddSpikesToFoeSide
+Flags = Contact,CanProtect,CanMirrorMove,Slicing
+EffectChance = 100
+Description = Ataca con una espada de forma brusca y, al hacerlo, se deprenden púas que rodean al bando enemigo.
+#-------------------------------
+[TAKEHEART]
+Name = Bálsamo Osado
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = RaiseUserSpAtkSpDef1CureStatus
+Description = El usuario se cura de problemas de estado. Aumenta su Ataque Especial y su Defensa Especial. 
+#-------------------------------
+[AQUACUTTER]
+Name = Tajo Acuático
+Type = WATER
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove,Slicing,HighCriticalHitRate
+Description = Corta al objetivo con agua a presión como si de una hoja se tratara. Suele ser crítico.
+#-------------------------------
+[AQUASTEP]
+Name = Danza Acuática
+Type = WATER
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = RaiseUserSpeed1
+Flags = Dance,Contact,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Ejecuta una elegante y fluida danza y le inflige daño. Aumenta la Velocidad del usuario.
+#-------------------------------
+[ARMORCANNON]
+Name = Cañón Armadura
+Type = FIRE
+Category = Special
+Power = 120
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerUserDefSpDef1
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+EffectChance = 100
+Description = Arroja partes de su armadura como proyectiles ardientes. Reduce la Def. y la Def. Esp. del usuario.
+#-------------------------------
+[AXEKICK]
+Name = Patada Hacha
+Type = FIGHTING
+Category = Physical
+Power = 120
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = CrashDamageIfFailsConfuseTarget
+Flags = Contact,CanProtect,CanMirrorMove,Kicking
+EffectChance = 30
+Description = Lanza una patada al aire y golpea con el talón. Si falla, se hiere a sí mismo. Puede confundir. 
+#-------------------------------
+[BITTERBLADE]
+Name = Espada Lamento
+Type = FIRE
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = HealUserByHalfOfDamageDone
+Flags = Contact,CanProtect,Slicing,CanMirrorMove
+Description = Asesta una estocada llena de rencor. Recupera la mitad de los PS del daño que produce.
+#-------------------------------
+[BLAZINGTORQUE]
+Name = Pirochoque
+Type = FIRE
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = StarmobileBurnTarget
+Flags = CanProtect,CannotMetronome
+EffectChance = 30
+Description = Puede causar quemaduras.
+#-------------------------------
+[CHILLINGWATER]
+Name = Agua Fría
+Type = WATER
+Category = Special
+Power = 50
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = LowerTargetAttack1
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+EffectChance = 100
+Description = Ataca al objetivo rociándolo con un agua gélida y desalentadora que reduce su Ataque.
+#-------------------------------
+[CHILLYRECEPTION]
+Name = Fría Acogida
+Type = ICE
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = BothSides
+FunctionCode = SwitchOutUserStartHailWeather
+Flags = CannotMetronome
+Description = Cuenta un chiste con una acogida tan fría que hace que nieve, y se cambia por un Pokémon del equipo. 
+#-------------------------------
+[COLLISIONCOURSE]
+Name = Nitrochoque
+Type = FIGHTING
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = IncreasePowerSuperEffective
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
+Description = Choca contra el suelo mientras se transforma. La potencia aumenta si es supereficaz. 
+#-------------------------------
+[COMBATTORQUE]
+Name = Pugnachoque
+Type = FIGHTING
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = StarmobileParalyzeTarget
+Flags = CanProtect,CannotMetronome
+EffectChance = 30
+Description = Puede paralizar al objetivo.
+#-------------------------------
+[COMEUPPANCE]
+Name = Resarcimiento
+Type = DARK
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 10
+Target = None
+FunctionCode = CounterDamagePlusHalf
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
+Description = Devuelve al rival el último ataque recibido, pero con mucha más fuerza. 
+#-------------------------------
+[DOODLE]
+Name = Decalcomanía
+Type = NORMAL
+Category = Status
+Accuracy = 100
+TotalPP = 10
+Target = NearFoe
+FunctionCode = SetUserAlliesAbilityToTargetAbility
+Flags = CannotMetronome
+Description = Calca la esencia misma del objetivo para atribuir su habilidad a sí mismo y a sus aliados. 
+#-------------------------------
+[DOUBLESHOCK]
+Name = Electropalmas
+Type = ELECTRIC
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = UserLosesElectricType
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
+Description = Libera toda la electricidad de su cuerpo para atacar. Pierde el tipo Eléctrico.
+#-------------------------------
+[ELECTRODRIFT]
+Name = Electroderrape
+Type = ELECTRIC
+Category = Special
+Power = 100
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = IncreasePowerSuperEffective
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
+Description = Se abalanza mientras se transforma y atraviesa al rival. La potencia aumenta si es supereficaz. 
+#-------------------------------
+[FILLETAWAY]
+Name = Deslome
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = RaiseUserAtkSpAtkSpeed2LoseHalfOfTotalHP
+Flags = CannotMetronome
+Description = Aumenta mucho el Ataque, el Ataque Especial y la Velocidad del usuario a costa de parte de sus PS. 
+#-------------------------------
+[FLOWERTRICK]
+Name = Truco Floral
+Type = GRASS
+Category = Physical
+Power = 70
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = AlwaysCriticalHit
+Flags = CanProtect,CanMirrorMove
+Description = Lanza un ramo de flores trucado. No falla nunca y siempre asesta un golpe crítico.
+#-------------------------------
+[GIGATONHAMMER]
+Name = Martillo Colosal
+Type = STEEL
+Category = Physical
+Power = 160
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = CantSelectConsecutiveTurns
+Flags = CanProtect,CanMirrorMove
+Description = Golpea con un enorme martillo. No se puede usar dos veces seguidas. 
+#-------------------------------
+[GLAIVERUSH]
+Name = Asalto Espadón
+Type = DRAGON
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = UserVulnerableUntilNextAction
+Flags = Contact,CanProtect,CanMirrorMove
+Description = En el turno siguiente los ataques del rival no fallarán y causarán el doble de daño. 
+#-------------------------------
+[HYPERDRILL]
+Name = Hipertaladro
+Type = NORMAL
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanMirrorMove,CannotMetronome
+Description = Ataca rotando la parte puntiaguda de su cuerpo. Ignora movimientos como Protección.
+#-------------------------------
+[ICESPINNER]
+Name = Pirueta Helada
+Type = ICE
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = RemoveTerrainIceSpinner
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Recubre las extremidades con una capa de hielo y golpea al rival. Si hay un campo lo rompe. 
+#-------------------------------
+[JETPUNCH]
+Name = Puño Jet
+Type = WATER
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+Priority = 1
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome,Punching
+Description = Envuelve el puño con un torrente y propina un golpe de alta prioridad.
+#-------------------------------
+[KOWTOWCLEAVE]
+Name = Genufendiente
+Type = DARK
+Category = Physical
+Power = 85
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = None
+Flags = Slicing,Contact,CanProtect,CanMirrorMove
+Description = Se postra en ademán de reverencia para que el objetivo baje la guardia y aprovecha para atacar. No falla.
+#-------------------------------
+[LASTRESPECTS]
+Name = Homenaje Póstumo
+Type = GHOST
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = IncreasePowerEachFaintedAlly
+Flags = CanProtect,CanMirrorMove
+Description = Venga a sus compañeros caídos. Cuantos más se hayan debilitado, mayor será la potencia.
+#-------------------------------
+[LUMINACRASH]
+Name = Fotocolisión
+Type = PSYCHIC
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetSpDef2
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Ataca proyectando una extraña luz que afecta a la mente y reduce mucho la Def Especial.
+#-------------------------------
+[MAGICALTORQUE]
+Name = Feerichoque
+Type = FAIRY
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = StarmobileConfuseTarget
+Flags = CanProtect,CannotMetronome
+EffectChance = 30
+Description = Puede confundir al objetivo.
+#-------------------------------
+[MAKEITRAIN]
+Name = Fiebre Dorada
+Type = STEEL
+Category = Special
+Power = 120
+Accuracy = 100
+TotalPP = 5
+Target = AllNearFoes
+FunctionCode = AddMoneyGainedFromBattleLowerUserSpAtk1
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = Ataca arrojando muchas monedas, pero reduce su At. Especial. Aumenta la recompensa.
+#-------------------------------
+[MORTALSPIN]
+Name = Giro Mortífero
+Type = POISON
+Category = Physical
+Power = 30
+Accuracy = 100
+TotalPP = 15
+Target = AllNearFoes
+FunctionCode = RemoveUserBindingAndEntryHazardsPoisonTarget
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Ataque giratorio que envenena al objetivo y anula efectos como atadura, constricción y drenadoras. 
+#-------------------------------
+[NOXIOUSTORQUE]
+Name = Ponzochoque
+Type = POISON
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = StarmobilePoisonTarget
+Flags = CanProtect,CannotMetronome
+EffectChance = 30
+Description = Puede envenenar al objetivo.
+#-------------------------------
+[ORDERUP]
+Name = Oído Cocina
+Type = DRAGON
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = RaiseUserStat1Commander
+Flags = CanProtect,CannotMetronome
+EffectChance = 100
+Description = Si lleva un Tatsugiri en la boca, aumenta una de sus características en función de su forma. 
+#-------------------------------
+[POPULATIONBOMB]
+Name = Proliferación
+Type = NORMAL
+Category = Physical
+Power = 20
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = HitTenTimes
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome,Slicing
+Description = Ejecuta un ataque conjunto que golpea al objetivo de una a diez veces seguidas. 
+#-------------------------------
+[POUNCE]
+Name = Brinco
+Type = BUG
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = LowerTargetSpeed1
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
+EffectChance = 100
+Description = Ataca abalanzándose sobre el objetivo y le reduce la Velocidad.
+#-------------------------------
+[RAGEFIST]
+Name = Puño Furia
+Type = GHOST
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = IncreasePowerEachTimeHit
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome,Punching
+Description = Convierte su rabia en energía. Cuantos más golpes haya recibido mayor será la potencia.
+#-------------------------------
+[RAGINGBULL]
+Name = Furia Taurina
+Type = NORMAL
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TypeIsUserSecondTypeRemoveScreens
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
+Description = Este movimiento cambia de tipo en función de la forma del usuario. Destruye barreras. 
+#-------------------------------
+[REVIVALBLESSING]
+Name = Plegaria Vital
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 1
+Target = User
+FunctionCode = RevivePokemonHalfHP
+Flags = CannotMetronome
+Description = Oración que revive a un Pokémon del equipo que se haya debilitado y restaura la mitad de sus PS. 
+#-------------------------------
+[RUINATION]
+Name = Calamidad
+Type = DARK
+Category = Special
+Power = 1
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = FixedDamageHalfTargetHP
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = Provoca una catástrofe devastadora que reduce a la mitad los PS del objetivo.
+#-------------------------------
+[SALTCURE]
+Name = Salazón
+Type = ROCK
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = StartSaltCureTarget
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+EffectChance = 100
+Description = El objetivo pierde PS cada turno. Afecta especialmente a Pokémon de tipo Acero y tipo Agua. 
+#-------------------------------
+[SHEDTAIL]
+Name = Autotomía
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = UserMakeSubstituteSwitchOut
+Flags = CannotMetronome
+Description = El usuario se cambia por otro Pokémon del equipo dejando un sustituto a cambio de sus PS. 
+#-------------------------------
+[SILKTRAP]
+Name = Telatrampa
+Type = BUG
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+Priority = 4
+FunctionCode = ProtectUserFromDamagingMovesSilkTrap
+Flags = CannotMetronome
+Description = Trampa sedosa que protege al usuario. Baja la Velocidad de quien lo toca. 
+#-------------------------------
+[SNOWSCAPE]
+Name = Paisaje Nevado
+Type = ICE
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = BothSides
+FunctionCode = StartHailWeather
+Flags = CannotMetronome
+Description = Invoca una nevada durante 5 turnos que aumenta la Defensa de los Pokémon de tipo Hielo.
+#-------------------------------
+[SPICYEXTRACT]
+Name = Extracto Picante
+Type = GRASS
+Category = Status
+Accuracy = 0
+TotalPP = 15
+Target = NearOther
+FunctionCode = RaiseTargetAtkLowerTargetDef2
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = Libera un extracto picante que aumenta mucho su Ataque, pero también reduce mucho su Defensa. 
+#-------------------------------
+[SPINOUT]
+Name = Quemarrueda
+Type = STEEL
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerUserSpeed2
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Gira violentamente sobre sí. Reduce mucho la Velocidad del usuario.
+#-------------------------------
+[TIDYUP]
+Name = Limpieza General
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = RaiseUserAtkSpd1RemoveHazardsSubstitutes
+Flags = CannotMetronome
+EffectChance = 100
+Description = Aumenta el Ataque y la Velocidad. Limpia efectos de efectos como Púas, Trampa Rocas o Sustituto.
+#-------------------------------
+[TORCHSONG]
+Name = Canto Ardiente
+Type = FIRE
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = RaiseUserSpAtk1
+Flags = Sound,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Expele tórridas llamaradas como si entonara una canción. Aumenta el Ataque Especial.
+#-------------------------------
+[TRAILBLAZE]
+Name = Abrecaminos
+Type = GRASS
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = RaiseUserSpeed1
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
+EffectChance = 100
+Description = Ataca como si saltara desde la hierba alta. Aumenta su Velocidad.
+#-------------------------------
+[TRIPLEDIVE]
+Name = Triple Inmersión
+Type = WATER
+Category = Physical
+Power = 30
+Accuracy = 95
+TotalPP = 10
+Target = NearOther
+FunctionCode = HitThreeTimes
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Ejecuta una inmersión triple en perfecta sincronía que golpea al objetivo tres veces seguidas.
+#-------------------------------
+[TWINBEAM]
+Name = Láser Doble
+Type = PSYCHIC
+Category = Special
+Power = 40
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = HitTwoTimes
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = Emite dos misteriosos haces lumínicos por los ojos que infligen daño dos veces seguidas.
+#-------------------------------
+[WICKEDTORQUE]
+Name = Ominochoque
+Type = DARK
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = StarmobileSleepTarget
+Flags = CanProtect,CannotMetronome
+EffectChance = 10
+Description = Puede dormir al objetivo.
+#-------------------------------
+[HYDROSTEAM]
+Name = Hidrovapor
+Type = WATER
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = IncreasePowerInSunWeather
+Flags = CanProtect,CanMirrorMove
+Description = Lanza un potente chorro de agua hirviendo al rival que aumenta su poder si hace sol.
+#-------------------------------
+[PSYBLADE]
+Name = Psicohojas
+Type = PSYCHIC
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = IncreasePowerInElectricTerrain
+Flags = Contact,CanProtect,CanMirrorMove,Slicing
+EffectChance = 10
+Description = El usuario desgarra al objetivo con una espada etérea cuyo poder aumenta en el terreno eléctrico.
+#-------------------------------
+[BLOODMOON]
+Name = Luna Roja
+Type = NORMAL
+Category = Special
+Power = 140
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = CantSelectConsecutiveTurns
+Flags = CanProtect,CanMirrorMove
+Description = Ataca con toda su fuerza a través de una luna roja. No puede usarse dos veces seguidas. 
+#-------------------------------
+[MATCHAGOTCHA]
+Name = Cañón Batidor
+Type = GRASS
+Category = Special
+Power = 80
+Accuracy = 90
+TotalPP = 15
+Target = AllNearFoes
+FunctionCode = HealUserByHalfOfDamageDoneBurnTarget
+Flags = CanProtect,CanMirrorMove,ThawsUser
+EffectChance = 20
+Description = Rocía al objetivo con té y recupera la mitad de los PS del daño que produce. Puede quemar. 
+#-------------------------------
+[SYRUPBOMB]
+Name = Bomba Caramelo
+Type = GRASS
+Category = Special
+Power = 60
+Accuracy = 85
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetSpeedOverTime
+Flags = CanProtect,CanMirrorMove,Bomb
+EffectChance = 100
+Description = Impregna al objetivo con su viscoso néctar, reduciendo su Velocidad durante tres turnos.
+#-------------------------------
+[IVYCUDGEL]
+Name = Garrote Liana
+Type = GRASS
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TypeIsUserSecondType
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
+Description = Golpea con un garrote. El tipo varía según la máscara que lleve. Suele ser crítico.
+#-------------------------------
+[ELECTROSHOT]
+Name = Electrorrayo
+Type = ELECTRIC
+Category = Special
+Power = 130
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TwoTurnAttackOneTurnInRainRaiseUserSpAtk1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = 1º turno: acumula electricidad y aumenta At. Esp. 2º turno: ataca. Si llueve ataca el 1º turno.
+#-------------------------------
+[TERASTARSTORM]
+Name = Teraclúster
+Type = NORMAL
+Category = Special
+Power = 120
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = TerapagosCategoryDependsOnHigherDamage
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = Si Terapagos lo usa en su Forma Astral, inflige daño a todos los rivales.
+#-------------------------------
+[FICKLEBEAM]
+Name = Láser Veleidoso
+Type = DRAGON
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = RandomlyDealsDoubleDamage
+Flags = CanProtect,CanMirrorMove
+Description = En ocasiones el resto de sus cabezas se unen al ataque haciendo el doble de daño.
+#-------------------------------
+[BURNINGBULWARK]
+Name = Llama Protectora
+Type = FIRE
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+Priority = 4
+FunctionCode = ProtectUserBurningBulwark
+Description = Emplea pelaje para protegerse de ataques y causar quemaduras si le tocan.
+#-------------------------------
+[THUNDERCLAP]
+Name = Relámpago Súbito
+Type = ELECTRIC
+Category = Special
+Power = 70
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+Priority = 1
+FunctionCode = FailsIfTargetActed
+Flags = CanProtect,CanMirrorMove
+Description = Rayo que cae sobre el objetivo con prioridad. Falla si el objetivo no ataca.
+#-------------------------------
+[MIGHTYCLEAVE]
+Name = Filo Potente
+Type = ROCK
+Category = Physical
+Power = 95
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanMirrorMove,Slicing
+Description = Rebana al objetivo con la luz que ha acumulado en la testa. Golpea aunque el rival se proteja.
+#-------------------------------
+[TACHYONCUTTER]
+Name = Tajo Taquión
+Type = STEEL
+Category = Special
+Power = 50
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = HitTwoTimes
+Flags = CanProtect,CanMirrorMove,Slicing
+Description = Ráfaga de cuchillas formadas por partículas que inflige daño dos veces seguidas. No falla.
+#-------------------------------
+[HARDPRESS]
+Name = Prensa Metálica
+Type = STEEL
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = PowerHigherWithTargetHP100PowerRange
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Oprime con los brazos o las pinzas. Cuantos más PS le queden al objetivo, más daño hace.
+#-------------------------------
+[DRAGONCHEER]
+Name = Bramido Dragón
+Type = DRAGON
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = AllAllies
+FunctionCode = RaiseAlliesCriticalHitRate1DragonTypes2
+Description = Bramido que aumenta la probabilidad de golpe crítico de aliados, y en dos niveles si es Dragón.
+#-------------------------------
+[ALLURINGVOICE]
+Name = Canto Encantador
+Type = FAIRY
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = ConfuseTargetIfTargetStatsRaisedThisTurn
+Flags = Sound,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Canto angelical que confunde al objetivo si sus características han aumentado en ese turno.
+#-------------------------------
+[TEMPERFLARE]
+Name = Cólera Ardiente
+Type = FIRE
+Category = Physical
+Power = 75
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = DoublePowerIfUserLastMoveFailed
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Su potencia se duplica si el movimiento del usuario falló en el turno anterior.
+#-------------------------------
+[SUPERCELLSLAM]
+Name = Plancha Voltaica
+Type = ELECTRIC
+Category = Physical
+Power = 100
+Accuracy = 95
+TotalPP = 15
+Target = NearOther
+FunctionCode = CrashDamageIfFails
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Electrifica su cuerpo y salta en plancha sobre el objetivo. Si falla, se hiere a sí mismo.
+#-------------------------------
+[PSYCHICNOISE]
+Name = Psicorruido
+Type = PSYCHIC
+Category = Special
+Power = 75
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = DisableTargetHealingMoves2Turns
+Flags = Sound,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Onda que impide al objetivo recuperar PS durante 2 turnos con movimientos, habilidades y objetos.
+#-------------------------------
+[UPPERHAND]
+Name = Palma Rauda
+Type = FIGHTING
+Category = Physical
+Power = 65
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+Priority = 3
+FunctionCode = FlinchTargetFailsIfTargetNotUsingPriorityMove
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Si el objetivo usa movimientos de prioridad se anticipa golpeándolo antes y lo amedrenta.
+#-------------------------------
+[MALIGNANTCHAIN]
+Name = Cadena Virulenta
+Type = POISON
+Category = Special
+Power = 100
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = BadPoisonTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 50
+Description = Apresa al objetivo con una cadena para minarle las fuerzas. Puede envenenar gravemente.
+#-------------------------------
+[TERABLAST]
+Name = Teraexplosión
+Type = NORMAL
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Movimiento cuyo tipo varia al del usuario en caso de que éste haya teracristalizado.
+#-------------------------------
+[ESCALOFRIO]
+Name = Escalofrío
+Type = ICE
+Category = Status
+Accuracy = 85
+TotalPP = 15
+Target = NearOther
+FunctionCode = FreezeTarget
+Flags = CanProtect,CanMirrorMove
+Description = Provoca un terrible escalofrío en el objetivo y lo congela.
+EffectChance = 10
+#-------------------------------
+[DESLIZAMIENTO]
+Name = Deslizamiento
+Type = ICE
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = RaiseUserSpeed1
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Se desliza con un esquí y aumenta la Velocidad del atacante.
+#-------------------------------
+[ATRAPAMOSCAS]
+Name = Atrapabicho
+Type = GRASS
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = SuperEffectiveAgainstBug
+Flags = Contact,CanProtect,CanMirrorMove,Biting
+Description = Muerde con unas fauces eficaces contra los Pokémon Bicho.
+#-------------------------------
+[TRIPLEHIT]
+Name = Triple Golpe
+Type = NORMAL
+Category = Physical
+Power = 15
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = HitThreeTimesPowersUpWithEachHitFlinchTarget
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Golpea hasta tres veces seguidas y cada vez más fuerte.
+#-----------------------------------------------------------------------
+# Ataques Let's GO
+#-----------------------------------------------------------------------
+[EEVEEVOLLEY]
+Name = Eevimpacto
+Type = NORMAL
+Category = Physical
+Power = 1
+Accuracy = 0
+TotalPP = 20
+Target = NearOther
+FunctionCode = PowerHigherWithUserHappiness
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Cuanto mayor sea la amistad con el Entrenador, más poderoso será este ataque. No falla.
+#-------------------------------
+[BOUNCYBUBBLE]
+Name = Vapodrenaje
+Type = WATER
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = HealUserByHalfOfDamageDone
+Flags = CanProtect,CanMirrorMove
+Description = El usuario ataca disparando burbujas de agua al objetivo y absorbe la mitad del daño producido.
+#-------------------------------
+[BUZZYBUZZ]
+Name = Joltioparálisis
+Type = ELECTRIC
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = ParalyzeTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = El usuario dispara una descarga eléctrica para atacar al objetivo, siempre paraliza.
+#-------------------------------
+[SIZZLYSLIDE]
+Name = Flarembestida
+Type = FIRE
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = BurnTarget
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = El usuario se cubre de fuego y carga contra el objetivo, siempre provoca quemadura.
+#-------------------------------
+[GLITZYGLOW]
+Name = Espeaura
+Type = PSYCHIC
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = DamageAndStartWeakenSpecialDamageAgainstUserSide
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = El usuario bombardea al objetivo con fuerza telequinética y levanta una Pantalla de Luz.
+#-------------------------------
+[BADDYBAD]
+Name = Umbreozona
+Type = DARK
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = DamageAndStartWeakenPhysicalDamageAgainstUserSide
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = El usuario actúa mal, ataca al objetivo y levanta una pantalla de Reflejo. 
+#-------------------------------
+[SAPPYSEED]
+Name = Leafitobombas
+Type = GRASS
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = DamageTargetAddLeechSeedToFoeSide
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = El usuario esparce semillas para atacar al objetivo y coloca Drenadoras.
+#-------------------------------
+[FREEZYFROST]
+Name = Glaceoprisma
+Type = ICE
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = DamageAndResetAllBattlersStatStages
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Ataca con un cristal de neblina helada. Elimina los cambios de estadísticas de todos. 
+#-------------------------------
+[SPARKLYSWIRL]
+Name = Sylveotornado
+Type = FAIRY
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = DamageAndCureUserPartyStatus
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Ataca al objetivo envolviéndolo con un torbellino. Cura todos los problemas de estado del equipo. 
+#-------------------------------
+[PIKAPAPOW]
+Name = Pikatormenta
+Type = ELECTRIC
+Category = Special
+Power = 1
+Accuracy = 0
+TotalPP = 20
+Target = NearOther
+FunctionCode = PowerHigherWithUserHappiness
+Flags = CanProtect,CanMirrorMove
+Description = Cuanto mayor sea la amistad con el Entrenador, más poderoso será este ataque. No falla.
+#-------------------------------
+[ZIPPYZAP]
+Name = Pikaturbo
+Type = ELECTRIC
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+Priority = 2
+FunctionCode = AlwaysCriticalHit
+Flags = Contact,CanProtect,CanMirrorMove
+Description = El usuario ataca con ráfagas eléctricas, siempre va en primer lugar y es golpe crítico.
+#-------------------------------
+[SPLISHYSPLASH]
+Name = Salpikasurf
+Type = WATER
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = AllNearFoes
+FunctionCode = ParalyzeTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = El usuario carga una enorme onda eléctrica y golpea al Pokémon rival con ella. Puede paralizar.
+#-------------------------------
+[FLOATYFALL]
+Name = Pikapicado
+Type = FLYING
+Category = Physical
+Power = 90
+Accuracy = 95
+TotalPP = 15
+Target = NearOther
+FunctionCode = FlinchTarget
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 30
+Description = El usuario flota en el aire y luego se lanza en picado para atacar al objetivo. Puede amedrentar.
+#-------------------------------
+[NIHILLIGHT]
+Name = Luz Devastadora
+Type = DRAGON
+Category = Special
+Power = 200
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = HitsFairysIgnoreTargetDefSpDefEvaStatStages
+Flags = CanProtect,CanMirrorMove
+Description = Luz devastadora que pega de forma neutra a los Pokémon de tipo hada. Ignora cambios de Def. Esp. y Evasión.
+#-------------------------------
+[OBLITERATE]
+Name = Obliterar
+Type = ICE
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+Flags = Contact,CanProtect,CanMirrorMove
+FunctionCode = TriplePowerIfTargetFrozen
+Description = Golpe de hielo asolador. Triplica el daño si el objetivo está congelado destrozando el hielo que lo atrapa.
+#-------------------------------
+[JADEBREATH]
+Name = Aliento de Jade
+Type = FAIRY
+Category = Special
+Power = 60
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+Flags = CanProtect,CanMirrorMove
+FunctionCode = SwitchOutUserDamagingMoveHealReplacement
+Description = Ataca con una niebla y regresa al equipo. Cura al pokemon que entra a sustituirlo.
+#-------------------------------

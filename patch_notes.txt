@@ -1,9 +1,0 @@
-Notas del parche 2.0.0
-- Release oficial de Pokemon Azerita
-- Nuevo contenido de expansión: El Ataque de los Clanes
-- Nuevas zonas: Tierras Blasteadas, Bosk of Jade, Península de Llama Infernal, Nagrand, Gorgrond y Valle Sombra de Luna
-- Nuevas raids: Fundición Piedra Negra y Templo Oscuro
-- Sistema de facciones y reputaciones
-- Nuevos objetos legendarios
-- Bosses del mundo antiguo completamente rediseñados
-- Algunas zonas del mundo antiguo reworkeadas

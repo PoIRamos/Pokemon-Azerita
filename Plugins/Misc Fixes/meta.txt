@@ -1,0 +1,4 @@
+Name       = Pokémon Azerita Misc Fixes
+Version    = 1.0
+Essentials = 21.1
+Credits    = PolRamos

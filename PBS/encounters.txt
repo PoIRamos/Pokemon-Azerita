@@ -2,119 +2,133 @@
 #------------------------------- 
 [008] # Abadía del Norte
 Water,20
-    100,MAGIKARP,5,5
+    80,MAGIKARP,5,5
+    20,FEEBAS,5,5
 #-------------------------------
 [002] # Bosque de Elbuin
 Land,21
     30,PIDGEY,3,5
-    30,ZIGZAGOON,3,5
-    30,SENTRET,3,5
-    10,TEDDIURSA,5,7
+    30,BUNNELBY,3,5
+    30,SEWADDLE,3,5
+    30,FLETCHLING,3,5
+    10,PAWMI,5,7
 Water,20
-    100,MAGIKARP,5,5
+    50,MAGIKARP,5,5
+    50,MURLOC,5,5
 #-------------------------------
 [003] # Villa de oro
 Land,21
-    40,SUNKERN,6,8
-    30,KAKUNA,6,8
-    20,MACHOP,6,8
-    10,SCYTHER,7,10
+    30,SENTRET,6,8
+    30,HOPPIP,6,8
+    30,TAILLOW,6,8
+    30,LILLIPUP,6,8
+    10,EEVEE,7,10
 #-------------------------------
 [030] # Loch Moras
 Land,21
-    30,ODDISH,8,10
-    30,SPINARAK,8,10
-    30,CLEFFA,8,10
-    10,DELIBIRD,9,11
+    30,GEODUDE,8,10
+    30,WOOPER,8,10
+    30,NACLI,8,10
+    30,DELIBIRD,8,10
+    10,ARCHEN,9,11
 #-------------------------------
 [032] # Guarida de Wendigos
 Cave,4
-    40,ZUBAT,9,12
-    30,GEODUDE,9,12
-    20,WOOBAT,9,12
-    10,SNORUNT,9,12
+    30,SNORUNT,9,12
+    30,BERGMITE,9,12
+    30,ZUBAT,9,12
+    30,CUBCHOO,9,12
+    10,SWINUB,9,12
 #-------------------------------
 [033] # Dun Moros
 Land,21
-    30,ABRA,14,16
-    30,ARON,14,16
+    30,MACHOP,14,16
+    30,ROGGENROLA,14,16
     30,SNOVER,14,16
-    10,GROWLITHE,18,19
+    30,STANTLER,14,16
+    10,SNEASEL,18,19
 #-------------------------------
 [040] # Bosque oscuro
 Land,21
-    30,GASTLY,22,24
+    30,FOONGUS,22,24
     30,SHUPPET,22,24
     30,PHANTUMP,22,24
-    10,SABLEYE,24,25
+    30,MURKROW,22,24
+    10,ABSOL,24,25
 #-------------------------------
 [041] # Villa oscura
 Land,21
-    30,HOUNDOUR,24,26
-    30,DUSKULL,24,26
-    30,PHANTUMP,24,26
-    10,MIGHTYENA,27,28
+    30,GASTLY,24,26
+    30,NOIBAT,24,26
+    30,MISDREAVUS,24,26
+    30,VENIPEDE,24,26
+    10,HOUNDOUR,27,28
 #-------------------------------
 [045] # Garganta fogosa
 Land,21
-    30,TORKOAL,30,33
-    30,DONPHAN,30,33
-    30,ONIX,30,33
-    10,CAMERUPT,34,35
+    30,SLUGMA,30,33
+    30,RHYHORN,30,33
+    30,HEATMOR,30,33
+    30,KLINK,30,33
+    10,TURTONATOR,34,35
 #-------------------------------
 [046] # Monte Piedra Negra
 Cave,4
-    30,DIGGERSBY,30,33
-    30,BINACLE,30,33
+    30,ARON,30,33
+    30,ROGGENROLA,30,33
     30,ROCKRUFF,30,33
-    10,GOLETT,34,35
+    30,WOOBAT,30,33
+    10,DEINO,34,35
 #-------------------------------
 [047] # Conexión BRM-BRD
 Cave,4
-    30,DIGGERSBY,30,33
-    30,BINACLE,30,33
+    30,ARON,30,33
+    30,ROGGENROLA,30,33
     30,ROCKRUFF,30,33
-    10,GOLETT,34,35
+    30,WOOBAT,30,33
+    10,BINACLE,34,35
 #-------------------------------
 [048] # Profundidades Piedra Negra
-Cave,4
-    32,CRUSTLE,35,37
-    32,DARMANITAN,35,37
+Cave,2
+    30,BRONZOR,35,37
+    30,DRILBUR,35,37
     30,CLAYDOL,35,37
+    30,NUMEL,35,37
     6,GIBLE,37,38
 #-------------------------------
 [050] # Cumbre Piedra Negra
 Land,21
-    30,BOUFFALANT,35,37
-    30,KROKOROK,35,37
-    30,EXCADRILL,35,37
-    10,ARCHEN,37,38
+    30,BOLDORE,35,37
+    30,SABLEYE,35,37
+    30,SKRELP,35,37
+    30,DURANT,35,37
+    10,DEINO,37,38
 #-------------------------------
 [053] # Terraza Cumbre Piedra Negra
 Land,21
-    30,HERACROSS,35,37
+    30,NUMEL,35,37
     30,SKARMORY,35,37
-    30,GASTRODON,35,37
-    10,GOGOAT,37,38
+    30,VULLABY,35,37
+    30,TURTONATOR,35,37
+    10,LARVITAR,37,38
 #-------------------------------
 [056] # Vega de Espina Torcida
 Land,21
-    20,EXEGGUTOR_1,39,41
-    20,PRIMEAPE,39,41
-    20,PASSIMIAN,39,41
-    20,KROOKODILE,39,41
-    10,JANGMOO,42,43
+    30,EXEGGUTOR_1,39,41
+    30,YANMEGA,39,41
+    30,PANGORO,39,41
+    30,TROPIUS,39,41
     10,SLAKOTH,20,21
 Water,2
-    60,DREDNAW,40,41
-    40,FERALIGATR,39,41
+    60,CRAWDAUNT,40,41
+    40,FLOATZEL,39,41
 #-------------------------------
 [057] # Gul'Zurub
 Land,21
-    20,BRAVIARY,39,41
-    20,COFAGRIGUS,39,41
-    20,SEVIPER,39,41
-    20,ARIADOS,39,41
+    30,ARBOK,39,41
+    30,CARNIVINE,39,41
+    30,URSARING,39,41
+    30,ARIADOS,39,41
     10,RILLABOOM,39,41
     10,INFERNAPE,39,41
 Water,2
@@ -123,17 +137,21 @@ Water,2
 #-------------------------------
 [059] # Bahía del tesoro
 Water,20
-    33,BASCULIN,34,35
+    33,PELIPPER,34,35
     33,SHARPEDO,34,35
-    33,WAILMER,33,35
+    33,CLAWITZER,33,35
 #-------------------------------
 [062] # Puerto de Bolarus
 Water,20
-    100,HORSEA,10,14
+    40,CHINCHOU,10,14
+    40,CHEWTLE,10,14
+    20,HORSEA,10,14
 #-------------------------------
 [066] # Ciudad de Bolarus
 Water,20
-    100,HORSEA,10,14
+    40,CHINCHOU,10,14
+    40,CHEWTLE,10,14
+    20,HORSEA,10,14
 #-------------------------------
 [079] # Costa Oscurecida
 Land,21
@@ -143,38 +161,39 @@ Land,21
     20,TREVENANT,50,52
     10,CORVIKNIGHT,50,52
     10,DECIDUEYE,50,52
-Water,2
+Water,20
     100,SHARPEDO,50,52
     #-------------------------------
 [007] # Valle del fresno
 Land,21
     20,LILLIGANT,52,54
     20,ALAKAZAM,52,54
-    20,LUDICOLO,52,54
+    20,SHIINOTIC,52,54
     20,CORSOLA,52,54
     20,MAWILE,52,54
-Water,2
+Water,20
     100,GYARADOS,50,52
 #-------------------------------
 [009] # Paso de Frondavil
 Cave,4
-    40,VIKAVOLT,52,54
+    30,SABLEYE,52,54
     30,EXCADRILL,52,54
-    20,WEAVILE,52,54
+    30,GLIMMORA,52,54
     10,TORTERRA,52,54
 #-------------------------------
 [010] # Claro Lunar
-Water,20
+Water,5
     100,POPPLIO,10,14
 #-------------------------------
 [014] # Los Baldíos
 Land,21
-    20,NIDOQUEEN,68,70
-    20,DRAPION,68,70
-    20,ZEBSTRIKA,68,70
-    15,NIDOKING,68,70
-    5,TYRANITAR,68,70
-Water,2
+    30,NIDOQUEEN,68,70
+    30,DRAPION,68,70
+    30,ZEBSTRIKA,68,70
+    30,NIDOKING,68,70
+    30,BRAVIARY,68,70
+    5,HAXORUS,68,70
+Water,10
     50,GYARADOS,68,70
     50,CARRACOSTA,68,70
 #-------------------------------
@@ -182,20 +201,20 @@ Water,2
 Land,21
     20,ARBOK,69,71
     20,ARMALDO,69,71
-    20,BRAVIARY,69,71
+    20,CACTURNE,69,71
     20,ESCAVALIER,69,71
     20,RHYDON,69,71
-Water,2
+Water,5
     50,DREDNAW,68,70
 #-------------------------------
 [018] # Taranis
 Land,21
-    20,CLAYDOL,69,71
-    20,AEGISLASH,69,71
-    20,COFAGRIGUS,69,71
-    20,CRUSTLE,69,71
-    20,FLYGON,69,71
-Water,2
+    30,HIPPOWDON,69,71
+    30,HELIOLISK,69,71
+    30,COFAGRIGUS,69,71
+    30,CRUSTLE,69,71
+    10,FLYGON,69,71
+Water,20
     50,LAPRAS,68,70
 #-------------------------------
 [019] # Cráter de Gun'oro
@@ -212,8 +231,9 @@ Land,21
     20,AURORUS,72,73
     20,CHESNAUGHT,72,73
     20,GARDEVOIR,72,73
+    20,GALLADE,72,73
     20,ALTARIA,72,73
-Water,2
+Water,5
     50,KINGDRA,71,73
 #-------------------------------
 [084] # Rudotar
@@ -223,76 +243,83 @@ Land,21
     20,CENTISKORCH,75,76
     20,ELECTIVIRE,75,76
     20,GLISCOR,75,76
-Water,2
+Water,20
     50,OMASTAR,75,76
 #-------------------------------
 [089] # Guarida de Onyxia
 Cave,3
     30,COALOSSAL,82,84
+    30,DRUDDIGON,82,84
     30,FLYGON,82,84
     30,CAMERUPT,82,84
+    30,DRAGONITE,82,84
 #-------------------------------
 [090] # Guarida de Onyxia
 Cave,3
     30,COALOSSAL,82,84
+    30,DRUDDIGON,82,84
     30,FLYGON,82,84
     30,CAMERUPT,82,84
+    30,DRAGONITE,82,84
 #-------------------------------
 [091] # Guarida de Onyxia
 Cave,3
     30,COALOSSAL,82,84
+    30,DRUDDIGON,82,84
     30,FLYGON,82,84
     30,CAMERUPT,82,84
+    30,DRAGONITE,82,84
 #-------------------------------
 [099] # Rasgamonte
 Land,21
-    20,ABOMASNOW,82,84
-    20,FROSLASS,82,84
-    20,GLALIE,82,84
-    20,WALREIN,82,84
-    20,BEARTIC,82,84
-Water,2
+    30,FROSLASS,82,84
+    30,GLALIE,82,84
+    30,WALREIN,82,84
+    30,BEARTIC,82,84
+    10,BAXCALIBUR,82,84
+Water,20
     50,WALREIN,82,84
 #-------------------------------
 [102] # Rasgamonte Sala 2
 Land,21
-    20,ABOMASNOW,82,84
-    20,FROSLASS,82,84
-    20,GLALIE,82,84
-    20,WALREIN,82,84
-    20,BEARTIC,82,84
+    30,FROSLASS,82,84
+    30,GLALIE,82,84
+    30,WALREIN,82,84
+    30,BEARTIC,82,84
+    10,BAXCALIBUR,82,84
 #-------------------------------
 [006] # Bosk of Jade
 Land,21
-    20,DRAMPA,39,41
-    20,KOMALA,39,41
-    20,PANGORO,39,41
-Water,2
+    30,DRAMPA,39,41
+    30,KOMALA,39,41
+    30,PANGORO,39,41
+    10,KOMMOO,39,41
+Water,20
     60,GYARADOS,40,41
     40,WISHIWASHI,39,41
 #-------------------------------
 [022] # Tierras Blasteadas
 Land,21
-    20,ARCANINE,69,71
-    20,DRAGONITE,69,71
+    20,SALAZZLE,69,71
+    20,HOUNDOOM,69,71
     20,MEDICHAM,69,71
 #-------------------------------
 [111] # Nagrand
 Land,21
-    20,COPPERAJAH,69,71
+    20,MUDSDALE,69,71
     20,NOIVERN,69,71
-    20,LYCANROC,69,71
-    20,CLAYDOL,69,71
+    20,GIRAFARIG,69,71
+    20,BOUFFALANT,69,71
 #-------------------------------
 [106] # Península de llama infernal
 Land,21
-    20,GENGAR,69,71
+    30,GENGAR,69,71
     20,EMBOAR,69,71
-    20,CENTISKORCH,69,71
-    20,GOLURK,69,71
+    30,STEELIX,69,71
+    20,DURALUDON,69,71
 #-------------------------------
 [113] # Valle sombra de luna
-Water,2
+Water,10
     60,MANTINE,40,41
     40,MILOTIC,39,41
     40,PRIMARINA,39,41

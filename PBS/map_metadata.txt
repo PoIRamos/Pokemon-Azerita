@@ -7,13 +7,13 @@ Name = Intro
 Name = Bosque de Elbuin
 Outdoor = true
 ShowArea = true
-BattleBack = field
+BattleBack = ElwynnForest
 #-------------------------------
 [003]   # Villa de Oro
 Name = Villa de Oro
 Outdoor = true
 ShowArea = true
-BattleBack = field
+BattleBack = Goldshire
 #-------------------------------
 [004]   # Centro pokemon Villa de oro
 Name = Centro pokemon Villa de oro
@@ -22,21 +22,21 @@ ShowArea = false
 [005]   # Gimnasio Villa de oro
 Name = Villa de Oro
 Outdoor = false
-BattleBack = indoor1
+BattleBack = Gym1
 #-------------------------------
 [006]   # Bosk of Jade
 Name = Bosk of Jade
 Outdoor = true
 ShowArea = true
 Weather = Fog,100
-BattleBack = field
+BattleBack = JadeForest
 Environment = Forest
 #-------------------------------
 [007]   # Valle del Fresno
 Name = Valle del Fresno
 Outdoor = true
 ShowArea = true
-BattleBack = forest
+BattleBack = Ashenvale
 MapSize = 2,11
 Environment = Forest
 #-------------------------------
@@ -44,7 +44,7 @@ Environment = Forest
 Name = Abadía del norte
 Outdoor = true
 ShowArea = true
-BattleBack = field
+BattleBack = Northshire
 #-------------------------------
 [009]   # Paso de Frondavil
 Name = Paso de Frondavil
@@ -52,14 +52,14 @@ Outdoor = false
 ShowArea = true
 HealingSpot = 8,17,11
 DarkMap = true
-BattleBack = rocky
+BattleBack = Felwood
 Environment = Cave
 #-------------------------------
 [010]   # Claro Lunar
 Name = Claro Lunar
 Outdoor = true
 ShowArea = true
-BattleBack = forest
+BattleBack = Moonglade
 Environment = Forest
 #-------------------------------
 [011]   # Centro Claro Lunar
@@ -73,13 +73,13 @@ Outdoor = false
 [013]   # Gimnasio Claro Lunar
 Name = Claro Lunar
 Outdoor = false
-BattleBack = indoor1
+BattleBack = Gym6
 #-------------------------------
 [014]   # Los Baldíos
 Name = Los Baldíos
 Outdoor = true
 ShowArea = true
-BattleBack = field
+BattleBack = Barrens
 #-------------------------------
 [015]   # Centro Los Baldíos
 Name = Los Baldíos
@@ -91,7 +91,7 @@ Name = Los Baldíos
 Name = Las Cien Agujas
 Outdoor = true
 ShowArea = true
-BattleBack = rocky
+BattleBack = ThousandNeedles
 Environment = Rock
 #-------------------------------
 [018]   # Taranis
@@ -99,52 +99,45 @@ Name = Taranis
 Outdoor = true
 ShowArea = true
 Weather = Sun,100
-BattleBack = sand
+BattleBack = Tanaris
 Environment = Sand
 #-------------------------------
 [019]   # Cráter de Gun'oro
 Name = Cráter de Gun'oro
 Outdoor = true
 ShowArea = true
-BattleBack = forest
+BattleBack = UnGoro
 Environment = Forest
 #-------------------------------
 [020]   # Felaras
 Name = Felaras
 Outdoor = true
 ShowArea = true
-BattleBack = forest
+BattleBack = Feralas
 Environment = Forest
-#-------------------------------
-[021]
-Name = Villa de Oro
-Outdoor = false
-ShowArea = false
-MapPosition = 0,93,70
-BattleBack = field
 #-------------------------------
 [022] # Tierras Blasteadas 
 Name = Tierras Blasteadas
 Outdoor = true
 ShowArea = true
-BattleBack = rocky
+BattleBack = BlastedLands
 Environment = Rock
 #-------------------------------
 [023]   # Alto Mando 3
 Name = Sala Alto Mando 3
 Outdoor = false
-BattleBack = elite5
+BattleBack = IcecrownCitadel
 #-------------------------------
 [024]   # Alto Mando 4
 Name = Sala Alto Mando 4
 Outdoor = false
-BattleBack = elite4
+BattleBack = IcecrownCitadel
 #-------------------------------
 [025]   # Campeón
 Name = Sala Campeón
 Outdoor = false
 Weather = Snow,100
-BattleBack = elite1
+BattleBack = FrozenThrone
 #-------------------------------
 [026]   # Camino al campeón
 Name = Camino al campeon
@@ -155,14 +148,14 @@ Weather = Snow,100
 Name = Núcleo de Magma
 Outdoor = false
 ShowArea = true
-BattleBack = cave1
+BattleBack = MoltenCore
 #-------------------------------
 [028] #Gorgrond 
 Name = Gorgrond
 Outdoor = true
 ShowArea = true
 BicycleAlways = false
-BattleBack = rocky
+BattleBack = Gorgrond
 Environment = Volcano
 #-------------------------------
 [029] # Centro de Gorgrond
@@ -172,14 +165,14 @@ Name = Gorgrond
 Name = Loch Moras
 Outdoor = true
 ShowArea = true
-BattleBack = forest
+BattleBack = LochModan
 Environment = Forest
 #-------------------------------
 [032]   # Guarida de Wendigos
 Name = Guarida de Wendigos
 Outdoor = false
 ShowArea = true
-BattleBack = cave1
+BattleBack = WendigoCave
 Environment = Cave
 Flags = IceRock
 #-------------------------------
@@ -188,27 +181,27 @@ Name = Dun Moros
 Outdoor = true
 ShowArea = true
 Weather = Snow,100
-BattleBack = snow
+BattleBack = DunMorogh
 Environment = Snow
 #-------------------------------
 [037]   # Posada del león orgulloso
 Name = Posada del león orgulloso
 ShowArea = true
 Bicycle = true
-BattleBack = indoor1
+BattleBack = Goldshire
 #-------------------------------
 [039]   # Gimnasio Dun Moros
 Name = Dun Moros
 Outdoor = false
 ShowArea = false
-BattleBack = indoor1
+BattleBack = Gym2
 #-------------------------------
 [040]   # Bosque Oscuro
 Name = Bosque oscuro
 Outdoor = true
 ShowArea = true
 BicycleAlways = false
-BattleBack = forest
+BattleBack = Duskwood
 Environment = ForestGrass
 #-------------------------------
 [041]   # Villa Oscura
@@ -216,19 +209,19 @@ Name = Villa Oscura
 Outdoor = true
 ShowArea = true
 BicycleAlways = false
-BattleBack = forest
+BattleBack = Darkshire
 Environment = ForestGrass
 #-------------------------------
 [044]   # Gimnasio Villa Oscura
 Name = Villa Oscura
-BattleBack = indoor1
+BattleBack = Gym3
 #-------------------------------
 [045]   # Garganta fogosa
 Name = Garganta fogosa
 Outdoor = true
 ShowArea = true
 BicycleAlways = false
-BattleBack = rocky
+BattleBack = SearingGorge
 Environment = Volcano
 #-------------------------------
 [046]   # Monte Piedra Negra
@@ -236,20 +229,20 @@ Name = Monte Piedra Negra
 Outdoor = false
 ShowArea = true
 Bicycle = false
-BattleBack = rocky
+BattleBack = BlackrockMountain
 Environment = Cave
 #-------------------------------
 [047]   # Conexión BRM-BRD
 Name = Monte Piedra Negra
 Outdoor = false
-BattleBack = rocky
+BattleBack = BlackrockMountain
 Environment = Rock
 #-------------------------------
 [048]   # Profundidades Piedra Negra
 Name = Profundidades Piedra Negra
 ShowArea = true
 DarkMap = true
-BattleBack = rocky
+BattleBack = BlackrockMountain
 Environment = Volcano
 #-------------------------------
 [049]   # Centro Profundidades Piedra Negra
@@ -261,7 +254,7 @@ Environment = Cave
 Name = Cumbre Piedra Negra
 ShowArea = true
 DarkMap = false
-BattleBack = rocky
+BattleBack = BlackrockSpire
 Environment = Rock
 #-------------------------------
 [051]   # Tienda Cumbre Piedra Negra
@@ -271,13 +264,13 @@ Environment = Cave
 #-------------------------------
 [052]   # Gimnasio Cumbre Piedra Negra
 Name = Cumbre Piedra Negra
-BattleBack = indoor1
+BattleBack = Gym4
 #-------------------------------
 [053]   # Terraza de la cumbre
 Name = Cumbre Piedra Negra Exterior
 ShowArea = true
 HealingSpot = 52,17,14
-BattleBack = field
+BattleBack = BlackrockSpire
 Environment = Grass
 #-------------------------------
 [054]   # Centro Cumbre Piedra Negra
@@ -289,27 +282,27 @@ Name = Cumbre Piedra Negra
 [056]   # Vega de Espina Torcida
 Name = Vega de Espina Torcida
 ShowArea = true
-BattleBack = forest
+BattleBack = Stranglethorn
 Environment = ForestGrass
 #-------------------------------
 [057]   # Gul Zurub
 Name = Gul'Zurub
 Outdoor = true
 ShowArea = true
-BattleBack = forest
+BattleBack = ZulGurub
 Environment = ForestGrass
 #-------------------------------
 [058]   # Arena Gurubashi
 Name = Arena Gurubashi
 ShowArea = true
-BattleBack = champion1
+BattleBack = GurubashiArena
 Environment = None
 #-------------------------------
 [059]   # Bahía del Tesoro
 Name = Bahía del tesoro
 Outdoor = true
 ShowArea = true
-BattleBack = field
+BattleBack = BootyBay
 #-------------------------------
 [060]   # Centro Booty Bay
 Name = Bahía del tesoro
@@ -322,13 +315,14 @@ BattleBack = indoor1
 Name = Puerto de Bolarus
 Outdoor = true
 ShowArea = true
+BattleBack = BoralusHarbor
 #-------------------------------
 [063]   # Almacén
 Name = Puerto de Bolarus
 #-------------------------------
 [064]   # Cuartel de la marina
 Name = Puerto de Bolarus
-BattleBack = indoor1
+BattleBack = BoralusHarbor
 #-------------------------------
 [065]   # Piso 2
 Name = Puerto de Bolarus
@@ -337,7 +331,7 @@ Name = Puerto de Bolarus
 Name = Ciudad de Bolarus
 Outdoor = true
 ShowArea = true
-BattleBack = field
+BattleBack = Boralus
 #-------------------------------
 [067]   # Centro comercial. P1
 Name = Ciudad de Bolarus
@@ -368,13 +362,13 @@ Name = Ciudad de Bolarus
 #-------------------------------
 [078]   # Gimnasio Bolarus
 Name = Ciudad de Bolarus
-BattleBack = indoor1
+BattleBack = Gym5
 #-------------------------------
 [079]   # Costa Oscurecida
 Name = Costa Oscurecida
 Outdoor = true
 ShowArea = true
-BattleBack = forest
+BattleBack = Darkshore
 Environment = ForestGrass
 #-------------------------------
 [081]   # Centro Felaras
@@ -385,13 +379,13 @@ Name = Felaras
 #-------------------------------
 [083]   # Gimnasio Felaras
 Name = Felaras
-BattleBack = indoor1
+BattleBack = Gym7
 #-------------------------------
 [084]   # Rudotar
 Name = Rudotar
 Outdoor = true
 ShowArea = true
-BattleBack = field
+BattleBack = Durotar
 #-------------------------------
 [085]   # Polgrimmar
 Name = Polgrimmar
@@ -400,62 +394,77 @@ ShowArea = true
 #-------------------------------
 [088]   # Gimnasio Polgrimmar
 Name = Polgrimmar
-BattleBack = indoor1
+BattleBack = Gym8
 #-------------------------------
 [089]   # Guarida de Onyxia
 Name = Guarida de Onyxia
 Outdoor = false
 ShowArea = true
-BattleBack = rocky
+BattleBack = OnyxiasLair
 Environment = Cave
 #-------------------------------
 [090]   # Guarida de Onyxia S2
 Name = Guarida de Onyxia
 Outdoor = false
 ShowArea = true
-BattleBack = rocky
+BattleBack = OnyxiasLair
 Environment = Cave
 #-------------------------------
 [091]   # Guarida de Onyxia S3
 Name = Guarida de Onyxia
 Outdoor = false
 ShowArea = true
-BattleBack = rocky
+BattleBack = OnyxiasLair
 Environment = Cave
 #-------------------------------
 [092]   # Sala del jefe
 Name = Guarida de Onyxia
 Outdoor = false
 ShowArea = false
-BattleBack = rocky
+BattleBack = OnyxiasLair
 Environment = Cave
 #-------------------------------
 [093]   # Denoregan
 Name = Denoregan
 Outdoor = false
 ShowArea = true
-BattleBack = indoor1
+BattleBack = Gnomeregan
+#-------------------------------
+[094]   # Denoregan
+Name = Denoregan
+Outdoor = false
+BattleBack = Gnomeregan
+#-------------------------------
+[095]   # Denoregan
+Name = Denoregan
+Outdoor = false
+BattleBack = Gnomeregan
+#-------------------------------
+[096]   # Denoregan
+Name = Denoregan
+Outdoor = false
+BattleBack = Gnomeregan
 #-------------------------------
 [099]   # Rasgamonte
 Name = Rasgamonte
 Outdoor = true
 ShowArea = true
-Weather = Snow,100
-BattleBack = snow
+Weather = Blizzard,100
+BattleBack = Icecrown
 Environment = Snow
 #-------------------------------
 [102]   # Sala 2
 Name = Rasgamonte
 Outdoor = true
-Weather = Snow,100
-BattleBack = snow
+Weather = Blizzard,100
+BattleBack = Icecrown
 Environment = Snow
 #-------------------------------
 [103]   # Sala 3
 Name = Rasgamonte
 Outdoor = true
 Weather = Snow,100
-BattleBack = snow
+BattleBack = Icecrown
 Environment = Snow
 #-------------------------------
 [104]   # Sala 4
@@ -463,7 +472,7 @@ Name = Rasgamonte
 Outdoor = true
 ShowArea = true
 Weather = Snow,100
-BattleBack = snow
+BattleBack = Icecrown
 Environment = Snow
 #-------------------------------
 [105]   # Liga Pokemon
@@ -476,20 +485,20 @@ Name = Península de Llama Infernal
 Outdoor = true
 ShowArea = true
 BicycleAlways = false
-BattleBack = rocky
+BattleBack = Hellfire
 Environment = Volcano
 #-------------------------------
 [108]   # Alto Mando 1
 Name = Sala Alto Mando 1
 Outdoor = false
-BattleBack = elite4
+BattleBack = Stormwind
 #-------------------------------
 [109]   # Alto Mando 2
 Name = Sala Alto Mando 2
 Outdoor = false
-BattleBack = elite6
+BattleBack = Orgrimmar
 #-------------------------------
-[081]   # Centro Península de Llama Infernal
+[110]   # Centro Península de Llama Infernal
 Name = Península de Llama Infernal
 #-------------------------------
 [038] #Fundición Piedra Negra 
@@ -497,28 +506,28 @@ Name = Fundición Piedra Negra
 Outdoor = false
 ShowArea = true
 BicycleAlways = false
-BattleBack = rocky
+BattleBack = BlackrockFoundry
 Environment = Volcano
 #-------------------------------
 [111]   # Nagrand
 Name = Nagrand
 Outdoor = true
 ShowArea = true
-BattleBack = field
+BattleBack = Nagrand
 Environment = Forest
 #-------------------------------
 [112]   # Guarida de Gruul
 Name = Guarida de Gruul
 Outdoor = false
 ShowArea = true
-BattleBack = rocky
+BattleBack = GruulsLair
 Environment = Cave
 #-------------------------------
 [113]   # Valle Sombra de Luna
 Name = Valle Sombra de Luna
 Outdoor = true
 ShowArea = true
-BattleBack = forest
+BattleBack = Shadowmoon
 Environment = ForestGrass
 #-------------------------------
 [114]   # Centro Valle Sombra de Luna
@@ -529,5 +538,5 @@ Name = Templo Oscuro
 Outdoor = false
 ShowArea = true
 BicycleAlways = false
-BattleBack = rocky
+BattleBack = BlackTemple
 Environment = Volcano
