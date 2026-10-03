@@ -1,0 +1,5 @@
+POKEMON AZERITA 2.0
+
+¡Migración a essentials 21.1!
+
+Todos los cambios en la página web.
