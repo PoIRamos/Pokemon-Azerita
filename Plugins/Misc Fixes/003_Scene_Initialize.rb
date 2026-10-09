@@ -39,6 +39,32 @@ class Battle::Scene
     msgWindow.shadowColor    = MESSAGE_SHADOW_COLOR
     msgWindow.letterbyletter = true
     @sprites["messageWindow"] = msgWindow
+    # [DBK] Midbattle Scripting: name window and speaker sprite
+    nameWindow = Window_AdvancedTextPokemon.new
+    nameWindow.baseColor      = MESSAGE_BASE_COLOR
+    nameWindow.shadowColor    = MESSAGE_SHADOW_COLOR
+    nameWindow.viewport       = @viewport
+    nameWindow.letterbyletter = false
+    nameWindow.visible        = false
+    nameWindow.x              = 16
+    nameWindow.y              = Graphics.height - 158
+    nameWindow.z              = 200
+    @sprites["nameWindow"]   = nameWindow
+
+    @speaker     = $player
+    @showSpeaker = false
+    @showWindows = false
+
+    defaultFile = GameData::TrainerType.front_sprite_filename($player.trainer_type)
+    spriteX, spriteY = Battle::Scene.pbTrainerPosition(1)
+    sprite = pbAddSprite("midbattle_speaker", spriteX, spriteY, defaultFile, @viewport)
+
+    if sprite.bitmap
+      sprite.z = 7
+      sprite.ox = sprite.src_rect.width / 2
+      sprite.oy = sprite.bitmap.height
+      sprite.visible = false
+    end
     # Create command window
     @sprites["commandWindow"] = CommandMenu.new(@viewport, 200)
     # Create fight window
