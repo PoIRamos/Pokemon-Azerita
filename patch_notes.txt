@@ -1,5 +1,3 @@
-POKEMON AZERITA 2.0
+NOTAS DEL PARCHE 2.0.2
 
-¡Migración a essentials 21.1!
-
-Todos los cambios en la página web.
+Se han añadido animaciones en combate cuando un jefe saca a su último Pokémon.
