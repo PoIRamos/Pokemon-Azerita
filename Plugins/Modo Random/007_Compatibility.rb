@@ -1,14 +1,21 @@
 if PluginManager.installed?("DiegoWTs Starter Selection") && defined?(DiegoWTsStarterSelection)
   class DiegoWTsStarterSelection
     alias_method :original_initialize, :initialize unless method_defined?(:original_initialize)
+
     def initialize(pkmn1, pkmn2, pkmn3)
-      original_initialize(pkmn1, pkmn2, pkmn3) unless RandomizedChallenge.enabled?
+      # En modo normal, usar directamente los iniciales originales.
+      return original_initialize(pkmn1, pkmn2, pkmn3) unless RandomizedChallenge.enabled?
+
       starter1 = get_starter(0) || pkmn1
       starter2 = get_starter(1) || pkmn2
       starter3 = get_starter(2) || pkmn3
+
       RandomizedChallenge.pause
-      original_initialize(starter1, starter2, starter3)
-      RandomizedChallenge.resume
+      begin
+        original_initialize(starter1, starter2, starter3)
+      ensure
+        RandomizedChallenge.resume
+      end
     end
   end
 end
