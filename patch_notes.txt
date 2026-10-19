@@ -1,3 +1,5 @@
-NOTAS DEL PARCHE 2.0.2
+NOTAS DEL PARCHE 2.0.3
 
-Se han añadido animaciones en combate cuando un jefe saca a su último Pokémon.
+- Se ha corregido un error por el que la habildiad Frostwyrm no se aplicaba correctamente.
+- Ahora la habilidad Frostwyrm congela al momento igual que Electricidad Estática en vez de al final del turno.
+- Ahora el movimiento Obliterar tiene más puntuación para la IA si el objetivo está congelado.
